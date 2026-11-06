@@ -1,0 +1,3323 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>计算公式串记 · 数学笔记</title><link rel="stylesheet" href="../../../site.css"></head><body><a class="skip" href="#main">跳到正文</a><header class="top"><div class="top-inner"><a class="brand" href="../../../index.html"><span class="brand-mark" aria-hidden="true">∑</span>数学笔记</a></div></header><div class="layout"><aside class="side"><details class="directory" open><summary>笔记目录</summary><nav aria-label="笔记目录"><details class="group"><summary>错题本</summary><a class="side-link" href="../../%E9%94%99%E9%A2%98%E6%9C%AC/%E6%A6%82%E7%8E%87%E9%94%99%E9%A2%98%E7%9B%AE%E5%BD%95.html">概率错题目录</a><a class="side-link" href="../../%E9%94%99%E9%A2%98%E6%9C%AC/%E9%AB%98%E6%95%B0%E9%94%99%E9%A2%98%E7%9B%AE%E5%BD%95.html">高数错题目录</a><a class="side-link" href="../../%E9%94%99%E9%A2%98%E6%9C%AC/%E7%BA%BF%E4%BB%A3%E9%94%99%E9%A2%98%E7%9B%AE%E5%BD%95.html">线代错题目录</a><a class="side-link" href="../../%E9%94%99%E9%A2%98%E6%9C%AC/%E7%9C%9F%E9%A2%98(1).html">真题(1)</a><a class="side-link" href="../../%E9%94%99%E9%A2%98%E6%9C%AC/%E7%9C%9F%E9%A2%98(2).html">真题(2)</a></details><details class="group" open><summary>高数</summary><details open><summary>《高数强化》</summary><a class="side-link" href="01-%E5%87%BD%E6%95%B0%E6%9E%81%E9%99%90%E4%B8%8E%E8%BF%9E%E7%BB%AD.html">01-函数极限与连续</a><a class="side-link" href="03-%E4%B8%80%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E5%AD%A6%E7%9A%84%E6%A6%82%E5%BF%B5.html">03-一元函数微分学的概念</a><a class="side-link" href="04-%E4%B8%80%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E5%AD%A6%E7%9A%84%E8%AE%A1%E7%AE%97.html">04-一元函数微分学的计算</a><a class="side-link" href="05-%E4%B8%80%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E5%AD%A6%E7%9A%84%E5%BA%94%E7%94%A8.html">05-一元函数微分学的应用</a><a class="side-link" href="08-%E4%B8%80%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6%E7%9A%84%E6%A6%82%E5%BF%B5%E4%B8%8E%E6%80%A7%E8%B4%A8.html">08-一元函数积分学的概念与性质</a><a class="side-link" href="09-%E4%B8%80%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6%E7%9A%84%E8%AE%A1%E7%AE%97.html">09-一元函数积分学的计算</a><a class="side-link" href="10-%E4%B8%80%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6%E7%9A%84%E5%BA%94%E7%94%A8.html">10-一元函数积分学的应用</a><a class="side-link" href="13-%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E5%AD%A6.html">13-多元函数微分学</a><a class="side-link" href="14-%E4%BA%8C%E9%87%8D%E7%A7%AF%E5%88%86.html">14-二重积分</a><a class="side-link" href="15-%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B.html">15-微分方程</a><a class="side-link" href="16-%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0.html">16-无穷级数</a><a class="side-link" href="17-%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6%E7%9A%84%E9%A2%84%E5%A4%87%E7%9F%A5%E8%AF%86.html">17-多元函数积分学的预备知识</a><a class="side-link" href="18-%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6.html">18-多元函数积分学</a><a class="side-link" href="%E8%AE%A1%E7%AE%97%E5%85%AC%E5%BC%8F%E4%B8%B2%E8%AE%B0.html" aria-current="page">计算公式串记</a></details><details><summary>多重积分</summary><a class="side-link" href="../%E5%A4%9A%E9%87%8D%E7%A7%AF%E5%88%86/%E4%BA%8C%E9%87%8D%E7%A7%AF%E5%88%86%E4%B8%AD%E5%88%A9%E7%94%A8%E4%BA%A4%E6%8D%A2%E5%AF%B9%E7%A7%B0%E6%80%A7%E5%8C%96%E7%AE%80.html">二重积分中利用交换对称性化简</a><a class="side-link" href="../%E5%A4%9A%E9%87%8D%E7%A7%AF%E5%88%86/%E7%A7%AF%E5%88%86%E6%98%A0%E5%B0%84%E5%8C%BA%E5%9F%9F.html">积分映射区域</a><a class="side-link" href="../%E5%A4%9A%E9%87%8D%E7%A7%AF%E5%88%86/%E8%80%83%E7%A0%94%E7%A7%AF%E5%88%86%E4%B8%AD%E7%9A%84%E7%A9%BA%E9%97%B4%E5%87%A0%E4%BD%95-%E6%95%B4%E5%90%88%E7%89%88.html">考研积分中的空间几何-整合版</a><a class="side-link" href="../%E5%A4%9A%E9%87%8D%E7%A7%AF%E5%88%86/%E8%BF%9E%E9%80%9A%E5%8C%BA%E5%9F%9F%E5%92%8C%E6%A0%BC%E6%9E%97%E5%85%AC%E5%BC%8F.html">连通区域和格林公式</a></details><details><summary>极限和微分</summary><a class="side-link" href="../%E6%9E%81%E9%99%90%E5%92%8C%E5%BE%AE%E5%88%86/%E6%9E%81%E9%99%90-%E7%96%91%E7%82%B9.html">极限-疑点</a><details><summary>一元微分</summary><a class="side-link" href="../%E6%9E%81%E9%99%90%E5%92%8C%E5%BE%AE%E5%88%86/%E4%B8%80%E5%85%83%E5%BE%AE%E5%88%86/%E8%B4%B9%E9%A9%AC%E5%AE%9A%E7%90%86.html">费马定理</a><a class="side-link" href="../%E6%9E%81%E9%99%90%E5%92%8C%E5%BE%AE%E5%88%86/%E4%B8%80%E5%85%83%E5%BE%AE%E5%88%86/%E6%9B%B2%E7%8E%87%E5%9C%86%E6%96%B9%E7%A8%8B.html">曲率圆方程</a><a class="side-link" href="../%E6%9E%81%E9%99%90%E5%92%8C%E5%BE%AE%E5%88%86/%E4%B8%80%E5%85%83%E5%BE%AE%E5%88%86/%E5%BE%AE%E5%88%86-%E5%BC%BA%E5%8C%96.html">微分-强化</a><a class="side-link" href="../%E6%9E%81%E9%99%90%E5%92%8C%E5%BE%AE%E5%88%86/%E4%B8%80%E5%85%83%E5%BE%AE%E5%88%86/%E5%BE%AE%E5%88%86%E5%BA%94%E7%94%A8-%E5%BC%BA%E5%8C%96.html">微分应用-强化</a><a class="side-link" href="../%E6%9E%81%E9%99%90%E5%92%8C%E5%BE%AE%E5%88%86/%E4%B8%80%E5%85%83%E5%BE%AE%E5%88%86/%E6%96%9C%E7%9B%B4%E7%BA%BF%E7%9A%84%E6%97%8B%E8%BD%AC%E4%BD%93%E5%BE%AE%E5%85%83.html">斜直线的旋转体微元</a><details><summary>专题</summary><a class="side-link" href="../%E6%9E%81%E9%99%90%E5%92%8C%E5%BE%AE%E5%88%86/%E4%B8%80%E5%85%83%E5%BE%AE%E5%88%86/%E4%B8%93%E9%A2%98/%E5%AF%BC%E6%95%B0%E6%AF%94%E4%B8%8E%E5%B9%B3%E5%9D%87%E5%8F%98%E5%8C%96%E7%8E%87%E5%8D%95%E8%B0%83%E6%80%A7.html">导数比与平均变化率单调性</a><a class="side-link" href="../%E6%9E%81%E9%99%90%E5%92%8C%E5%BE%AE%E5%88%86/%E4%B8%80%E5%85%83%E5%BE%AE%E5%88%86/%E4%B8%93%E9%A2%98/%E5%AF%BC%E6%95%B0%E5%80%BC%E4%B8%8E%E9%82%BB%E5%9F%9F%E5%8D%95%E8%B0%83%E6%80%A7.html">导数值与邻域单调性</a><a class="side-link" href="../%E6%9E%81%E9%99%90%E5%92%8C%E5%BE%AE%E5%88%86/%E4%B8%80%E5%85%83%E5%BE%AE%E5%88%86/%E4%B8%93%E9%A2%98/%E9%AB%98%E9%98%B6%E5%AF%BC%E6%95%B0%E4%B8%8E%E6%B3%B0%E5%8B%92%E7%B3%BB%E6%95%B0.html">高阶导数与泰勒系数</a><a class="side-link" href="../%E6%9E%81%E9%99%90%E5%92%8C%E5%BE%AE%E5%88%86/%E4%B8%80%E5%85%83%E5%BE%AE%E5%88%86/%E4%B8%93%E9%A2%98/%E5%87%BD%E6%95%B0%E6%9E%81%E9%99%90%E4%B8%8E%E5%AF%BC%E6%95%B0%E6%9E%81%E9%99%90.html">函数极限与导数极限</a><a class="side-link" href="../%E6%9E%81%E9%99%90%E5%92%8C%E5%BE%AE%E5%88%86/%E4%B8%80%E5%85%83%E5%BE%AE%E5%88%86/%E4%B8%93%E9%A2%98/%E7%BB%9D%E5%AF%B9%E5%80%BC%E5%87%BD%E6%95%B0%E9%9B%B6%E7%82%B9%E5%8F%AF%E5%AF%BC%E4%B8%8E%E5%8E%9F%E5%87%BD%E6%95%B0%E5%AF%BC%E6%95%B0.html">绝对值函数零点可导与原函数导数</a><a class="side-link" href="../%E6%9E%81%E9%99%90%E5%92%8C%E5%BE%AE%E5%88%86/%E4%B8%80%E5%85%83%E5%BE%AE%E5%88%86/%E4%B8%93%E9%A2%98/%E6%9C%89%E9%99%90%E6%B3%B0%E5%8B%92%E5%85%AC%E5%BC%8F%E4%B8%8E%E6%B3%B0%E5%8B%92%E7%BA%A7%E6%95%B0.html">有限泰勒公式与泰勒级数</a></details></details><details><summary>专题</summary><a class="side-link" href="../%E6%9E%81%E9%99%90%E5%92%8C%E5%BE%AE%E5%88%86/%E4%B8%93%E9%A2%98/%E6%9E%81%E9%99%90-%E5%8F%98%E4%B8%8A%E9%99%90%E7%A7%AF%E5%88%86%E7%AD%89%E4%BB%B7%E6%9B%BF%E6%8D%A2.html">极限-变上限积分等价替换</a><a class="side-link" href="../%E6%9E%81%E9%99%90%E5%92%8C%E5%BE%AE%E5%88%86/%E4%B8%93%E9%A2%98/%E6%9E%81%E9%99%90-%E5%AF%BC%E6%95%B0%E6%9E%81%E9%99%90%E4%B8%8E%E5%87%BD%E6%95%B0%E5%A2%9E%E9%95%BF%E7%8E%87.html">极限-导数极限与函数增长率</a><a class="side-link" href="../%E6%9E%81%E9%99%90%E5%92%8C%E5%BE%AE%E5%88%86/%E4%B8%93%E9%A2%98/%E6%9E%81%E9%99%90-%E9%80%92%E6%8E%A8%E6%95%B0%E5%88%97%E7%9A%84%E5%8D%95%E8%B0%83%E6%9C%89%E7%95%8C%E8%AF%81%E6%98%8E.html">极限-递推数列的单调有界证明</a><a class="side-link" href="../%E6%9E%81%E9%99%90%E5%92%8C%E5%BE%AE%E5%88%86/%E4%B8%93%E9%A2%98/%E6%9E%81%E9%99%90-%E5%8F%8C%E4%BE%A7%E6%9E%81%E9%99%90%E4%B8%8E%E5%80%92%E6%95%B0%E6%8D%A2%E5%85%83.html">极限-双侧极限与倒数换元</a><a class="side-link" href="../%E6%9E%81%E9%99%90%E5%92%8C%E5%BE%AE%E5%88%86/%E4%B8%93%E9%A2%98/%E6%9E%81%E9%99%90-%E6%8C%87%E6%95%B0%E5%86%85%E9%83%A8%E7%9A%84%E7%AD%89%E4%BB%B7%E6%9B%BF%E6%8D%A2.html">极限-指数内部的等价替换</a></details></details><details><summary>空间几何和多元微分</summary><a class="side-link" href="../%E7%A9%BA%E9%97%B4%E5%87%A0%E4%BD%95%E5%92%8C%E5%A4%9A%E5%85%83%E5%BE%AE%E5%88%86/%E6%8A%BD%E8%B1%A1%E9%9A%90%E5%87%BD%E6%95%B0%E6%B1%82%E5%81%8F%E5%AF%BC.html">抽象隐函数求偏导</a><a class="side-link" href="../%E7%A9%BA%E9%97%B4%E5%87%A0%E4%BD%95%E5%92%8C%E5%A4%9A%E5%85%83%E5%BE%AE%E5%88%86/%E5%88%86%E6%AE%B5%E5%87%BD%E6%95%B0%E6%9E%81%E5%80%BC%E5%88%A4%E6%96%AD%EF%BC%9A%E5%AE%9A%E4%B9%89%E6%B3%95%E4%BC%98%E5%85%88.html">分段函数极值判断：定义法优先</a><a class="side-link" href="../%E7%A9%BA%E9%97%B4%E5%87%A0%E4%BD%95%E5%92%8C%E5%A4%9A%E5%85%83%E5%BE%AE%E5%88%86/%E6%B1%82%E9%94%A5%E9%9D%A2%E6%96%B9%E7%A8%8B.html">求锥面方程</a><a class="side-link" href="../%E7%A9%BA%E9%97%B4%E5%87%A0%E4%BD%95%E5%92%8C%E5%A4%9A%E5%85%83%E5%BE%AE%E5%88%86/%E7%9B%B4%E7%BA%BF%E9%9D%A2.html">直线面</a></details><details><summary>无穷级数</summary><a class="side-link" href="../%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/%E5%B8%B8%E8%A7%81%E9%BA%A6%E5%85%8B%E5%8A%B3%E6%9E%97%E7%BA%A7%E6%95%B0%E5%B1%95%E5%BC%80.html">常见麦克劳林级数展开</a><a class="side-link" href="../%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/%E5%B9%82%E7%BA%A7%E6%95%B0%EF%BC%9A%E6%94%B6%E6%95%9B%E5%9F%9F%E4%B8%8E%E5%92%8C%E5%87%BD%E6%95%B0.html">幂级数：收敛域与和函数</a><a class="side-link" href="../%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/%E7%BC%BA%E9%A1%B9%E5%B9%82%E7%BA%A7%E6%95%B0.html">缺项幂级数</a><a class="side-link" href="../%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/%E6%9D%A1%E4%BB%B6%E6%94%B6%E6%95%9B%E4%B8%8E%E5%B9%82%E7%BA%A7%E6%95%B0%E6%94%B6%E6%95%9B%E5%8D%8A%E5%BE%84.html">条件收敛与幂级数收敛半径</a><a class="side-link" href="../%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0%E6%95%9B%E6%95%A3%E6%80%A7%E5%88%A4%E5%88%AB.html">无穷级数敛散性判别</a><details><summary>幂级数专题</summary><a class="side-link" href="../%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/%E5%B9%82%E7%BA%A7%E6%95%B0%E4%B8%93%E9%A2%98/%E5%B9%82%E7%BA%A7%E6%95%B0-%E5%AF%B9%E6%95%B0%E5%87%BD%E6%95%B0%E5%B1%95%E5%BC%80.html">幂级数-对数函数展开</a><a class="side-link" href="../%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/%E5%B9%82%E7%BA%A7%E6%95%B0%E4%B8%93%E9%A2%98/%E5%B9%82%E7%BA%A7%E6%95%B0-%E5%A4%9A%E4%B8%AA%E7%BA%A7%E6%95%B0%E4%B8%8E%E6%B1%82%E5%92%8C%E6%B5%81%E7%A8%8B.html">幂级数-多个级数与求和流程</a><a class="side-link" href="../%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/%E5%B9%82%E7%BA%A7%E6%95%B0%E4%B8%93%E9%A2%98/%E5%B9%82%E7%BA%A7%E6%95%B0-%E5%88%A4%E6%96%AD%E6%B5%81%E7%A8%8B%E4%B8%8E%E6%98%93%E9%94%99%E7%82%B9.html">幂级数-判断流程与易错点</a><a class="side-link" href="../%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/%E5%B9%82%E7%BA%A7%E6%95%B0%E4%B8%93%E9%A2%98/%E5%B9%82%E7%BA%A7%E6%95%B0-%E6%94%B6%E6%95%9B%E5%8D%8A%E5%BE%84%E4%B8%8E%E7%AB%AF%E7%82%B9.html">幂级数-收敛半径与端点</a><a class="side-link" href="../%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/%E5%B9%82%E7%BA%A7%E6%95%B0%E4%B8%93%E9%A2%98/%E5%B9%82%E7%BA%A7%E6%95%B0-%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%E4%B8%8E%E6%8A%BD%E8%B1%A1%E7%B3%BB%E6%95%B0%E6%B1%82%E5%92%8C.html">幂级数-微分方程与抽象系数求和</a><a class="side-link" href="../%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/%E5%B9%82%E7%BA%A7%E6%95%B0%E4%B8%93%E9%A2%98/%E5%B9%82%E7%BA%A7%E6%95%B0-%E6%9C%89%E7%90%86%E5%87%BD%E6%95%B0%E5%B1%95%E5%BC%80.html">幂级数-有理函数展开</a><a class="side-link" href="../%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/%E5%B9%82%E7%BA%A7%E6%95%B0%E4%B8%93%E9%A2%98/%E5%B9%82%E7%BA%A7%E6%95%B0-%E9%80%90%E9%A1%B9%E6%B1%82%E5%AF%BC%E4%B8%8E%E9%80%90%E9%A1%B9%E7%A7%AF%E5%88%86.html">幂级数-逐项求导与逐项积分</a><a class="side-link" href="../%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/%E5%B9%82%E7%BA%A7%E6%95%B0%E4%B8%93%E9%A2%98/%E5%B9%82%E7%BA%A7%E6%95%B0-%E7%BB%84%E5%90%88%E5%B1%95%E5%BC%80%E4%B8%8E%E7%B3%BB%E6%95%B0%E8%AE%A1%E7%AE%97.html">幂级数-组合展开与系数计算</a></details></details><details><summary>一元积分</summary><a class="side-link" href="../%E4%B8%80%E5%85%83%E7%A7%AF%E5%88%86/%E5%8F%8D%E5%B8%B8%E7%A7%AF%E5%88%86%20%2B%20%E6%9C%89%E7%95%8C%E5%AF%BC%E6%95%B0%E7%BB%BC%E5%90%88%E5%88%A4%E6%96%AD.html">反常积分 + 有界导数综合判断</a><a class="side-link" href="../%E4%B8%80%E5%85%83%E7%A7%AF%E5%88%86/%E5%8F%8D%E5%B8%B8%E7%A7%AF%E5%88%86%E4%B8%AD%E7%9A%84%E7%AD%89%E4%BB%B7%E6%AF%94%E8%BE%83%E5%88%A4%E6%95%9B.html">反常积分中的等价比较判敛</a><a class="side-link" href="../%E4%B8%80%E5%85%83%E7%A7%AF%E5%88%86/%E7%A7%AF%E5%88%86%E8%8C%83%E5%9B%B4%E4%BC%B0%E8%AE%A1.html">积分范围估计</a><a class="side-link" href="../%E4%B8%80%E5%85%83%E7%A7%AF%E5%88%86/%E7%A7%AF%E5%88%86%E8%AE%A1%E7%AE%97-%E5%BC%BA%E5%8C%96.html">积分计算-强化</a><a class="side-link" href="../%E4%B8%80%E5%85%83%E7%A7%AF%E5%88%86/%E6%9E%81%E5%9D%90%E6%A0%87%E8%BD%AC%E6%8D%A2.html">极坐标转换</a><a class="side-link" href="../%E4%B8%80%E5%85%83%E7%A7%AF%E5%88%86/%E6%9F%AF%E8%A5%BF%E4%B8%8D%E7%AD%89%E5%BC%8F%E7%A7%AF%E5%88%86%E5%BA%94%E7%94%A8.html">柯西不等式积分应用</a><a class="side-link" href="../%E4%B8%80%E5%85%83%E7%A7%AF%E5%88%86/%E8%A1%B0%E5%87%8F%E6%8C%AF%E8%8D%A1%E6%9B%B2%E7%BA%BF.html">衰减振荡曲线</a><details><summary>专题</summary><a class="side-link" href="../%E4%B8%80%E5%85%83%E7%A7%AF%E5%88%86/%E4%B8%93%E9%A2%98/%E5%AF%B9%E7%A7%B0%E5%8C%BA%E9%97%B4%E7%A7%AF%E5%88%86%E4%B8%8E%E5%8C%BA%E9%97%B4%E5%86%8D%E7%8E%B0.html">对称区间积分与区间再现</a><a class="side-link" href="../%E4%B8%80%E5%85%83%E7%A7%AF%E5%88%86/%E4%B8%93%E9%A2%98/%E6%A0%B9%E5%BC%8F%E7%A7%AF%E5%88%86%E4%B8%8E%E8%8E%AB%E6%AF%94%E4%B9%8C%E6%96%AF%E6%8D%A2%E5%85%83.html">根式积分与莫比乌斯换元</a><a class="side-link" href="../%E4%B8%80%E5%85%83%E7%A7%AF%E5%88%86/%E4%B8%93%E9%A2%98/%E5%BD%A2%E5%BF%83%E8%AF%81%E6%98%8E%E4%B8%8E%E7%A7%AF%E5%88%86%E4%B8%8D%E7%AD%89%E5%BC%8F.html">形心证明与积分不等式</a></details></details></details><details class="group"><summary>线代</summary><details><summary>《线代强化》</summary><a class="side-link" href="../../%E7%BA%BF%E4%BB%A3%E7%AC%94%E8%AE%B0/%E3%80%8A%E7%BA%BF%E4%BB%A3%E5%BC%BA%E5%8C%96%E3%80%8B/%E7%AC%AC01%E8%AE%B2_%E8%A1%8C%E5%88%97%E5%BC%8F.html">第01讲_行列式</a><a class="side-link" href="../../%E7%BA%BF%E4%BB%A3%E7%AC%94%E8%AE%B0/%E3%80%8A%E7%BA%BF%E4%BB%A3%E5%BC%BA%E5%8C%96%E3%80%8B/%E7%AC%AC02%E8%AE%B2_%E4%BD%99%E5%AD%90%E5%BC%8F%E5%92%8C%E4%BB%A3%E6%95%B0%E4%BD%99%E5%AD%90%E5%BC%8F%E7%9A%84%E8%AE%A1%E7%AE%97.html">第02讲_余子式和代数余子式的计算</a><a class="side-link" href="../../%E7%BA%BF%E4%BB%A3%E7%AC%94%E8%AE%B0/%E3%80%8A%E7%BA%BF%E4%BB%A3%E5%BC%BA%E5%8C%96%E3%80%8B/%E7%AC%AC03%E8%AE%B2_%E7%9F%A9%E9%98%B5%E8%BF%90%E7%AE%97.html">第03讲_矩阵运算</a><a class="side-link" href="../../%E7%BA%BF%E4%BB%A3%E7%AC%94%E8%AE%B0/%E3%80%8A%E7%BA%BF%E4%BB%A3%E5%BC%BA%E5%8C%96%E3%80%8B/%E7%AC%AC04%E8%AE%B2_%E7%9F%A9%E9%98%B5%E7%9A%84%E7%A7%A9.html">第04讲_矩阵的秩</a><a class="side-link" href="../../%E7%BA%BF%E4%BB%A3%E7%AC%94%E8%AE%B0/%E3%80%8A%E7%BA%BF%E4%BB%A3%E5%BC%BA%E5%8C%96%E3%80%8B/%E7%AC%AC05%E8%AE%B2_%E7%BA%BF%E6%80%A7%E6%96%B9%E7%A8%8B%E7%BB%84.html">第05讲_线性方程组</a><a class="side-link" href="../../%E7%BA%BF%E4%BB%A3%E7%AC%94%E8%AE%B0/%E3%80%8A%E7%BA%BF%E4%BB%A3%E5%BC%BA%E5%8C%96%E3%80%8B/%E7%AC%AC06%E8%AE%B2_%E5%90%91%E9%87%8F%E7%BB%84.html">第06讲_向量组</a><a class="side-link" href="../../%E7%BA%BF%E4%BB%A3%E7%AC%94%E8%AE%B0/%E3%80%8A%E7%BA%BF%E4%BB%A3%E5%BC%BA%E5%8C%96%E3%80%8B/%E7%AC%AC07%E8%AE%B2_%E7%89%B9%E5%BE%81%E5%80%BC%E4%B8%8E%E7%89%B9%E5%BE%81%E5%90%91%E9%87%8F.html">第07讲_特征值与特征向量</a><a class="side-link" href="../../%E7%BA%BF%E4%BB%A3%E7%AC%94%E8%AE%B0/%E3%80%8A%E7%BA%BF%E4%BB%A3%E5%BC%BA%E5%8C%96%E3%80%8B/%E7%AC%AC08%E8%AE%B2_%E7%9B%B8%E4%BC%BC%E7%90%86%E8%AE%BA.html">第08讲_相似理论</a><a class="side-link" href="../../%E7%BA%BF%E4%BB%A3%E7%AC%94%E8%AE%B0/%E3%80%8A%E7%BA%BF%E4%BB%A3%E5%BC%BA%E5%8C%96%E3%80%8B/%E7%AC%AC09%E8%AE%B2_%E4%BA%8C%E6%AC%A1%E5%9E%8B.html">第09讲_二次型</a></details><details><summary>二次型</summary><a class="side-link" href="../../%E7%BA%BF%E4%BB%A3%E7%AC%94%E8%AE%B0/%E4%BA%8C%E6%AC%A1%E5%9E%8B/%E4%BA%8C%E6%AC%A1%E5%9E%8B%E5%8F%98%E6%8D%A2.html">二次型变换</a><a class="side-link" href="../../%E7%BA%BF%E4%BB%A3%E7%AC%94%E8%AE%B0/%E4%BA%8C%E6%AC%A1%E5%9E%8B/%E4%BA%8C%E6%AC%A1%E5%9E%8B%E5%92%8C%E6%9B%B2%E9%9D%A2.html">二次型和曲面</a><a class="side-link" href="../../%E7%BA%BF%E4%BB%A3%E7%AC%94%E8%AE%B0/%E4%BA%8C%E6%AC%A1%E5%9E%8B/%E4%BA%8C%E6%AC%A1%E5%9E%8B%E6%9C%80%E5%80%BC%E9%97%AE%E9%A2%98.html">二次型最值问题</a><a class="side-link" href="../../%E7%BA%BF%E4%BB%A3%E7%AC%94%E8%AE%B0/%E4%BA%8C%E6%AC%A1%E5%9E%8B/%E5%AE%9E%E5%AF%B9%E7%A7%B0%E7%9F%A9%E9%98%B5.html">实对称矩阵</a></details><details><summary>方程组</summary><a class="side-link" href="../../%E7%BA%BF%E4%BB%A3%E7%AC%94%E8%AE%B0/%E6%96%B9%E7%A8%8B%E7%BB%84/%E6%96%B9%E7%A8%8B%E7%BB%84%E8%A7%A3.html">方程组解</a><a class="side-link" href="../../%E7%BA%BF%E4%BB%A3%E7%AC%94%E8%AE%B0/%E6%96%B9%E7%A8%8B%E7%BB%84/%E7%A9%BA%E9%97%B4%E4%B8%AD%E5%9D%90%E6%A0%87%E9%97%AE%E9%A2%98%E8%BD%AC%E6%8D%A2.html">空间中坐标问题转换</a></details></details><details class="group"><summary>概率</summary><details><summary>《概率强化》</summary><a class="side-link" href="../../%E6%A6%82%E7%8E%87%E7%AC%94%E8%AE%B0/%E3%80%8A%E6%A6%82%E7%8E%87%E5%BC%BA%E5%8C%96%E3%80%8B/01-%E7%AC%AC1%E8%AE%B2-%E9%9A%8F%E6%9C%BA%E4%BA%8B%E4%BB%B6%E5%92%8C%E6%A6%82%E7%8E%87.html">01-第1讲-随机事件和概率</a><a class="side-link" href="../../%E6%A6%82%E7%8E%87%E7%AC%94%E8%AE%B0/%E3%80%8A%E6%A6%82%E7%8E%87%E5%BC%BA%E5%8C%96%E3%80%8B/02-%E7%AC%AC2%E8%AE%B2-%E4%B8%80%E7%BB%B4%E9%9A%8F%E6%9C%BA%E5%8F%98%E9%87%8F%E5%8F%8A%E5%85%B6%E5%88%86%E5%B8%83.html">02-第2讲-一维随机变量及其分布</a><a class="side-link" href="../../%E6%A6%82%E7%8E%87%E7%AC%94%E8%AE%B0/%E3%80%8A%E6%A6%82%E7%8E%87%E5%BC%BA%E5%8C%96%E3%80%8B/03-%E7%AC%AC3%E8%AE%B2-%E4%B8%80%E7%BB%B4%E9%9A%8F%E6%9C%BA%E5%8F%98%E9%87%8F%E5%87%BD%E6%95%B0%E7%9A%84%E5%88%86%E5%B8%83.html">03-第3讲-一维随机变量函数的分布</a><a class="side-link" href="../../%E6%A6%82%E7%8E%87%E7%AC%94%E8%AE%B0/%E3%80%8A%E6%A6%82%E7%8E%87%E5%BC%BA%E5%8C%96%E3%80%8B/04-%E7%AC%AC4%E8%AE%B2-%E5%A4%9A%E7%BB%B4%E9%9A%8F%E6%9C%BA%E5%8F%98%E9%87%8F%E5%8F%8A%E5%85%B6%E5%88%86%E5%B8%83.html">04-第4讲-多维随机变量及其分布</a><a class="side-link" href="../../%E6%A6%82%E7%8E%87%E7%AC%94%E8%AE%B0/%E3%80%8A%E6%A6%82%E7%8E%87%E5%BC%BA%E5%8C%96%E3%80%8B/05-%E7%AC%AC5%E8%AE%B2-%E5%A4%9A%E7%BB%B4%E9%9A%8F%E6%9C%BA%E5%8F%98%E9%87%8F%E5%87%BD%E6%95%B0%E7%9A%84%E5%88%86%E5%B8%83.html">05-第5讲-多维随机变量函数的分布</a><a class="side-link" href="../../%E6%A6%82%E7%8E%87%E7%AC%94%E8%AE%B0/%E3%80%8A%E6%A6%82%E7%8E%87%E5%BC%BA%E5%8C%96%E3%80%8B/06-%E7%AC%AC6%E8%AE%B2-%E6%95%B0%E5%AD%97%E7%89%B9%E5%BE%81.html">06-第6讲-数字特征</a><a class="side-link" href="../../%E6%A6%82%E7%8E%87%E7%AC%94%E8%AE%B0/%E3%80%8A%E6%A6%82%E7%8E%87%E5%BC%BA%E5%8C%96%E3%80%8B/07-%E7%AC%AC7%E8%AE%B2-%E5%A4%A7%E6%95%B0%E5%AE%9A%E5%BE%8B%E4%B8%8E%E4%B8%AD%E5%BF%83%E6%9E%81%E9%99%90%E5%AE%9A%E7%90%86.html">07-第7讲-大数定律与中心极限定理</a><a class="side-link" href="../../%E6%A6%82%E7%8E%87%E7%AC%94%E8%AE%B0/%E3%80%8A%E6%A6%82%E7%8E%87%E5%BC%BA%E5%8C%96%E3%80%8B/08-%E7%AC%AC8%E8%AE%B2-%E7%BB%9F%E8%AE%A1%E9%87%8F%E5%8F%8A%E5%85%B6%E5%88%86%E5%B8%83.html">08-第8讲-统计量及其分布</a><a class="side-link" href="../../%E6%A6%82%E7%8E%87%E7%AC%94%E8%AE%B0/%E3%80%8A%E6%A6%82%E7%8E%87%E5%BC%BA%E5%8C%96%E3%80%8B/09-%E7%AC%AC9%E8%AE%B2-%E5%8F%82%E6%95%B0%E4%BC%B0%E8%AE%A1%E4%B8%8E%E5%81%87%E8%AE%BE%E6%A3%80%E9%AA%8C.html">09-第9讲-参数估计与假设检验</a><a class="side-link" href="../../%E6%A6%82%E7%8E%87%E7%AC%94%E8%AE%B0/%E3%80%8A%E6%A6%82%E7%8E%87%E5%BC%BA%E5%8C%96%E3%80%8B/10-%E9%99%84%E5%BD%95-%E6%9D%A1%E4%BB%B6%E6%95%B0%E5%AD%97%E7%89%B9%E5%BE%81.html">10-附录-条件数字特征</a><a class="side-link" href="../../%E6%A6%82%E7%8E%87%E7%AC%94%E8%AE%B0/%E3%80%8A%E6%A6%82%E7%8E%87%E5%BC%BA%E5%8C%96%E3%80%8B/11-%E9%AB%98%E9%A2%91%E5%85%AC%E5%BC%8F%E9%80%9F%E6%9F%A5.html">11-高频公式速查</a></details><details><summary>多维变量</summary><a class="side-link" href="../../%E6%A6%82%E7%8E%87%E7%AC%94%E8%AE%B0/%E5%A4%9A%E7%BB%B4%E5%8F%98%E9%87%8F/%E4%BA%8C%E7%BB%B4%E9%9A%8F%E6%9C%BA%E5%8F%98%E9%87%8F%E5%87%BD%E6%95%B0%E7%9A%84%E5%88%86%E5%B8%83.html">二维随机变量函数的分布</a><a class="side-link" href="../../%E6%A6%82%E7%8E%87%E7%AC%94%E8%AE%B0/%E5%A4%9A%E7%BB%B4%E5%8F%98%E9%87%8F/%E4%BA%8C%E7%BB%B4%E6%AD%A3%E6%80%81%E5%88%86%E5%B8%83.html">二维正态分布</a><a class="side-link" href="../../%E6%A6%82%E7%8E%87%E7%AC%94%E8%AE%B0/%E5%A4%9A%E7%BB%B4%E5%8F%98%E9%87%8F/%E6%9D%A1%E4%BB%B6%E5%AF%86%E5%BA%A6%E4%B9%8B%E6%AF%94%E6%B1%82%E8%BE%B9%E7%BC%98%E5%AF%86%E5%BA%A6.html">条件密度之比求边缘密度</a><a class="side-link" href="../../%E6%A6%82%E7%8E%87%E7%AC%94%E8%AE%B0/%E5%A4%9A%E7%BB%B4%E5%8F%98%E9%87%8F/%E5%85%88%E6%8B%86%E5%8F%98%E9%87%8F%E5%9F%9F%E5%86%8D%E5%88%86%E6%AE%B5%E7%A7%AF%E5%88%86.html">先拆变量域再分段积分</a></details><details><summary>数字特征</summary><a class="side-link" href="../../%E6%A6%82%E7%8E%87%E7%AC%94%E8%AE%B0/%E6%95%B0%E5%AD%97%E7%89%B9%E5%BE%81/%E6%9D%A1%E4%BB%B6%E6%9C%9F%E6%9C%9B%E4%B8%8E%E5%85%A8%E6%9C%9F%E6%9C%9B.html">条件期望与全期望</a></details><details><summary>条件概率</summary><a class="side-link" href="../../%E6%A6%82%E7%8E%87%E7%AC%94%E8%AE%B0/%E6%9D%A1%E4%BB%B6%E6%A6%82%E7%8E%87/%E8%B4%9D%E5%8F%B6%E6%96%AF%E6%A6%82%E5%9E%8B.html">贝叶斯概型</a><a class="side-link" href="../../%E6%A6%82%E7%8E%87%E7%AC%94%E8%AE%B0/%E6%9D%A1%E4%BB%B6%E6%A6%82%E7%8E%87/%E6%A6%82%E7%8E%87%E4%B8%AD%E4%BA%8B%E4%BB%B6%E4%B8%8E%E6%9D%A1%E4%BB%B6%E6%A6%82%E7%8E%87%E7%9A%84%E5%B8%B8%E8%A7%81%E5%8F%98%E6%8D%A2.html">概率中事件与条件概率的常见变换</a><a class="side-link" href="../../%E6%A6%82%E7%8E%87%E7%AC%94%E8%AE%B0/%E6%9D%A1%E4%BB%B6%E6%A6%82%E7%8E%87/%E6%9D%A1%E4%BB%B6%E6%A6%82%E7%8E%87%E3%80%81%E6%9D%A1%E4%BB%B6%E5%88%86%E5%B8%83%E4%B8%8E%E2%80%9C%E5%9B%BA%E5%AE%9A%E4%B8%80%E4%B8%AA%E9%9A%8F%E6%9C%BA%E5%8F%98%E9%87%8F%E2%80%9D%E7%9A%84%E7%BB%9F%E4%B8%80%E7%90%86%E8%A7%A3.html">条件概率、条件分布与“固定一个随机变量”的统一理解</a></details><details><summary>统计量及分布</summary><a class="side-link" href="../../%E6%A6%82%E7%8E%87%E7%AC%94%E8%AE%B0/%E7%BB%9F%E8%AE%A1%E9%87%8F%E5%8F%8A%E5%88%86%E5%B8%83/%E4%BC%B0%E8%AE%A1%E9%87%8F%E3%80%81%E4%BC%B0%E8%AE%A1%E5%80%BC%E4%B8%8E%E6%97%A0%E5%81%8F%E4%BC%B0%E8%AE%A1.html">估计量、估计值与无偏估计</a><a class="side-link" href="../../%E6%A6%82%E7%8E%87%E7%AC%94%E8%AE%B0/%E7%BB%9F%E8%AE%A1%E9%87%8F%E5%8F%8A%E5%88%86%E5%B8%83/%E7%A6%BB%E6%95%A3%E5%9E%8B%E6%9C%80%E5%A4%A7%E4%BC%BC%E7%84%B6%E4%BC%B0%E8%AE%A1.html">离散型最大似然估计</a><a class="side-link" href="../../%E6%A6%82%E7%8E%87%E7%AC%94%E8%AE%B0/%E7%BB%9F%E8%AE%A1%E9%87%8F%E5%8F%8A%E5%88%86%E5%B8%83/%E6%A0%B7%E6%9C%AC%E5%AE%B9%E9%87%8F%E4%B8%8D%E7%AD%89%E5%BC%8F.html">样本容量不等式</a><a class="side-link" href="../../%E6%A6%82%E7%8E%87%E7%AC%94%E8%AE%B0/%E7%BB%9F%E8%AE%A1%E9%87%8F%E5%8F%8A%E5%88%86%E5%B8%83/%E6%9C%89%E5%85%B3%E4%BC%B0%E8%AE%A1%E9%87%8F%E7%9A%84%E5%88%86%E5%B8%83.html">有关估计量的分布</a><a class="side-link" href="../../%E6%A6%82%E7%8E%87%E7%AC%94%E8%AE%B0/%E7%BB%9F%E8%AE%A1%E9%87%8F%E5%8F%8A%E5%88%86%E5%B8%83/%E6%AD%A3%E6%80%81%E5%88%86%E5%B8%83%E4%B8%8E%E6%AD%A3%E6%80%81%E6%A0%B7%E6%9C%AC%E5%B8%B8%E7%94%A8%E6%80%A7%E8%B4%A8.html">正态分布与正态样本常用性质</a><details><summary>样本容量专题</summary><a class="side-link" href="../../%E6%A6%82%E7%8E%87%E7%AC%94%E8%AE%B0/%E7%BB%9F%E8%AE%A1%E9%87%8F%E5%8F%8A%E5%88%86%E5%B8%83/%E6%A0%B7%E6%9C%AC%E5%AE%B9%E9%87%8F%E4%B8%93%E9%A2%98/%E6%A0%B7%E6%9C%AC%E5%AE%B9%E9%87%8F-%E5%B9%B3%E6%96%B9%E6%9C%9F%E6%9C%9B%E4%B8%8E%E5%9D%87%E6%96%B9%E8%AF%AF%E5%B7%AE.html">样本容量-平方期望与均方误差</a><a class="side-link" href="../../%E6%A6%82%E7%8E%87%E7%AC%94%E8%AE%B0/%E7%BB%9F%E8%AE%A1%E9%87%8F%E5%8F%8A%E5%88%86%E5%B8%83/%E6%A0%B7%E6%9C%AC%E5%AE%B9%E9%87%8F%E4%B8%93%E9%A2%98/%E6%A0%B7%E6%9C%AC%E5%AE%B9%E9%87%8F-%E5%88%87%E6%AF%94%E9%9B%AA%E5%A4%AB%E4%B8%8E%E5%88%A4%E6%96%AD%E6%B5%81%E7%A8%8B.html">样本容量-切比雪夫与判断流程</a><a class="side-link" href="../../%E6%A6%82%E7%8E%87%E7%AC%94%E8%AE%B0/%E7%BB%9F%E8%AE%A1%E9%87%8F%E5%8F%8A%E5%88%86%E5%B8%83/%E6%A0%B7%E6%9C%AC%E5%AE%B9%E9%87%8F%E4%B8%93%E9%A2%98/%E6%A0%B7%E6%9C%AC%E5%AE%B9%E9%87%8F-%E6%AD%A3%E6%80%81%E6%A6%82%E7%8E%87%E4%B8%8E%E6%A0%87%E5%87%86%E5%8C%96.html">样本容量-正态概率与标准化</a></details><details><summary>正态专题</summary><a class="side-link" href="../../%E6%A6%82%E7%8E%87%E7%AC%94%E8%AE%B0/%E7%BB%9F%E8%AE%A1%E9%87%8F%E5%8F%8A%E5%88%86%E5%B8%83/%E6%AD%A3%E6%80%81%E4%B8%93%E9%A2%98/%E6%AD%A3%E6%80%81-%E7%9F%A9%E4%B8%8E%E7%BB%9D%E5%AF%B9%E5%80%BC%E5%8F%8A%E7%BA%BF%E6%80%A7%E5%8F%98%E6%8D%A2.html">正态-矩与绝对值及线性变换</a><a class="side-link" href="../../%E6%A6%82%E7%8E%87%E7%AC%94%E8%AE%B0/%E7%BB%9F%E8%AE%A1%E9%87%8F%E5%8F%8A%E5%88%86%E5%B8%83/%E6%AD%A3%E6%80%81%E4%B8%93%E9%A2%98/%E6%AD%A3%E6%80%81-%E6%A0%B7%E6%9C%AC%E5%9D%87%E5%80%BC%E4%B8%8E%E6%A0%B7%E6%9C%AC%E6%96%B9%E5%B7%AE.html">正态-样本均值与样本方差</a></details></details><details><summary>一维变量</summary><a class="side-link" href="../../%E6%A6%82%E7%8E%87%E7%AC%94%E8%AE%B0/%E4%B8%80%E7%BB%B4%E5%8F%98%E9%87%8F/%E6%94%BE%E7%90%83%E9%97%AE%E9%A2%98.html">放球问题</a><a class="side-link" href="../../%E6%A6%82%E7%8E%87%E7%AC%94%E8%AE%B0/%E4%B8%80%E7%BB%B4%E5%8F%98%E9%87%8F/%E6%A6%82%E7%8E%87%E7%A7%AF%E5%88%86%E5%8F%98%E6%8D%A2.html">概率积分变换</a><a class="side-link" href="../../%E6%A6%82%E7%8E%87%E7%AC%94%E8%AE%B0/%E4%B8%80%E7%BB%B4%E5%8F%98%E9%87%8F/%E6%B3%8A%E6%9D%BE%E7%A8%80%E7%96%8F%E5%8C%96.html">泊松稀疏化</a><details><summary>放球抽球专题</summary><a class="side-link" href="../../%E6%A6%82%E7%8E%87%E7%AC%94%E8%AE%B0/%E4%B8%80%E7%BB%B4%E5%8F%98%E9%87%8F/%E6%94%BE%E7%90%83%E6%8A%BD%E7%90%83%E4%B8%93%E9%A2%98/%E6%8A%BD%E7%90%83-%E6%94%BE%E5%9B%9E%E4%B8%8E%E4%B8%8D%E6%94%BE%E5%9B%9E.html">抽球-放回与不放回</a><a class="side-link" href="../../%E6%A6%82%E7%8E%87%E7%AC%94%E8%AE%B0/%E4%B8%80%E7%BB%B4%E5%8F%98%E9%87%8F/%E6%94%BE%E7%90%83%E6%8A%BD%E7%90%83%E4%B8%93%E9%A2%98/%E6%8A%BD%E7%90%83-%E9%A6%96%E6%AC%A1%E6%88%90%E5%8A%9F%E6%A8%A1%E5%9E%8B.html">抽球-首次成功模型</a><a class="side-link" href="../../%E6%A6%82%E7%8E%87%E7%AC%94%E8%AE%B0/%E4%B8%80%E7%BB%B4%E5%8F%98%E9%87%8F/%E6%94%BE%E7%90%83%E6%8A%BD%E7%90%83%E4%B8%93%E9%A2%98/%E6%94%BE%E7%90%83-%E5%9F%BA%E6%9C%AC%E6%A8%A1%E5%9E%8B%E4%B8%8E%E6%8C%87%E5%AE%9A%E7%9B%92%E8%AE%A1%E6%95%B0.html">放球-基本模型与指定盒计数</a><a class="side-link" href="../../%E6%A6%82%E7%8E%87%E7%AC%94%E8%AE%B0/%E4%B8%80%E7%BB%B4%E5%8F%98%E9%87%8F/%E6%94%BE%E7%90%83%E6%8A%BD%E7%90%83%E4%B8%93%E9%A2%98/%E6%94%BE%E7%90%83-%E7%9B%B8%E5%90%8C%E7%90%83%E4%B8%8E%E6%8F%92%E6%9D%BF%E6%B3%95.html">放球-相同球与插板法</a><a class="side-link" href="../../%E6%A6%82%E7%8E%87%E7%AC%94%E8%AE%B0/%E4%B8%80%E7%BB%B4%E5%8F%98%E9%87%8F/%E6%94%BE%E7%90%83%E6%8A%BD%E7%90%83%E4%B8%93%E9%A2%98/%E6%94%BE%E7%90%83-%E5%8D%A0%E7%9B%92%E4%BA%8B%E4%BB%B6%E4%B8%8E%E7%A9%BA%E7%9B%92%E6%9C%9F%E6%9C%9B.html">放球-占盒事件与空盒期望</a></details></details></details></nav></details></aside><main class="note" id="main"><div class="breadcrumb"><a href="../../../index.html">错题目录</a></div><div class="note-head"><h1>计算公式串记</h1></div><details class="page-toc"><summary>本页定位</summary><ul><li><a href="#h-16">表格积分示例</a></li><li><a href="#h-63">考研常用泰勒展开式，泰勒级数</a></li><li><a href="#h-65">必背</a></li><li><a href="#h-96">常用展开对照表</a></li><li><a href="#h-112">记忆规律</a></li><li><a href="#h-123">三角函数常见化简</a></li><li><a href="#h-125">1. 根号型：优先看能否配平方</a></li><li><a href="#h-168">2. 半角分式</a></li><li><a href="#h-202">3. 弧长/根号常见形式</a></li><li><a href="#h-221">4. 合并与降幂</a></li><li><a href="#h-247">5. 做题识别顺序</a></li></ul></details><article class="prose"><h1 id="h-1">含指数函数 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi>e</mi>
+</math> 的常用积分公式速查表</h1>
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>积分公式</th>
+<th>使用条件 / 记忆点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>最基础</td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mstyle displaystyle="true" scriptlevel="0">
+    <mrow>
+      <mo>&#x222B;</mo>
+      <msup>
+        <mi>e</mi>
+        <mrow data-mjx-texclass="ORD">
+          <mi>b</mi>
+          <mo>&#x2062;</mo>
+          <mi>x</mi>
+        </mrow>
+      </msup>
+      <mstyle scriptlevel="0">
+        <mspace width="0.167em"></mspace>
+      </mstyle>
+      <mrow>
+        <mi>d</mi>
+        <mi>x</mi>
+      </mrow>
+    </mrow>
+    <mo>=</mo>
+    <mrow>
+      <mrow>
+        <mfrac>
+          <mn>1</mn>
+          <mi>b</mi>
+        </mfrac>
+        <mo>&#x2062;</mo>
+        <msup>
+          <mi>e</mi>
+          <mrow data-mjx-texclass="ORD">
+            <mi>b</mi>
+            <mo>&#x2062;</mo>
+            <mi>x</mi>
+          </mrow>
+        </msup>
+      </mrow>
+      <mo>+</mo>
+      <mi>C</mi>
+    </mrow>
+  </mstyle>
+</math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi>b</mi>
+  <mo>&#x2260;</mo>
+  <mn>0</mn>
+</math>；指数里面是 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi>b</mi>
+  <mo>&#x2062;</mo>
+  <mi>x</mi>
+</math>，积分后外面除以 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi>b</mi>
+</math></td>
+</tr>
+<tr>
+<td>一般多项式 × 指数</td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mstyle displaystyle="true" scriptlevel="0">
+    <mrow>
+      <mo>&#x222B;</mo>
+      <mrow>
+        <msup>
+          <mi>x</mi>
+          <mi>n</mi>
+        </msup>
+        <mo>&#x2062;</mo>
+        <msup>
+          <mi>e</mi>
+          <mrow data-mjx-texclass="ORD">
+            <mi>b</mi>
+            <mo>&#x2062;</mo>
+            <mi>x</mi>
+          </mrow>
+        </msup>
+      </mrow>
+      <mstyle scriptlevel="0">
+        <mspace width="0.167em"></mspace>
+      </mstyle>
+      <mrow>
+        <mi>d</mi>
+        <mi>x</mi>
+      </mrow>
+    </mrow>
+    <mo>=</mo>
+    <mrow>
+      <mrow>
+        <msup>
+          <mi>e</mi>
+          <mrow data-mjx-texclass="ORD">
+            <mi>b</mi>
+            <mo>&#x2062;</mo>
+            <mi>x</mi>
+          </mrow>
+        </msup>
+        <mo>&#x2062;</mo>
+        <mrow>
+          <munderover>
+            <mo>&#x2211;</mo>
+            <mrow data-mjx-texclass="ORD">
+              <mi>k</mi>
+              <mo>=</mo>
+              <mn>0</mn>
+            </mrow>
+            <mrow data-mjx-texclass="ORD">
+              <mi>n</mi>
+            </mrow>
+          </munderover>
+          <mrow>
+            <msup>
+              <mrow>
+                <mo stretchy="false">(</mo>
+                <mrow>
+                  <mo>&#x2212;</mo>
+                  <mn>1</mn>
+                </mrow>
+                <mo stretchy="false">)</mo>
+              </mrow>
+              <mi>k</mi>
+            </msup>
+            <mo>&#x2062;</mo>
+            <mfrac>
+              <mrow>
+                <mi>n</mi>
+                <mo>!</mo>
+              </mrow>
+              <mrow>
+                <mrow>
+                  <mo stretchy="false">(</mo>
+                  <mrow>
+                    <mi>n</mi>
+                    <mo>&#x2212;</mo>
+                    <mi>k</mi>
+                  </mrow>
+                  <mo stretchy="false">)</mo>
+                </mrow>
+                <mo>!</mo>
+              </mrow>
+            </mfrac>
+            <mo>&#x2062;</mo>
+            <mfrac>
+              <msup>
+                <mi>x</mi>
+                <mrow data-mjx-texclass="ORD">
+                  <mi>n</mi>
+                  <mo>&#x2212;</mo>
+                  <mi>k</mi>
+                </mrow>
+              </msup>
+              <msup>
+                <mi>b</mi>
+                <mrow data-mjx-texclass="ORD">
+                  <mi>k</mi>
+                  <mo>+</mo>
+                  <mn>1</mn>
+                </mrow>
+              </msup>
+            </mfrac>
+          </mrow>
+        </mrow>
+      </mrow>
+      <mo>+</mo>
+      <mi>C</mi>
+    </mrow>
+  </mstyle>
+</math></td>
+<td>**表格积分例子：**求 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mo>&#x222B;</mo>
+  <mrow>
+    <msup>
+      <mi>x</mi>
+      <mn>3</mn>
+    </msup>
+    <mo>&#x2062;</mo>
+    <msup>
+      <mi>e</mi>
+      <mrow data-mjx-texclass="ORD">
+        <mn>2</mn>
+        <mo>&#x2062;</mo>
+        <mi>x</mi>
+      </mrow>
+    </msup>
+  </mrow>
+  <mrow>
+    <mi>d</mi>
+    <mi>x</mi>
+  </mrow>
+</math>。<a href="%E8%AE%A1%E7%AE%97%E5%85%AC%E5%BC%8F%E4%B8%B2%E8%AE%B0.html#h-16">如下</a></td>
+</tr>
+<tr>
+<td>指数 × 正弦</td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mstyle displaystyle="true" scriptlevel="0">
+    <mrow>
+      <mo>&#x222B;</mo>
+      <mrow>
+        <msup>
+          <mi>e</mi>
+          <mrow data-mjx-texclass="ORD">
+            <mi>b</mi>
+            <mo>&#x2062;</mo>
+            <mi>x</mi>
+          </mrow>
+        </msup>
+        <mo>&#x2062;</mo>
+        <mrow>
+          <mi>sin</mi>
+          <mo data-mjx-texclass="NONE">&#x2061;</mo>
+          <mrow>
+            <mo data-mjx-texclass="OPEN">(</mo>
+            <mrow>
+              <mi>a</mi>
+              <mo>&#x2062;</mo>
+              <mi>x</mi>
+            </mrow>
+            <mo data-mjx-texclass="CLOSE">)</mo>
+          </mrow>
+        </mrow>
+      </mrow>
+      <mstyle scriptlevel="0">
+        <mspace width="0.167em"></mspace>
+      </mstyle>
+      <mrow>
+        <mi>d</mi>
+        <mi>x</mi>
+      </mrow>
+    </mrow>
+    <mo>=</mo>
+    <mrow>
+      <mrow>
+        <mfrac>
+          <msup>
+            <mi>e</mi>
+            <mrow data-mjx-texclass="ORD">
+              <mi>b</mi>
+              <mo>&#x2062;</mo>
+              <mi>x</mi>
+            </mrow>
+          </msup>
+          <mrow>
+            <msup>
+              <mi>a</mi>
+              <mn>2</mn>
+            </msup>
+            <mo>+</mo>
+            <msup>
+              <mi>b</mi>
+              <mn>2</mn>
+            </msup>
+          </mrow>
+        </mfrac>
+        <mo>&#x2062;</mo>
+        <mrow data-mjx-texclass="INNER">
+          <mo data-mjx-texclass="OPEN">(</mo>
+          <mrow>
+            <mrow>
+              <mi>b</mi>
+              <mo>&#x2062;</mo>
+              <mrow>
+                <mi>sin</mi>
+                <mo data-mjx-texclass="NONE">&#x2061;</mo>
+                <mrow>
+                  <mi>a</mi>
+                  <mo>&#x2062;</mo>
+                  <mi>x</mi>
+                </mrow>
+              </mrow>
+            </mrow>
+            <mo>&#x2212;</mo>
+            <mrow>
+              <mi>a</mi>
+              <mo>&#x2062;</mo>
+              <mrow>
+                <mi>cos</mi>
+                <mo data-mjx-texclass="NONE">&#x2061;</mo>
+                <mrow>
+                  <mi>a</mi>
+                  <mo>&#x2062;</mo>
+                  <mi>x</mi>
+                </mrow>
+              </mrow>
+            </mrow>
+          </mrow>
+          <mo data-mjx-texclass="CLOSE">)</mo>
+        </mrow>
+      </mrow>
+      <mo>+</mo>
+      <mi>C</mi>
+    </mrow>
+  </mstyle>
+</math></td>
+<td>记忆：<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi>sin</mi>
+  <mo stretchy="false">&#x21D2;</mo>
+  <mrow>
+    <mrow>
+      <mi>b</mi>
+      <mo>&#x2062;</mo>
+      <mi>sin</mi>
+    </mrow>
+    <mo>&#x2212;</mo>
+    <mrow>
+      <mi>a</mi>
+      <mo>&#x2062;</mo>
+      <mi>cos</mi>
+    </mrow>
+  </mrow>
+</math>；分母永远是 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <msup>
+    <mi>a</mi>
+    <mn>2</mn>
+  </msup>
+  <mo>+</mo>
+  <msup>
+    <mi>b</mi>
+    <mn>2</mn>
+  </msup>
+</math></td>
+</tr>
+<tr>
+<td>指数 × 余弦</td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mstyle displaystyle="true" scriptlevel="0">
+    <mrow>
+      <mo>&#x222B;</mo>
+      <mrow>
+        <msup>
+          <mi>e</mi>
+          <mrow data-mjx-texclass="ORD">
+            <mi>b</mi>
+            <mo>&#x2062;</mo>
+            <mi>x</mi>
+          </mrow>
+        </msup>
+        <mo>&#x2062;</mo>
+        <mrow>
+          <mi>cos</mi>
+          <mo data-mjx-texclass="NONE">&#x2061;</mo>
+          <mrow>
+            <mo data-mjx-texclass="OPEN">(</mo>
+            <mrow>
+              <mi>a</mi>
+              <mo>&#x2062;</mo>
+              <mi>x</mi>
+            </mrow>
+            <mo data-mjx-texclass="CLOSE">)</mo>
+          </mrow>
+        </mrow>
+      </mrow>
+      <mstyle scriptlevel="0">
+        <mspace width="0.167em"></mspace>
+      </mstyle>
+      <mrow>
+        <mi>d</mi>
+        <mi>x</mi>
+      </mrow>
+    </mrow>
+    <mo>=</mo>
+    <mrow>
+      <mrow>
+        <mfrac>
+          <msup>
+            <mi>e</mi>
+            <mrow data-mjx-texclass="ORD">
+              <mi>b</mi>
+              <mo>&#x2062;</mo>
+              <mi>x</mi>
+            </mrow>
+          </msup>
+          <mrow>
+            <msup>
+              <mi>a</mi>
+              <mn>2</mn>
+            </msup>
+            <mo>+</mo>
+            <msup>
+              <mi>b</mi>
+              <mn>2</mn>
+            </msup>
+          </mrow>
+        </mfrac>
+        <mo>&#x2062;</mo>
+        <mrow data-mjx-texclass="INNER">
+          <mo data-mjx-texclass="OPEN">(</mo>
+          <mrow>
+            <mrow>
+              <mi>b</mi>
+              <mo>&#x2062;</mo>
+              <mrow>
+                <mi>cos</mi>
+                <mo data-mjx-texclass="NONE">&#x2061;</mo>
+                <mrow>
+                  <mi>a</mi>
+                  <mo>&#x2062;</mo>
+                  <mi>x</mi>
+                </mrow>
+              </mrow>
+            </mrow>
+            <mo>+</mo>
+            <mrow>
+              <mi>a</mi>
+              <mo>&#x2062;</mo>
+              <mrow>
+                <mi>sin</mi>
+                <mo data-mjx-texclass="NONE">&#x2061;</mo>
+                <mrow>
+                  <mi>a</mi>
+                  <mo>&#x2062;</mo>
+                  <mi>x</mi>
+                </mrow>
+              </mrow>
+            </mrow>
+          </mrow>
+          <mo data-mjx-texclass="CLOSE">)</mo>
+        </mrow>
+      </mrow>
+      <mo>+</mo>
+      <mi>C</mi>
+    </mrow>
+  </mstyle>
+</math></td>
+<td>记忆：<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi>cos</mi>
+  <mo stretchy="false">&#x21D2;</mo>
+  <mrow>
+    <mrow>
+      <mi>b</mi>
+      <mo>&#x2062;</mo>
+      <mi>cos</mi>
+    </mrow>
+    <mo>+</mo>
+    <mrow>
+      <mi>a</mi>
+      <mo>&#x2062;</mo>
+      <mi>sin</mi>
+    </mrow>
+  </mrow>
+</math>；分母永远是 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <msup>
+    <mi>a</mi>
+    <mn>2</mn>
+  </msup>
+  <mo>+</mo>
+  <msup>
+    <mi>b</mi>
+    <mn>2</mn>
+  </msup>
+</math></td>
+</tr>
+<tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <msup>
+    <mi>e</mi>
+    <mi>x</mi>
+  </msup>
+</math> × 正弦</td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mstyle displaystyle="true" scriptlevel="0">
+    <mrow>
+      <mo>&#x222B;</mo>
+      <mrow>
+        <msup>
+          <mi>e</mi>
+          <mi>x</mi>
+        </msup>
+        <mo>&#x2062;</mo>
+        <mrow>
+          <mi>sin</mi>
+          <mo data-mjx-texclass="NONE">&#x2061;</mo>
+          <mrow>
+            <mo data-mjx-texclass="OPEN">(</mo>
+            <mrow>
+              <mi>a</mi>
+              <mo>&#x2062;</mo>
+              <mi>x</mi>
+            </mrow>
+            <mo data-mjx-texclass="CLOSE">)</mo>
+          </mrow>
+        </mrow>
+      </mrow>
+      <mstyle scriptlevel="0">
+        <mspace width="0.167em"></mspace>
+      </mstyle>
+      <mrow>
+        <mi>d</mi>
+        <mi>x</mi>
+      </mrow>
+    </mrow>
+    <mo>=</mo>
+    <mrow>
+      <mrow>
+        <mfrac>
+          <msup>
+            <mi>e</mi>
+            <mi>x</mi>
+          </msup>
+          <mrow>
+            <mn>1</mn>
+            <mo>+</mo>
+            <msup>
+              <mi>a</mi>
+              <mn>2</mn>
+            </msup>
+          </mrow>
+        </mfrac>
+        <mo>&#x2062;</mo>
+        <mrow data-mjx-texclass="INNER">
+          <mo data-mjx-texclass="OPEN">(</mo>
+          <mrow>
+            <mrow>
+              <mi>sin</mi>
+              <mo data-mjx-texclass="NONE">&#x2061;</mo>
+              <mrow>
+                <mi>a</mi>
+                <mo>&#x2062;</mo>
+                <mi>x</mi>
+              </mrow>
+            </mrow>
+            <mo>&#x2212;</mo>
+            <mrow>
+              <mi>a</mi>
+              <mo>&#x2062;</mo>
+              <mrow>
+                <mi>cos</mi>
+                <mo data-mjx-texclass="NONE">&#x2061;</mo>
+                <mrow>
+                  <mi>a</mi>
+                  <mo>&#x2062;</mo>
+                  <mi>x</mi>
+                </mrow>
+              </mrow>
+            </mrow>
+          </mrow>
+          <mo data-mjx-texclass="CLOSE">)</mo>
+        </mrow>
+      </mrow>
+      <mo>+</mo>
+      <mi>C</mi>
+    </mrow>
+  </mstyle>
+</math></td>
+<td>上面的正弦公式令 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi>b</mi>
+  <mo>=</mo>
+  <mn>1</mn>
+</math></td>
+</tr>
+<tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <msup>
+    <mi>e</mi>
+    <mi>x</mi>
+  </msup>
+</math> × 余弦</td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mstyle displaystyle="true" scriptlevel="0">
+    <mrow>
+      <mo>&#x222B;</mo>
+      <mrow>
+        <msup>
+          <mi>e</mi>
+          <mi>x</mi>
+        </msup>
+        <mo>&#x2062;</mo>
+        <mrow>
+          <mi>cos</mi>
+          <mo data-mjx-texclass="NONE">&#x2061;</mo>
+          <mrow>
+            <mo data-mjx-texclass="OPEN">(</mo>
+            <mrow>
+              <mi>a</mi>
+              <mo>&#x2062;</mo>
+              <mi>x</mi>
+            </mrow>
+            <mo data-mjx-texclass="CLOSE">)</mo>
+          </mrow>
+        </mrow>
+      </mrow>
+      <mstyle scriptlevel="0">
+        <mspace width="0.167em"></mspace>
+      </mstyle>
+      <mrow>
+        <mi>d</mi>
+        <mi>x</mi>
+      </mrow>
+    </mrow>
+    <mo>=</mo>
+    <mrow>
+      <mrow>
+        <mfrac>
+          <msup>
+            <mi>e</mi>
+            <mi>x</mi>
+          </msup>
+          <mrow>
+            <mn>1</mn>
+            <mo>+</mo>
+            <msup>
+              <mi>a</mi>
+              <mn>2</mn>
+            </msup>
+          </mrow>
+        </mfrac>
+        <mo>&#x2062;</mo>
+        <mrow data-mjx-texclass="INNER">
+          <mo data-mjx-texclass="OPEN">(</mo>
+          <mrow>
+            <mrow>
+              <mi>cos</mi>
+              <mo data-mjx-texclass="NONE">&#x2061;</mo>
+              <mrow>
+                <mi>a</mi>
+                <mo>&#x2062;</mo>
+                <mi>x</mi>
+              </mrow>
+            </mrow>
+            <mo>+</mo>
+            <mrow>
+              <mi>a</mi>
+              <mo>&#x2062;</mo>
+              <mrow>
+                <mi>sin</mi>
+                <mo data-mjx-texclass="NONE">&#x2061;</mo>
+                <mrow>
+                  <mi>a</mi>
+                  <mo>&#x2062;</mo>
+                  <mi>x</mi>
+                </mrow>
+              </mrow>
+            </mrow>
+          </mrow>
+          <mo data-mjx-texclass="CLOSE">)</mo>
+        </mrow>
+      </mrow>
+      <mo>+</mo>
+      <mi>C</mi>
+    </mrow>
+  </mstyle>
+</math></td>
+<td>上面的余弦公式令 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi>b</mi>
+  <mo>=</mo>
+  <mn>1</mn>
+</math></td>
+</tr>
+<tr>
+<td>Gamma 标准型</td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mstyle displaystyle="true" scriptlevel="0">
+    <mrow>
+      <msubsup>
+        <mo>&#x222B;</mo>
+        <mn>0</mn>
+        <mi mathvariant="normal">&#x221E;</mi>
+      </msubsup>
+      <mrow>
+        <msup>
+          <mi>x</mi>
+          <mrow data-mjx-texclass="ORD">
+            <mi>&#x3B1;</mi>
+            <mo>&#x2212;</mo>
+            <mn>1</mn>
+          </mrow>
+        </msup>
+        <mo>&#x2062;</mo>
+        <msup>
+          <mi>e</mi>
+          <mrow data-mjx-texclass="ORD">
+            <mo>&#x2212;</mo>
+            <mrow>
+              <mi>&#x3BB;</mi>
+              <mo>&#x2062;</mo>
+              <mi>x</mi>
+            </mrow>
+          </mrow>
+        </msup>
+      </mrow>
+      <mstyle scriptlevel="0">
+        <mspace width="0.167em"></mspace>
+      </mstyle>
+      <mrow>
+        <mi>d</mi>
+        <mi>x</mi>
+      </mrow>
+    </mrow>
+    <mo>=</mo>
+    <mfrac>
+      <mrow>
+        <mi mathvariant="normal">&#x393;</mi>
+        <mo>&#x2061;</mo>
+        <mrow>
+          <mo stretchy="false">(</mo>
+          <mi>&#x3B1;</mi>
+          <mo stretchy="false">)</mo>
+        </mrow>
+      </mrow>
+      <msup>
+        <mi>&#x3BB;</mi>
+        <mi>&#x3B1;</mi>
+      </msup>
+    </mfrac>
+  </mstyle>
+</math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mrow>
+    <mi>&#x3B1;</mi>
+    <mo>&gt;</mo>
+    <mn>0</mn>
+  </mrow>
+  <mo>,</mo>
+  <mrow>
+    <mi>&#x3BB;</mi>
+    <mo>&gt;</mo>
+    <mn>0</mn>
+  </mrow>
+</math>；看到 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mn>0</mn>
+  <mo accent="false" stretchy="false">&#x2192;</mo>
+  <mi mathvariant="normal">&#x221E;</mi>
+</math>、<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi>x</mi>
+</math> 的幂 × <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <msup>
+    <mi>e</mi>
+    <mrow data-mjx-texclass="ORD">
+      <mo>&#x2212;</mo>
+      <mrow>
+        <mi>&#x3BB;</mi>
+        <mo>&#x2062;</mo>
+        <mi>x</mi>
+      </mrow>
+    </mrow>
+  </msup>
+</math>，优先想到 Gamma 函数</td>
+</tr>
+<tr>
+<td>Gamma 整数特殊型</td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mstyle displaystyle="true" scriptlevel="0">
+    <mrow>
+      <msubsup>
+        <mo>&#x222B;</mo>
+        <mn>0</mn>
+        <mi mathvariant="normal">&#x221E;</mi>
+      </msubsup>
+      <mrow>
+        <msup>
+          <mi>x</mi>
+          <mi>n</mi>
+        </msup>
+        <mo>&#x2062;</mo>
+        <msup>
+          <mi>e</mi>
+          <mrow data-mjx-texclass="ORD">
+            <mo>&#x2212;</mo>
+            <mrow>
+              <mi>&#x3BB;</mi>
+              <mo>&#x2062;</mo>
+              <mi>x</mi>
+            </mrow>
+          </mrow>
+        </msup>
+      </mrow>
+      <mstyle scriptlevel="0">
+        <mspace width="0.167em"></mspace>
+      </mstyle>
+      <mrow>
+        <mi>d</mi>
+        <mi>x</mi>
+      </mrow>
+    </mrow>
+    <mo>=</mo>
+    <mfrac>
+      <mrow>
+        <mi>n</mi>
+        <mo>!</mo>
+      </mrow>
+      <msup>
+        <mi>&#x3BB;</mi>
+        <mrow data-mjx-texclass="ORD">
+          <mi>n</mi>
+          <mo>+</mo>
+          <mn>1</mn>
+        </mrow>
+      </msup>
+    </mfrac>
+  </mstyle>
+</math></td>
+<td>因为 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mrow>
+    <mrow>
+      <mi mathvariant="normal">&#x393;</mi>
+      <mo>&#x2062;</mo>
+      <mrow>
+        <mo stretchy="false">(</mo>
+        <mrow>
+          <mi>n</mi>
+          <mo>+</mo>
+          <mn>1</mn>
+        </mrow>
+        <mo stretchy="false">)</mo>
+      </mrow>
+    </mrow>
+    <mo>=</mo>
+    <mi>n</mi>
+  </mrow>
+  <mo>!</mo>
+</math>；概率论中很常用</td>
+</tr>
+</tbody></table>
+<h3 id="h-16">表格积分示例</h3>
+<p>求：</p>
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mo>&#x222B;</mo>
+  <mrow>
+    <msup>
+      <mi>x</mi>
+      <mn>3</mn>
+    </msup>
+    <mo>&#x2062;</mo>
+    <msup>
+      <mi>e</mi>
+      <mrow data-mjx-texclass="ORD">
+        <mn>2</mn>
+        <mo>&#x2062;</mo>
+        <mi>x</mi>
+      </mrow>
+    </msup>
+  </mrow>
+  <mstyle scriptlevel="0">
+    <mspace width="0.167em"></mspace>
+  </mstyle>
+  <mrow>
+    <mi>d</mi>
+    <mi>x</mi>
+  </mrow>
+</math></div>
+
+
+<table>
+<thead>
+<tr>
+<th>符号</th>
+<th>多项式连续求导</th>
+<th>指数函数连续积分</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mo>+</mo>
+</math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <msup>
+    <mi>x</mi>
+    <mn>3</mn>
+  </msup>
+</math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mfrac>
+    <mn>1</mn>
+    <mn>2</mn>
+  </mfrac>
+  <mo>&#x2062;</mo>
+  <msup>
+    <mi>e</mi>
+    <mrow data-mjx-texclass="ORD">
+      <mn>2</mn>
+      <mo>&#x2062;</mo>
+      <mi>x</mi>
+    </mrow>
+  </msup>
+</math></td>
+</tr>
+<tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mo>&#x2212;</mo>
+</math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mn>3</mn>
+  <mo>&#x2062;</mo>
+  <msup>
+    <mi>x</mi>
+    <mn>2</mn>
+  </msup>
+</math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mfrac>
+    <mn>1</mn>
+    <mn>4</mn>
+  </mfrac>
+  <mo>&#x2062;</mo>
+  <msup>
+    <mi>e</mi>
+    <mrow data-mjx-texclass="ORD">
+      <mn>2</mn>
+      <mo>&#x2062;</mo>
+      <mi>x</mi>
+    </mrow>
+  </msup>
+</math></td>
+</tr>
+<tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mo>+</mo>
+</math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mn>6</mn>
+  <mo>&#x2062;</mo>
+  <mi>x</mi>
+</math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mfrac>
+    <mn>1</mn>
+    <mn>8</mn>
+  </mfrac>
+  <mo>&#x2062;</mo>
+  <msup>
+    <mi>e</mi>
+    <mrow data-mjx-texclass="ORD">
+      <mn>2</mn>
+      <mo>&#x2062;</mo>
+      <mi>x</mi>
+    </mrow>
+  </msup>
+</math></td>
+</tr>
+<tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mo>&#x2212;</mo>
+</math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mn>6</mn>
+</math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mfrac>
+    <mn>1</mn>
+    <mn>16</mn>
+  </mfrac>
+  <mo>&#x2062;</mo>
+  <msup>
+    <mi>e</mi>
+    <mrow data-mjx-texclass="ORD">
+      <mn>2</mn>
+      <mo>&#x2062;</mo>
+      <mi>x</mi>
+    </mrow>
+  </msup>
+</math></td>
+</tr>
+<tr>
+<td></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mn>0</mn>
+</math></td>
+<td></td>
+</tr>
+</tbody></table>
+<p>行对应相乘得到：</p>
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mrow>
+    <mo>&#x222B;</mo>
+    <mrow>
+      <msup>
+        <mi>x</mi>
+        <mn>3</mn>
+      </msup>
+      <mo>&#x2062;</mo>
+      <msup>
+        <mi>e</mi>
+        <mrow data-mjx-texclass="ORD">
+          <mn>2</mn>
+          <mo>&#x2062;</mo>
+          <mi>x</mi>
+        </mrow>
+      </msup>
+    </mrow>
+    <mstyle scriptlevel="0">
+      <mspace width="0.167em"></mspace>
+    </mstyle>
+    <mrow>
+      <mi>d</mi>
+      <mi>x</mi>
+    </mrow>
+  </mrow>
+  <mo>=</mo>
+  <mrow>
+    <mrow>
+      <mrow>
+        <mrow>
+          <mrow>
+            <mfrac>
+              <mn>1</mn>
+              <mn>2</mn>
+            </mfrac>
+            <mo>&#x2062;</mo>
+            <msup>
+              <mi>x</mi>
+              <mn>3</mn>
+            </msup>
+            <mo>&#x2062;</mo>
+            <msup>
+              <mi>e</mi>
+              <mrow data-mjx-texclass="ORD">
+                <mn>2</mn>
+                <mo>&#x2062;</mo>
+                <mi>x</mi>
+              </mrow>
+            </msup>
+          </mrow>
+          <mo>&#x2212;</mo>
+          <mrow>
+            <mfrac>
+              <mn>3</mn>
+              <mn>4</mn>
+            </mfrac>
+            <mo>&#x2062;</mo>
+            <msup>
+              <mi>x</mi>
+              <mn>2</mn>
+            </msup>
+            <mo>&#x2062;</mo>
+            <msup>
+              <mi>e</mi>
+              <mrow data-mjx-texclass="ORD">
+                <mn>2</mn>
+                <mo>&#x2062;</mo>
+                <mi>x</mi>
+              </mrow>
+            </msup>
+          </mrow>
+        </mrow>
+        <mo>+</mo>
+        <mrow>
+          <mfrac>
+            <mn>3</mn>
+            <mn>4</mn>
+          </mfrac>
+          <mo>&#x2062;</mo>
+          <mi>x</mi>
+          <mo>&#x2062;</mo>
+          <msup>
+            <mi>e</mi>
+            <mrow data-mjx-texclass="ORD">
+              <mn>2</mn>
+              <mo>&#x2062;</mo>
+              <mi>x</mi>
+            </mrow>
+          </msup>
+        </mrow>
+      </mrow>
+      <mo>&#x2212;</mo>
+      <mrow>
+        <mfrac>
+          <mn>3</mn>
+          <mn>8</mn>
+        </mfrac>
+        <mo>&#x2062;</mo>
+        <msup>
+          <mi>e</mi>
+          <mrow data-mjx-texclass="ORD">
+            <mn>2</mn>
+            <mo>&#x2062;</mo>
+            <mi>x</mi>
+          </mrow>
+        </msup>
+      </mrow>
+    </mrow>
+    <mo>+</mo>
+    <mi>C</mi>
+  </mrow>
+</math></div>
+
+
+<p>即：</p>
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <menclose notation="box">
+    <mrow data-mjx-texclass="ORD">
+      <mstyle scriptlevel="0">
+        <mrow data-mjx-texclass="ORD">
+          <mrow>
+            <mo>&#x222B;</mo>
+            <mrow>
+              <msup>
+                <mi>x</mi>
+                <mn>3</mn>
+              </msup>
+              <mo>&#x2062;</mo>
+              <msup>
+                <mi>e</mi>
+                <mrow data-mjx-texclass="ORD">
+                  <mn>2</mn>
+                  <mo>&#x2062;</mo>
+                  <mi>x</mi>
+                </mrow>
+              </msup>
+            </mrow>
+            <mstyle scriptlevel="0">
+              <mspace width="0.167em"></mspace>
+            </mstyle>
+            <mrow>
+              <mi>d</mi>
+              <mi>x</mi>
+            </mrow>
+          </mrow>
+          <mo>=</mo>
+          <mrow>
+            <mrow>
+              <msup>
+                <mi>e</mi>
+                <mrow data-mjx-texclass="ORD">
+                  <mn>2</mn>
+                  <mo>&#x2062;</mo>
+                  <mi>x</mi>
+                </mrow>
+              </msup>
+              <mo>&#x2062;</mo>
+              <mrow data-mjx-texclass="INNER">
+                <mo data-mjx-texclass="OPEN">(</mo>
+                <mrow>
+                  <mrow>
+                    <mrow>
+                      <mfrac>
+                        <msup>
+                          <mi>x</mi>
+                          <mn>3</mn>
+                        </msup>
+                        <mn>2</mn>
+                      </mfrac>
+                      <mo>&#x2212;</mo>
+                      <mfrac>
+                        <mrow>
+                          <mn>3</mn>
+                          <mo>&#x2062;</mo>
+                          <msup>
+                            <mi>x</mi>
+                            <mn>2</mn>
+                          </msup>
+                        </mrow>
+                        <mn>4</mn>
+                      </mfrac>
+                    </mrow>
+                    <mo>+</mo>
+                    <mfrac>
+                      <mrow>
+                        <mn>3</mn>
+                        <mo>&#x2062;</mo>
+                        <mi>x</mi>
+                      </mrow>
+                      <mn>4</mn>
+                    </mfrac>
+                  </mrow>
+                  <mo>&#x2212;</mo>
+                  <mfrac>
+                    <mn>3</mn>
+                    <mn>8</mn>
+                  </mfrac>
+                </mrow>
+                <mo data-mjx-texclass="CLOSE">)</mo>
+              </mrow>
+            </mrow>
+            <mo>+</mo>
+            <mi>C</mi>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+  </menclose>
+</math></div>
+
+
+
+
+<h1 id="h-63">考研常用泰勒展开式，泰勒级数</h1>
+<h2 id="h-65">必背</h2>
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <msup>
+    <mi>e</mi>
+    <mi>x</mi>
+  </msup>
+  <mo>=</mo>
+  <mrow>
+    <mn>1</mn>
+    <mo>+</mo>
+    <mi>x</mi>
+    <mo>+</mo>
+    <mfrac>
+      <msup>
+        <mi>x</mi>
+        <mn>2</mn>
+      </msup>
+      <mrow>
+        <mn>2</mn>
+        <mo>!</mo>
+      </mrow>
+    </mfrac>
+    <mo>+</mo>
+    <mfrac>
+      <msup>
+        <mi>x</mi>
+        <mn>3</mn>
+      </msup>
+      <mrow>
+        <mn>3</mn>
+        <mo>!</mo>
+      </mrow>
+    </mfrac>
+    <mo>+</mo>
+    <mfrac>
+      <msup>
+        <mi>x</mi>
+        <mn>4</mn>
+      </msup>
+      <mrow>
+        <mn>4</mn>
+        <mo>!</mo>
+      </mrow>
+    </mfrac>
+    <mo>+</mo>
+    <mo>&#x22EF;</mo>
+  </mrow>
+</math></div>
+
+
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mrow>
+    <mi>sin</mi>
+    <mo data-mjx-texclass="NONE">&#x2061;</mo>
+    <mi>x</mi>
+  </mrow>
+  <mo>=</mo>
+  <mrow>
+    <mrow>
+      <mrow>
+        <mrow>
+          <mi>x</mi>
+          <mo>&#x2212;</mo>
+          <mfrac>
+            <msup>
+              <mi>x</mi>
+              <mn>3</mn>
+            </msup>
+            <mrow>
+              <mn>3</mn>
+              <mo>!</mo>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>+</mo>
+        <mfrac>
+          <msup>
+            <mi>x</mi>
+            <mn>5</mn>
+          </msup>
+          <mrow>
+            <mn>5</mn>
+            <mo>!</mo>
+          </mrow>
+        </mfrac>
+      </mrow>
+      <mo>&#x2212;</mo>
+      <mfrac>
+        <msup>
+          <mi>x</mi>
+          <mn>7</mn>
+        </msup>
+        <mrow>
+          <mn>7</mn>
+          <mo>!</mo>
+        </mrow>
+      </mfrac>
+    </mrow>
+    <mo>+</mo>
+    <mo>&#x22EF;</mo>
+  </mrow>
+</math></div>
+
+
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mrow>
+    <mi>cos</mi>
+    <mo data-mjx-texclass="NONE">&#x2061;</mo>
+    <mi>x</mi>
+  </mrow>
+  <mo>=</mo>
+  <mrow>
+    <mrow>
+      <mrow>
+        <mrow>
+          <mn>1</mn>
+          <mo>&#x2212;</mo>
+          <mfrac>
+            <msup>
+              <mi>x</mi>
+              <mn>2</mn>
+            </msup>
+            <mrow>
+              <mn>2</mn>
+              <mo>!</mo>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>+</mo>
+        <mfrac>
+          <msup>
+            <mi>x</mi>
+            <mn>4</mn>
+          </msup>
+          <mrow>
+            <mn>4</mn>
+            <mo>!</mo>
+          </mrow>
+        </mfrac>
+      </mrow>
+      <mo>&#x2212;</mo>
+      <mfrac>
+        <msup>
+          <mi>x</mi>
+          <mn>6</mn>
+        </msup>
+        <mrow>
+          <mn>6</mn>
+          <mo>!</mo>
+        </mrow>
+      </mfrac>
+    </mrow>
+    <mo>+</mo>
+    <mo>&#x22EF;</mo>
+  </mrow>
+</math></div>
+
+
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mrow>
+    <mi>ln</mi>
+    <mo data-mjx-texclass="NONE">&#x2061;</mo>
+    <mrow>
+      <mo data-mjx-texclass="OPEN">(</mo>
+      <mrow>
+        <mn>1</mn>
+        <mo>+</mo>
+        <mi>x</mi>
+      </mrow>
+      <mo data-mjx-texclass="CLOSE">)</mo>
+    </mrow>
+  </mrow>
+  <mo>=</mo>
+  <mrow>
+    <mrow>
+      <mrow>
+        <mrow>
+          <mi>x</mi>
+          <mo>&#x2212;</mo>
+          <mfrac>
+            <msup>
+              <mi>x</mi>
+              <mn>2</mn>
+            </msup>
+            <mn>2</mn>
+          </mfrac>
+        </mrow>
+        <mo>+</mo>
+        <mfrac>
+          <msup>
+            <mi>x</mi>
+            <mn>3</mn>
+          </msup>
+          <mn>3</mn>
+        </mfrac>
+      </mrow>
+      <mo>&#x2212;</mo>
+      <mfrac>
+        <msup>
+          <mi>x</mi>
+          <mn>4</mn>
+        </msup>
+        <mn>4</mn>
+      </mfrac>
+    </mrow>
+    <mo>+</mo>
+    <mfrac>
+      <msup>
+        <mi>x</mi>
+        <mn>5</mn>
+      </msup>
+      <mn>5</mn>
+    </mfrac>
+    <mo>+</mo>
+    <mo>&#x22EF;</mo>
+  </mrow>
+</math></div>
+
+
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mrow>
+    <mi>ln</mi>
+    <mo data-mjx-texclass="NONE">&#x2061;</mo>
+    <mrow>
+      <mo data-mjx-texclass="OPEN">(</mo>
+      <mrow>
+        <mn>1</mn>
+        <mo>&#x2212;</mo>
+        <mi>x</mi>
+      </mrow>
+      <mo data-mjx-texclass="CLOSE">)</mo>
+    </mrow>
+  </mrow>
+  <mo>=</mo>
+  <mrow>
+    <mrow>
+      <mo>&#x2212;</mo>
+      <mi>x</mi>
+    </mrow>
+    <mo>&#x2212;</mo>
+    <mfrac>
+      <msup>
+        <mi>x</mi>
+        <mn>2</mn>
+      </msup>
+      <mn>2</mn>
+    </mfrac>
+    <mo>&#x2212;</mo>
+    <mfrac>
+      <msup>
+        <mi>x</mi>
+        <mn>3</mn>
+      </msup>
+      <mn>3</mn>
+    </mfrac>
+    <mo>&#x2212;</mo>
+    <mfrac>
+      <msup>
+        <mi>x</mi>
+        <mn>4</mn>
+      </msup>
+      <mn>4</mn>
+    </mfrac>
+    <mo>&#x2212;</mo>
+    <mo>&#x22EF;</mo>
+  </mrow>
+</math></div>
+
+
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mfrac>
+    <mn>1</mn>
+    <mrow>
+      <mn>1</mn>
+      <mo>&#x2212;</mo>
+      <mi>x</mi>
+    </mrow>
+  </mfrac>
+  <mo>=</mo>
+  <mrow>
+    <mn>1</mn>
+    <mo>+</mo>
+    <mi>x</mi>
+    <mo>+</mo>
+    <msup>
+      <mi>x</mi>
+      <mn>2</mn>
+    </msup>
+    <mo>+</mo>
+    <msup>
+      <mi>x</mi>
+      <mn>3</mn>
+    </msup>
+    <mo>+</mo>
+    <msup>
+      <mi>x</mi>
+      <mn>4</mn>
+    </msup>
+    <mo>+</mo>
+    <mo>&#x22EF;</mo>
+  </mrow>
+</math></div>
+
+
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mfrac>
+    <mn>1</mn>
+    <mrow>
+      <mn>1</mn>
+      <mo>+</mo>
+      <mi>x</mi>
+    </mrow>
+  </mfrac>
+  <mo>=</mo>
+  <mrow>
+    <mrow>
+      <mrow>
+        <mrow>
+          <mrow>
+            <mn>1</mn>
+            <mo>&#x2212;</mo>
+            <mi>x</mi>
+          </mrow>
+          <mo>+</mo>
+          <msup>
+            <mi>x</mi>
+            <mn>2</mn>
+          </msup>
+        </mrow>
+        <mo>&#x2212;</mo>
+        <msup>
+          <mi>x</mi>
+          <mn>3</mn>
+        </msup>
+      </mrow>
+      <mo>+</mo>
+      <msup>
+        <mi>x</mi>
+        <mn>4</mn>
+      </msup>
+    </mrow>
+    <mo>&#x2212;</mo>
+    <mo>&#x22EF;</mo>
+  </mrow>
+</math></div>
+
+
+
+
+<h1 id="h-96">常用展开对照表</h1>
+<table>
+<thead>
+<tr>
+<th>函数</th>
+<th>幂级数展开</th>
+<th>记忆/来源</th>
+<th>收敛半径</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <msup>
+    <mi>e</mi>
+    <mi>x</mi>
+  </msup>
+</math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mstyle displaystyle="true" scriptlevel="0">
+    <mrow>
+      <mn>1</mn>
+      <mo>+</mo>
+      <mi>x</mi>
+      <mo>+</mo>
+      <mfrac>
+        <msup>
+          <mi>x</mi>
+          <mn>2</mn>
+        </msup>
+        <mrow>
+          <mn>2</mn>
+          <mo>!</mo>
+        </mrow>
+      </mfrac>
+      <mo>+</mo>
+      <mfrac>
+        <msup>
+          <mi>x</mi>
+          <mn>3</mn>
+        </msup>
+        <mrow>
+          <mn>3</mn>
+          <mo>!</mo>
+        </mrow>
+      </mfrac>
+      <mo>+</mo>
+      <mo>&#x22EF;</mo>
+    </mrow>
+    <mo>=</mo>
+    <mrow>
+      <munderover>
+        <mo>&#x2211;</mo>
+        <mrow data-mjx-texclass="ORD">
+          <mi>n</mi>
+          <mo>=</mo>
+          <mn>0</mn>
+        </mrow>
+        <mrow data-mjx-texclass="ORD">
+          <mi mathvariant="normal">&#x221E;</mi>
+        </mrow>
+      </munderover>
+      <mfrac>
+        <msup>
+          <mi>x</mi>
+          <mi>n</mi>
+        </msup>
+        <mrow>
+          <mi>n</mi>
+          <mo>!</mo>
+        </mrow>
+      </mfrac>
+    </mrow>
+  </mstyle>
+</math></td>
+<td>各阶导数仍为 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <msup>
+    <mi>e</mi>
+    <mi>x</mi>
+  </msup>
+</math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi>R</mi>
+  <mo>=</mo>
+  <mi mathvariant="normal">&#x221E;</mi>
+</math></td>
+</tr>
+<tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi>sin</mi>
+  <mo data-mjx-texclass="NONE">&#x2061;</mo>
+  <mi>x</mi>
+</math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mstyle displaystyle="true" scriptlevel="0">
+    <mrow>
+      <mrow>
+        <mrow>
+          <mi>x</mi>
+          <mo>&#x2212;</mo>
+          <mfrac>
+            <msup>
+              <mi>x</mi>
+              <mn>3</mn>
+            </msup>
+            <mrow>
+              <mn>3</mn>
+              <mo>!</mo>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>+</mo>
+        <mfrac>
+          <msup>
+            <mi>x</mi>
+            <mn>5</mn>
+          </msup>
+          <mrow>
+            <mn>5</mn>
+            <mo>!</mo>
+          </mrow>
+        </mfrac>
+      </mrow>
+      <mo>&#x2212;</mo>
+      <mfrac>
+        <msup>
+          <mi>x</mi>
+          <mn>7</mn>
+        </msup>
+        <mrow>
+          <mn>7</mn>
+          <mo>!</mo>
+        </mrow>
+      </mfrac>
+    </mrow>
+    <mo>+</mo>
+    <mo>&#x22EF;</mo>
+  </mstyle>
+</math></td>
+<td>奇函数→只含奇次项</td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi>R</mi>
+  <mo>=</mo>
+  <mi mathvariant="normal">&#x221E;</mi>
+</math></td>
+</tr>
+<tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi>cos</mi>
+  <mo data-mjx-texclass="NONE">&#x2061;</mo>
+  <mi>x</mi>
+</math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mstyle displaystyle="true" scriptlevel="0">
+    <mrow>
+      <mrow>
+        <mrow>
+          <mn>1</mn>
+          <mo>&#x2212;</mo>
+          <mfrac>
+            <msup>
+              <mi>x</mi>
+              <mn>2</mn>
+            </msup>
+            <mrow>
+              <mn>2</mn>
+              <mo>!</mo>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>+</mo>
+        <mfrac>
+          <msup>
+            <mi>x</mi>
+            <mn>4</mn>
+          </msup>
+          <mrow>
+            <mn>4</mn>
+            <mo>!</mo>
+          </mrow>
+        </mfrac>
+      </mrow>
+      <mo>&#x2212;</mo>
+      <mfrac>
+        <msup>
+          <mi>x</mi>
+          <mn>6</mn>
+        </msup>
+        <mrow>
+          <mn>6</mn>
+          <mo>!</mo>
+        </mrow>
+      </mfrac>
+    </mrow>
+    <mo>+</mo>
+    <mo>&#x22EF;</mo>
+  </mstyle>
+</math></td>
+<td>偶函数→只含偶次项</td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi>R</mi>
+  <mo>=</mo>
+  <mi mathvariant="normal">&#x221E;</mi>
+</math></td>
+</tr>
+<tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi>ln</mi>
+  <mo data-mjx-texclass="NONE">&#x2061;</mo>
+  <mrow>
+    <mo data-mjx-texclass="OPEN">(</mo>
+    <mrow>
+      <mn>1</mn>
+      <mo>+</mo>
+      <mi>x</mi>
+    </mrow>
+    <mo data-mjx-texclass="CLOSE">)</mo>
+  </mrow>
+</math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mstyle displaystyle="true" scriptlevel="0">
+    <mrow>
+      <mrow>
+        <mrow>
+          <mrow>
+            <mi>x</mi>
+            <mo>&#x2212;</mo>
+            <mfrac>
+              <msup>
+                <mi>x</mi>
+                <mn>2</mn>
+              </msup>
+              <mn>2</mn>
+            </mfrac>
+          </mrow>
+          <mo>+</mo>
+          <mfrac>
+            <msup>
+              <mi>x</mi>
+              <mn>3</mn>
+            </msup>
+            <mn>3</mn>
+          </mfrac>
+        </mrow>
+        <mo>&#x2212;</mo>
+        <mfrac>
+          <msup>
+            <mi>x</mi>
+            <mn>4</mn>
+          </msup>
+          <mn>4</mn>
+        </mfrac>
+      </mrow>
+      <mo>+</mo>
+      <mo>&#x22EF;</mo>
+    </mrow>
+    <mo>=</mo>
+    <mrow>
+      <munderover>
+        <mo>&#x2211;</mo>
+        <mrow data-mjx-texclass="ORD">
+          <mi>n</mi>
+          <mo>=</mo>
+          <mn>1</mn>
+        </mrow>
+        <mrow data-mjx-texclass="ORD">
+          <mi mathvariant="normal">&#x221E;</mi>
+        </mrow>
+      </munderover>
+      <mfrac>
+        <mrow>
+          <msup>
+            <mrow>
+              <mo stretchy="false">(</mo>
+              <mrow>
+                <mo>&#x2212;</mo>
+                <mn>1</mn>
+              </mrow>
+              <mo stretchy="false">)</mo>
+            </mrow>
+            <mrow data-mjx-texclass="ORD">
+              <mi>n</mi>
+              <mo>&#x2212;</mo>
+              <mn>1</mn>
+            </mrow>
+          </msup>
+          <mo>&#x2062;</mo>
+          <msup>
+            <mi>x</mi>
+            <mi>n</mi>
+          </msup>
+        </mrow>
+        <mi>n</mi>
+      </mfrac>
+    </mrow>
+  </mstyle>
+</math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mfrac>
+    <mn>1</mn>
+    <mrow>
+      <mn>1</mn>
+      <mo>+</mo>
+      <mi>x</mi>
+    </mrow>
+  </mfrac>
+</math> 积分得到</td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi>R</mi>
+  <mo>=</mo>
+  <mn>1</mn>
+</math></td>
+</tr>
+<tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi>ln</mi>
+  <mo data-mjx-texclass="NONE">&#x2061;</mo>
+  <mrow>
+    <mo data-mjx-texclass="OPEN">(</mo>
+    <mrow>
+      <mn>1</mn>
+      <mo>&#x2212;</mo>
+      <mi>x</mi>
+    </mrow>
+    <mo data-mjx-texclass="CLOSE">)</mo>
+  </mrow>
+</math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mstyle displaystyle="true" scriptlevel="0">
+    <mrow>
+      <mrow>
+        <mo>&#x2212;</mo>
+        <mi>x</mi>
+      </mrow>
+      <mo>&#x2212;</mo>
+      <mfrac>
+        <msup>
+          <mi>x</mi>
+          <mn>2</mn>
+        </msup>
+        <mn>2</mn>
+      </mfrac>
+      <mo>&#x2212;</mo>
+      <mfrac>
+        <msup>
+          <mi>x</mi>
+          <mn>3</mn>
+        </msup>
+        <mn>3</mn>
+      </mfrac>
+      <mo>&#x2212;</mo>
+      <mfrac>
+        <msup>
+          <mi>x</mi>
+          <mn>4</mn>
+        </msup>
+        <mn>4</mn>
+      </mfrac>
+      <mo>&#x2212;</mo>
+      <mo>&#x22EF;</mo>
+    </mrow>
+    <mo>=</mo>
+    <mrow>
+      <munderover>
+        <mo>&#x2211;</mo>
+        <mrow data-mjx-texclass="ORD">
+          <mi>n</mi>
+          <mo>=</mo>
+          <mn>1</mn>
+        </mrow>
+        <mrow data-mjx-texclass="ORD">
+          <mi mathvariant="normal">&#x221E;</mi>
+        </mrow>
+      </munderover>
+      <mfrac>
+        <mrow>
+          <mrow>
+            <mo stretchy="false">(</mo>
+            <mrow>
+              <mo>&#x2212;</mo>
+              <mn>1</mn>
+            </mrow>
+            <mo stretchy="false">)</mo>
+          </mrow>
+          <mo>&#x2062;</mo>
+          <msup>
+            <mi>x</mi>
+            <mi>n</mi>
+          </msup>
+        </mrow>
+        <mi>n</mi>
+      </mfrac>
+    </mrow>
+  </mstyle>
+</math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi>ln</mi>
+  <mo data-mjx-texclass="NONE">&#x2061;</mo>
+  <mrow>
+    <mo data-mjx-texclass="OPEN">(</mo>
+    <mrow>
+      <mn>1</mn>
+      <mo>+</mo>
+      <mi>x</mi>
+    </mrow>
+    <mo data-mjx-texclass="CLOSE">)</mo>
+  </mrow>
+</math> 中 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi>x</mi>
+  <mo stretchy="false">&#x2192;</mo>
+  <mrow>
+    <mo>&#x2212;</mo>
+    <mi>x</mi>
+  </mrow>
+</math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi>R</mi>
+  <mo>=</mo>
+  <mn>1</mn>
+</math></td>
+</tr>
+<tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mfrac>
+    <mn>1</mn>
+    <mrow>
+      <mn>1</mn>
+      <mo>&#x2212;</mo>
+      <mi>x</mi>
+    </mrow>
+  </mfrac>
+</math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mstyle displaystyle="true" scriptlevel="0">
+    <mrow>
+      <mn>1</mn>
+      <mo>+</mo>
+      <mi>x</mi>
+      <mo>+</mo>
+      <msup>
+        <mi>x</mi>
+        <mn>2</mn>
+      </msup>
+      <mo>+</mo>
+      <msup>
+        <mi>x</mi>
+        <mn>3</mn>
+      </msup>
+      <mo>+</mo>
+      <mo>&#x22EF;</mo>
+    </mrow>
+    <mo>=</mo>
+    <mrow>
+      <munderover>
+        <mo>&#x2211;</mo>
+        <mrow data-mjx-texclass="ORD">
+          <mi>n</mi>
+          <mo>=</mo>
+          <mn>0</mn>
+        </mrow>
+        <mrow data-mjx-texclass="ORD">
+          <mi mathvariant="normal">&#x221E;</mi>
+        </mrow>
+      </munderover>
+      <msup>
+        <mi>x</mi>
+        <mi>n</mi>
+      </msup>
+    </mrow>
+  </mstyle>
+</math></td>
+<td>几何级数母公式</td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi>R</mi>
+  <mo>=</mo>
+  <mn>1</mn>
+</math></td>
+</tr>
+<tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mfrac>
+    <mn>1</mn>
+    <mrow>
+      <mn>1</mn>
+      <mo>+</mo>
+      <mi>x</mi>
+    </mrow>
+  </mfrac>
+</math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mstyle displaystyle="true" scriptlevel="0">
+    <mrow>
+      <mrow>
+        <mrow>
+          <mrow>
+            <mn>1</mn>
+            <mo>&#x2212;</mo>
+            <mi>x</mi>
+          </mrow>
+          <mo>+</mo>
+          <msup>
+            <mi>x</mi>
+            <mn>2</mn>
+          </msup>
+        </mrow>
+        <mo>&#x2212;</mo>
+        <msup>
+          <mi>x</mi>
+          <mn>3</mn>
+        </msup>
+      </mrow>
+      <mo>+</mo>
+      <mo>&#x22EF;</mo>
+    </mrow>
+    <mo>=</mo>
+    <mrow>
+      <munderover>
+        <mo>&#x2211;</mo>
+        <mrow data-mjx-texclass="ORD">
+          <mi>n</mi>
+          <mo>=</mo>
+          <mn>0</mn>
+        </mrow>
+        <mrow data-mjx-texclass="ORD">
+          <mi mathvariant="normal">&#x221E;</mi>
+        </mrow>
+      </munderover>
+      <mrow>
+        <msup>
+          <mrow>
+            <mo stretchy="false">(</mo>
+            <mrow>
+              <mo>&#x2212;</mo>
+              <mn>1</mn>
+            </mrow>
+            <mo stretchy="false">)</mo>
+          </mrow>
+          <mi>n</mi>
+        </msup>
+        <mo>&#x2062;</mo>
+        <msup>
+          <mi>x</mi>
+          <mi>n</mi>
+        </msup>
+      </mrow>
+    </mrow>
+  </mstyle>
+</math></td>
+<td>几何级数 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi>x</mi>
+  <mo stretchy="false">&#x2192;</mo>
+  <mrow>
+    <mo>&#x2212;</mo>
+    <mi>x</mi>
+  </mrow>
+</math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi>R</mi>
+  <mo>=</mo>
+  <mn>1</mn>
+</math></td>
+</tr>
+<tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <msup>
+    <mrow>
+      <mo stretchy="false">(</mo>
+      <mrow>
+        <mn>1</mn>
+        <mo>+</mo>
+        <mi>x</mi>
+      </mrow>
+      <mo stretchy="false">)</mo>
+    </mrow>
+    <mi>&#x3B1;</mi>
+  </msup>
+</math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mstyle displaystyle="true" scriptlevel="0">
+    <mn>1</mn>
+    <mo>+</mo>
+    <mrow>
+      <mi>&#x3B1;</mi>
+      <mo>&#x2062;</mo>
+      <mi>x</mi>
+    </mrow>
+    <mo>+</mo>
+    <mrow>
+      <mfrac>
+        <mrow>
+          <mi>&#x3B1;</mi>
+          <mo>&#x2062;</mo>
+          <mrow>
+            <mo stretchy="false">(</mo>
+            <mrow>
+              <mi>&#x3B1;</mi>
+              <mo>&#x2212;</mo>
+              <mn>1</mn>
+            </mrow>
+            <mo stretchy="false">)</mo>
+          </mrow>
+        </mrow>
+        <mrow>
+          <mn>2</mn>
+          <mo>!</mo>
+        </mrow>
+      </mfrac>
+      <mo>&#x2062;</mo>
+      <msup>
+        <mi>x</mi>
+        <mn>2</mn>
+      </msup>
+    </mrow>
+    <mo>+</mo>
+    <mrow>
+      <mfrac>
+        <mrow>
+          <mi>&#x3B1;</mi>
+          <mo>&#x2062;</mo>
+          <mrow>
+            <mo stretchy="false">(</mo>
+            <mrow>
+              <mi>&#x3B1;</mi>
+              <mo>&#x2212;</mo>
+              <mn>1</mn>
+            </mrow>
+            <mo stretchy="false">)</mo>
+          </mrow>
+          <mo>&#x2062;</mo>
+          <mrow>
+            <mo stretchy="false">(</mo>
+            <mrow>
+              <mi>&#x3B1;</mi>
+              <mo>&#x2212;</mo>
+              <mn>2</mn>
+            </mrow>
+            <mo stretchy="false">)</mo>
+          </mrow>
+        </mrow>
+        <mrow>
+          <mn>3</mn>
+          <mo>!</mo>
+        </mrow>
+      </mfrac>
+      <mo>&#x2062;</mo>
+      <msup>
+        <mi>x</mi>
+        <mn>3</mn>
+      </msup>
+    </mrow>
+    <mo>+</mo>
+    <mo>&#x22EF;</mo>
+  </mstyle>
+</math></td>
+<td>二项式展开</td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi>R</mi>
+  <mo>=</mo>
+  <mn>1</mn>
+</math></td>
+</tr>
+<tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi>arctan</mi>
+  <mo data-mjx-texclass="NONE">&#x2061;</mo>
+  <mi>x</mi>
+</math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mstyle displaystyle="true" scriptlevel="0">
+    <mrow>
+      <mrow>
+        <mrow>
+          <mrow>
+            <mi>x</mi>
+            <mo>&#x2212;</mo>
+            <mfrac>
+              <msup>
+                <mi>x</mi>
+                <mn>3</mn>
+              </msup>
+              <mn>3</mn>
+            </mfrac>
+          </mrow>
+          <mo>+</mo>
+          <mfrac>
+            <msup>
+              <mi>x</mi>
+              <mn>5</mn>
+            </msup>
+            <mn>5</mn>
+          </mfrac>
+        </mrow>
+        <mo>&#x2212;</mo>
+        <mfrac>
+          <msup>
+            <mi>x</mi>
+            <mn>7</mn>
+          </msup>
+          <mn>7</mn>
+        </mfrac>
+      </mrow>
+      <mo>+</mo>
+      <mo>&#x22EF;</mo>
+    </mrow>
+    <mo>=</mo>
+    <mrow>
+      <munderover>
+        <mo>&#x2211;</mo>
+        <mrow data-mjx-texclass="ORD">
+          <mi>n</mi>
+          <mo>=</mo>
+          <mn>0</mn>
+        </mrow>
+        <mrow data-mjx-texclass="ORD">
+          <mi mathvariant="normal">&#x221E;</mi>
+        </mrow>
+      </munderover>
+      <mfrac>
+        <mrow>
+          <msup>
+            <mrow>
+              <mo stretchy="false">(</mo>
+              <mrow>
+                <mo>&#x2212;</mo>
+                <mn>1</mn>
+              </mrow>
+              <mo stretchy="false">)</mo>
+            </mrow>
+            <mi>n</mi>
+          </msup>
+          <mo>&#x2062;</mo>
+          <msup>
+            <mi>x</mi>
+            <mrow data-mjx-texclass="ORD">
+              <mrow>
+                <mn>2</mn>
+                <mo>&#x2062;</mo>
+                <mi>n</mi>
+              </mrow>
+              <mo>+</mo>
+              <mn>1</mn>
+            </mrow>
+          </msup>
+        </mrow>
+        <mrow>
+          <mrow>
+            <mn>2</mn>
+            <mo>&#x2062;</mo>
+            <mi>n</mi>
+          </mrow>
+          <mo>+</mo>
+          <mn>1</mn>
+        </mrow>
+      </mfrac>
+    </mrow>
+  </mstyle>
+</math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mfrac>
+    <mn>1</mn>
+    <mrow>
+      <mn>1</mn>
+      <mo>+</mo>
+      <msup>
+        <mi>x</mi>
+        <mn>2</mn>
+      </msup>
+    </mrow>
+  </mfrac>
+</math> 积分得到</td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi>R</mi>
+  <mo>=</mo>
+  <mn>1</mn>
+</math></td>
+</tr>
+</tbody></table>
+<h2 id="h-112">记忆规律</h2>
+<ul>
+<li><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <msup>
+    <mi>e</mi>
+    <mi>x</mi>
+  </msup>
+</math>：所有次幂都有，系数为 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mrow>
+    <mn>1</mn>
+    <mo>/</mo>
+    <mi>n</mi>
+  </mrow>
+  <mo>!</mo>
+</math></li>
+<li><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi>sin</mi>
+  <mo data-mjx-texclass="NONE">&#x2061;</mo>
+  <mi>x</mi>
+</math>：只有奇次，正负交替</li>
+<li><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi>cos</mi>
+  <mo data-mjx-texclass="NONE">&#x2061;</mo>
+  <mi>x</mi>
+</math>：只有偶次，正负交替</li>
+<li><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi>ln</mi>
+  <mo data-mjx-texclass="NONE">&#x2061;</mo>
+  <mrow>
+    <mo data-mjx-texclass="OPEN">(</mo>
+    <mrow>
+      <mn>1</mn>
+      <mo>+</mo>
+      <mi>x</mi>
+    </mrow>
+    <mo data-mjx-texclass="CLOSE">)</mo>
+  </mrow>
+</math>：所有次幂都有，分母就是次数，正负交替</li>
+<li><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mfrac>
+    <mn>1</mn>
+    <mrow>
+      <mn>1</mn>
+      <mo>&#x2212;</mo>
+      <mi>x</mi>
+    </mrow>
+  </mfrac>
+</math>：全部为正</li>
+<li><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mfrac>
+    <mn>1</mn>
+    <mrow>
+      <mn>1</mn>
+      <mo>+</mo>
+      <mi>x</mi>
+    </mrow>
+  </mfrac>
+</math>：正负交替</li>
+</ul>
+<blockquote><p>做极限时不要默认展开越多越好：先判断最低需要保留到哪一阶，尤其加减出现主项抵消时再继续展开。</p>
+</blockquote><h1 id="h-123">三角函数常见化简</h1>
+<h3 id="h-125">1. 根号型：优先看能否配平方</h3>
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mrow>
+    <mrow>
+      <mn>1</mn>
+      <mo>&#x2212;</mo>
+      <mrow>
+        <mi>cos</mi>
+        <mo data-mjx-texclass="NONE">&#x2061;</mo>
+        <mi>x</mi>
+      </mrow>
+    </mrow>
+    <mo>=</mo>
+    <mrow>
+      <mn>2</mn>
+      <mo>&#x2062;</mo>
+      <mrow>
+        <msup>
+          <mi>sin</mi>
+          <mn>2</mn>
+        </msup>
+        <mo data-mjx-texclass="NONE">&#x2061;</mo>
+        <mfrac>
+          <mi>x</mi>
+          <mn>2</mn>
+        </mfrac>
+      </mrow>
+    </mrow>
+  </mrow>
+  <mo>,</mo>
+  <mrow>
+    <mstyle scriptlevel="0">
+      <mspace width="2em"></mspace>
+    </mstyle>
+    <mrow>
+      <mrow>
+        <mn>1</mn>
+        <mo>+</mo>
+        <mrow>
+          <mi>cos</mi>
+          <mo data-mjx-texclass="NONE">&#x2061;</mo>
+          <mi>x</mi>
+        </mrow>
+      </mrow>
+      <mo>=</mo>
+      <mrow>
+        <mn>2</mn>
+        <mo>&#x2062;</mo>
+        <mrow>
+          <msup>
+            <mi>cos</mi>
+            <mn>2</mn>
+          </msup>
+          <mo data-mjx-texclass="NONE">&#x2061;</mo>
+          <mfrac>
+            <mi>x</mi>
+            <mn>2</mn>
+          </mfrac>
+        </mrow>
+      </mrow>
+    </mrow>
+  </mrow>
+</math></div>
+
+
+<p>所以</p>
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <msqrt>
+    <mrow>
+      <mn>1</mn>
+      <mo>&#x2212;</mo>
+      <mrow>
+        <mi>cos</mi>
+        <mo data-mjx-texclass="NONE">&#x2061;</mo>
+        <mi>x</mi>
+      </mrow>
+    </mrow>
+  </msqrt>
+  <mo>=</mo>
+  <mrow>
+    <msqrt>
+      <mn>2</mn>
+    </msqrt>
+    <mo>&#x2062;</mo>
+    <mrow data-mjx-texclass="INNER">
+      <mo data-mjx-texclass="OPEN">|</mo>
+      <mrow>
+        <mi>sin</mi>
+        <mo data-mjx-texclass="NONE">&#x2061;</mo>
+        <mfrac>
+          <mi>x</mi>
+          <mn>2</mn>
+        </mfrac>
+      </mrow>
+      <mo data-mjx-texclass="CLOSE">|</mo>
+    </mrow>
+  </mrow>
+</math></div>
+
+
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <msqrt>
+    <mrow>
+      <mn>1</mn>
+      <mo>+</mo>
+      <mrow>
+        <mi>cos</mi>
+        <mo data-mjx-texclass="NONE">&#x2061;</mo>
+        <mi>x</mi>
+      </mrow>
+    </mrow>
+  </msqrt>
+  <mo>=</mo>
+  <mrow>
+    <msqrt>
+      <mn>2</mn>
+    </msqrt>
+    <mo>&#x2062;</mo>
+    <mrow data-mjx-texclass="INNER">
+      <mo data-mjx-texclass="OPEN">|</mo>
+      <mrow>
+        <mi>cos</mi>
+        <mo data-mjx-texclass="NONE">&#x2061;</mo>
+        <mfrac>
+          <mi>x</mi>
+          <mn>2</mn>
+        </mfrac>
+      </mrow>
+      <mo data-mjx-texclass="CLOSE">|</mo>
+    </mrow>
+  </mrow>
+</math></div>
+
+
+<p>以及</p>
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mrow>
+    <mn>1</mn>
+    <mo>+</mo>
+    <mrow>
+      <mi>sin</mi>
+      <mo data-mjx-texclass="NONE">&#x2061;</mo>
+      <mi>x</mi>
+    </mrow>
+  </mrow>
+  <mo>=</mo>
+  <msup>
+    <mrow data-mjx-texclass="INNER">
+      <mo data-mjx-texclass="OPEN">(</mo>
+      <mrow>
+        <mrow>
+          <mi>sin</mi>
+          <mo data-mjx-texclass="NONE">&#x2061;</mo>
+          <mfrac>
+            <mi>x</mi>
+            <mn>2</mn>
+          </mfrac>
+        </mrow>
+        <mo>+</mo>
+        <mrow>
+          <mi>cos</mi>
+          <mo data-mjx-texclass="NONE">&#x2061;</mo>
+          <mfrac>
+            <mi>x</mi>
+            <mn>2</mn>
+          </mfrac>
+        </mrow>
+      </mrow>
+      <mo data-mjx-texclass="CLOSE">)</mo>
+    </mrow>
+    <mn>2</mn>
+  </msup>
+</math></div>
+
+
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mrow>
+    <mn>1</mn>
+    <mo>&#x2212;</mo>
+    <mrow>
+      <mi>sin</mi>
+      <mo data-mjx-texclass="NONE">&#x2061;</mo>
+      <mi>x</mi>
+    </mrow>
+  </mrow>
+  <mo>=</mo>
+  <msup>
+    <mrow data-mjx-texclass="INNER">
+      <mo data-mjx-texclass="OPEN">(</mo>
+      <mrow>
+        <mrow>
+          <mi>cos</mi>
+          <mo data-mjx-texclass="NONE">&#x2061;</mo>
+          <mfrac>
+            <mi>x</mi>
+            <mn>2</mn>
+          </mfrac>
+        </mrow>
+        <mo>&#x2212;</mo>
+        <mrow>
+          <mi>sin</mi>
+          <mo data-mjx-texclass="NONE">&#x2061;</mo>
+          <mfrac>
+            <mi>x</mi>
+            <mn>2</mn>
+          </mfrac>
+        </mrow>
+      </mrow>
+      <mo data-mjx-texclass="CLOSE">)</mo>
+    </mrow>
+    <mn>2</mn>
+  </msup>
+</math></div>
+
+
+<p>因此</p>
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <msqrt>
+    <mrow>
+      <mn>1</mn>
+      <mo>+</mo>
+      <mrow>
+        <mi>sin</mi>
+        <mo data-mjx-texclass="NONE">&#x2061;</mo>
+        <mi>x</mi>
+      </mrow>
+    </mrow>
+  </msqrt>
+  <mo>=</mo>
+  <mrow data-mjx-texclass="INNER">
+    <mo data-mjx-texclass="OPEN">|</mo>
+    <mrow>
+      <mrow>
+        <mi>sin</mi>
+        <mo data-mjx-texclass="NONE">&#x2061;</mo>
+        <mfrac>
+          <mi>x</mi>
+          <mn>2</mn>
+        </mfrac>
+      </mrow>
+      <mo>+</mo>
+      <mrow>
+        <mi>cos</mi>
+        <mo data-mjx-texclass="NONE">&#x2061;</mo>
+        <mfrac>
+          <mi>x</mi>
+          <mn>2</mn>
+        </mfrac>
+      </mrow>
+    </mrow>
+    <mo data-mjx-texclass="CLOSE">|</mo>
+  </mrow>
+</math></div>
+
+
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <msqrt>
+    <mrow>
+      <mn>1</mn>
+      <mo>&#x2212;</mo>
+      <mrow>
+        <mi>sin</mi>
+        <mo data-mjx-texclass="NONE">&#x2061;</mo>
+        <mi>x</mi>
+      </mrow>
+    </mrow>
+  </msqrt>
+  <mo>=</mo>
+  <mrow data-mjx-texclass="INNER">
+    <mo data-mjx-texclass="OPEN">|</mo>
+    <mrow>
+      <mrow>
+        <mi>cos</mi>
+        <mo data-mjx-texclass="NONE">&#x2061;</mo>
+        <mfrac>
+          <mi>x</mi>
+          <mn>2</mn>
+        </mfrac>
+      </mrow>
+      <mo>&#x2212;</mo>
+      <mrow>
+        <mi>sin</mi>
+        <mo data-mjx-texclass="NONE">&#x2061;</mo>
+        <mfrac>
+          <mi>x</mi>
+          <mn>2</mn>
+        </mfrac>
+      </mrow>
+    </mrow>
+    <mo data-mjx-texclass="CLOSE">|</mo>
+  </mrow>
+</math></div>
+
+
+<blockquote><p>易错：<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <msqrt>
+    <msup>
+      <mi>u</mi>
+      <mn>2</mn>
+    </msup>
+  </msqrt>
+  <mo>=</mo>
+  <mrow>
+    <mo data-mjx-texclass="ORD" stretchy="false">|</mo>
+    <mi>u</mi>
+    <mo data-mjx-texclass="ORD" stretchy="false">|</mo>
+  </mrow>
+</math>，根号化简注意绝对值。</p>
+</blockquote><h3 id="h-168">2. 半角分式</h3>
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mfrac>
+    <mrow>
+      <mi>sin</mi>
+      <mo data-mjx-texclass="NONE">&#x2061;</mo>
+      <mi>x</mi>
+    </mrow>
+    <mrow>
+      <mn>1</mn>
+      <mo>+</mo>
+      <mrow>
+        <mi>cos</mi>
+        <mo data-mjx-texclass="NONE">&#x2061;</mo>
+        <mi>x</mi>
+      </mrow>
+    </mrow>
+  </mfrac>
+  <mo>=</mo>
+  <mrow>
+    <mi>tan</mi>
+    <mo data-mjx-texclass="NONE">&#x2061;</mo>
+    <mfrac>
+      <mi>x</mi>
+      <mn>2</mn>
+    </mfrac>
+  </mrow>
+</math></div>
+
+
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mfrac>
+    <mrow>
+      <mi>sin</mi>
+      <mo data-mjx-texclass="NONE">&#x2061;</mo>
+      <mi>x</mi>
+    </mrow>
+    <mrow>
+      <mn>1</mn>
+      <mo>&#x2212;</mo>
+      <mrow>
+        <mi>cos</mi>
+        <mo data-mjx-texclass="NONE">&#x2061;</mo>
+        <mi>x</mi>
+      </mrow>
+    </mrow>
+  </mfrac>
+  <mo>=</mo>
+  <mrow>
+    <mi>cot</mi>
+    <mo data-mjx-texclass="NONE">&#x2061;</mo>
+    <mfrac>
+      <mi>x</mi>
+      <mn>2</mn>
+    </mfrac>
+  </mrow>
+</math></div>
+
+
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mfrac>
+    <mrow>
+      <mn>1</mn>
+      <mo>&#x2212;</mo>
+      <mrow>
+        <mi>cos</mi>
+        <mo data-mjx-texclass="NONE">&#x2061;</mo>
+        <mi>x</mi>
+      </mrow>
+    </mrow>
+    <mrow>
+      <mi>sin</mi>
+      <mo data-mjx-texclass="NONE">&#x2061;</mo>
+      <mi>x</mi>
+    </mrow>
+  </mfrac>
+  <mo>=</mo>
+  <mrow>
+    <mi>tan</mi>
+    <mo data-mjx-texclass="NONE">&#x2061;</mo>
+    <mfrac>
+      <mi>x</mi>
+      <mn>2</mn>
+    </mfrac>
+  </mrow>
+</math></div>
+
+
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mfrac>
+    <mrow>
+      <mn>1</mn>
+      <mo>+</mo>
+      <mrow>
+        <mi>cos</mi>
+        <mo data-mjx-texclass="NONE">&#x2061;</mo>
+        <mi>x</mi>
+      </mrow>
+    </mrow>
+    <mrow>
+      <mi>sin</mi>
+      <mo data-mjx-texclass="NONE">&#x2061;</mo>
+      <mi>x</mi>
+    </mrow>
+  </mfrac>
+  <mo>=</mo>
+  <mrow>
+    <mi>cot</mi>
+    <mo data-mjx-texclass="NONE">&#x2061;</mo>
+    <mfrac>
+      <mi>x</mi>
+      <mn>2</mn>
+    </mfrac>
+  </mrow>
+</math></div>
+
+
+<p>以及</p>
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <msqrt>
+    <mfrac>
+      <mrow>
+        <mn>1</mn>
+        <mo>&#x2212;</mo>
+        <mrow>
+          <mi>cos</mi>
+          <mo data-mjx-texclass="NONE">&#x2061;</mo>
+          <mi>x</mi>
+        </mrow>
+      </mrow>
+      <mrow>
+        <mn>1</mn>
+        <mo>+</mo>
+        <mrow>
+          <mi>cos</mi>
+          <mo data-mjx-texclass="NONE">&#x2061;</mo>
+          <mi>x</mi>
+        </mrow>
+      </mrow>
+    </mfrac>
+  </msqrt>
+  <mo>=</mo>
+  <mrow data-mjx-texclass="INNER">
+    <mo data-mjx-texclass="OPEN">|</mo>
+    <mrow>
+      <mi>tan</mi>
+      <mo data-mjx-texclass="NONE">&#x2061;</mo>
+      <mfrac>
+        <mi>x</mi>
+        <mn>2</mn>
+      </mfrac>
+    </mrow>
+    <mo data-mjx-texclass="CLOSE">|</mo>
+  </mrow>
+</math></div>
+
+
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <msqrt>
+    <mfrac>
+      <mrow>
+        <mn>1</mn>
+        <mo>+</mo>
+        <mrow>
+          <mi>cos</mi>
+          <mo data-mjx-texclass="NONE">&#x2061;</mo>
+          <mi>x</mi>
+        </mrow>
+      </mrow>
+      <mrow>
+        <mn>1</mn>
+        <mo>&#x2212;</mo>
+        <mrow>
+          <mi>cos</mi>
+          <mo data-mjx-texclass="NONE">&#x2061;</mo>
+          <mi>x</mi>
+        </mrow>
+      </mrow>
+    </mfrac>
+  </msqrt>
+  <mo>=</mo>
+  <mrow data-mjx-texclass="INNER">
+    <mo data-mjx-texclass="OPEN">|</mo>
+    <mrow>
+      <mi>cot</mi>
+      <mo data-mjx-texclass="NONE">&#x2061;</mo>
+      <mfrac>
+        <mi>x</mi>
+        <mn>2</mn>
+      </mfrac>
+    </mrow>
+    <mo data-mjx-texclass="CLOSE">|</mo>
+  </mrow>
+</math></div>
+
+
+<h3 id="h-202">3. 弧长/根号常见形式</h3>
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mrow>
+    <mn>1</mn>
+    <mo>+</mo>
+    <mrow>
+      <msup>
+        <mi>tan</mi>
+        <mn>2</mn>
+      </msup>
+      <mo data-mjx-texclass="NONE">&#x2061;</mo>
+      <mi>x</mi>
+    </mrow>
+  </mrow>
+  <mo>=</mo>
+  <mrow>
+    <msup>
+      <mi>sec</mi>
+      <mn>2</mn>
+    </msup>
+    <mo data-mjx-texclass="NONE">&#x2061;</mo>
+    <mi>x</mi>
+  </mrow>
+</math></div>
+
+
+<p>所以</p>
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <menclose notation="box">
+    <mrow data-mjx-texclass="ORD">
+      <mstyle scriptlevel="0">
+        <mrow data-mjx-texclass="ORD">
+          <msqrt>
+            <mrow>
+              <mn>1</mn>
+              <mo>+</mo>
+              <mrow>
+                <msup>
+                  <mi>tan</mi>
+                  <mn>2</mn>
+                </msup>
+                <mo data-mjx-texclass="NONE">&#x2061;</mo>
+                <mi>x</mi>
+              </mrow>
+            </mrow>
+          </msqrt>
+          <mo>=</mo>
+          <mrow>
+            <mo data-mjx-texclass="ORD" stretchy="false">|</mo>
+            <mrow>
+              <mi>sec</mi>
+              <mo data-mjx-texclass="NONE">&#x2061;</mo>
+              <mi>x</mi>
+            </mrow>
+            <mo data-mjx-texclass="ORD" stretchy="false">|</mo>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+  </menclose>
+</math></div>
+
+
+<p>同理</p>
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <menclose notation="box">
+    <mrow data-mjx-texclass="ORD">
+      <mstyle scriptlevel="0">
+        <mrow data-mjx-texclass="ORD">
+          <msqrt>
+            <mrow>
+              <mn>1</mn>
+              <mo>+</mo>
+              <mrow>
+                <msup>
+                  <mi>cot</mi>
+                  <mn>2</mn>
+                </msup>
+                <mo data-mjx-texclass="NONE">&#x2061;</mo>
+                <mi>x</mi>
+              </mrow>
+            </mrow>
+          </msqrt>
+          <mo>=</mo>
+          <mrow>
+            <mo data-mjx-texclass="ORD" stretchy="false">|</mo>
+            <mrow>
+              <mi>csc</mi>
+              <mo data-mjx-texclass="NONE">&#x2061;</mo>
+              <mi>x</mi>
+            </mrow>
+            <mo data-mjx-texclass="ORD" stretchy="false">|</mo>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+  </menclose>
+</math></div>
+
+
+<h3 id="h-221">4. 合并与降幂</h3>
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mrow>
+    <mrow>
+      <mi>a</mi>
+      <mo>&#x2062;</mo>
+      <mrow>
+        <mi>sin</mi>
+        <mo data-mjx-texclass="NONE">&#x2061;</mo>
+        <mi>x</mi>
+      </mrow>
+    </mrow>
+    <mo>+</mo>
+    <mrow>
+      <mi>b</mi>
+      <mo>&#x2062;</mo>
+      <mrow>
+        <mi>cos</mi>
+        <mo data-mjx-texclass="NONE">&#x2061;</mo>
+        <mi>x</mi>
+      </mrow>
+    </mrow>
+  </mrow>
+  <mo>=</mo>
+  <mrow>
+    <msqrt>
+      <mrow>
+        <msup>
+          <mi>a</mi>
+          <mn>2</mn>
+        </msup>
+        <mo>+</mo>
+        <msup>
+          <mi>b</mi>
+          <mn>2</mn>
+        </msup>
+      </mrow>
+    </msqrt>
+    <mo>&#x2062;</mo>
+    <mrow>
+      <mi>sin</mi>
+      <mo data-mjx-texclass="NONE">&#x2061;</mo>
+      <mrow>
+        <mo data-mjx-texclass="OPEN">(</mo>
+        <mrow>
+          <mi>x</mi>
+          <mo>+</mo>
+          <mi>&#x3C6;</mi>
+        </mrow>
+        <mo data-mjx-texclass="CLOSE">)</mo>
+      </mrow>
+    </mrow>
+  </mrow>
+</math></div>
+
+
+<p>因此</p>
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mrow>
+    <mo data-mjx-texclass="ORD" stretchy="false">|</mo>
+    <mrow>
+      <mrow>
+        <mi>a</mi>
+        <mo>&#x2062;</mo>
+        <mrow>
+          <mi>sin</mi>
+          <mo data-mjx-texclass="NONE">&#x2061;</mo>
+          <mi>x</mi>
+        </mrow>
+      </mrow>
+      <mo>+</mo>
+      <mrow>
+        <mi>b</mi>
+        <mo>&#x2062;</mo>
+        <mrow>
+          <mi>cos</mi>
+          <mo data-mjx-texclass="NONE">&#x2061;</mo>
+          <mi>x</mi>
+        </mrow>
+      </mrow>
+    </mrow>
+    <mo data-mjx-texclass="ORD" stretchy="false">|</mo>
+  </mrow>
+  <mo>&#x2264;</mo>
+  <msqrt>
+    <mrow>
+      <msup>
+        <mi>a</mi>
+        <mn>2</mn>
+      </msup>
+      <mo>+</mo>
+      <msup>
+        <mi>b</mi>
+        <mn>2</mn>
+      </msup>
+    </mrow>
+  </msqrt>
+</math></div>
+
+
+<p>以及</p>
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mrow>
+    <msup>
+      <mi>sin</mi>
+      <mn>2</mn>
+    </msup>
+    <mo data-mjx-texclass="NONE">&#x2061;</mo>
+    <mi>x</mi>
+  </mrow>
+  <mo>=</mo>
+  <mfrac>
+    <mrow>
+      <mn>1</mn>
+      <mo>&#x2212;</mo>
+      <mrow>
+        <mi>cos</mi>
+        <mo data-mjx-texclass="NONE">&#x2061;</mo>
+        <mrow>
+          <mn>2</mn>
+          <mo>&#x2062;</mo>
+          <mi>x</mi>
+        </mrow>
+      </mrow>
+    </mrow>
+    <mn>2</mn>
+  </mfrac>
+</math></div>
+
+
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mrow>
+    <msup>
+      <mi>cos</mi>
+      <mn>2</mn>
+    </msup>
+    <mo data-mjx-texclass="NONE">&#x2061;</mo>
+    <mi>x</mi>
+  </mrow>
+  <mo>=</mo>
+  <mfrac>
+    <mrow>
+      <mn>1</mn>
+      <mo>+</mo>
+      <mrow>
+        <mi>cos</mi>
+        <mo data-mjx-texclass="NONE">&#x2061;</mo>
+        <mrow>
+          <mn>2</mn>
+          <mo>&#x2062;</mo>
+          <mi>x</mi>
+        </mrow>
+      </mrow>
+    </mrow>
+    <mn>2</mn>
+  </mfrac>
+</math></div>
+
+
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mrow>
+    <mrow>
+      <mi>sin</mi>
+      <mo data-mjx-texclass="NONE">&#x2061;</mo>
+      <mi>x</mi>
+    </mrow>
+    <mo>&#x2062;</mo>
+    <mrow>
+      <mi>cos</mi>
+      <mo data-mjx-texclass="NONE">&#x2061;</mo>
+      <mi>x</mi>
+    </mrow>
+  </mrow>
+  <mo>=</mo>
+  <mrow>
+    <mfrac>
+      <mn>1</mn>
+      <mn>2</mn>
+    </mfrac>
+    <mo>&#x2062;</mo>
+    <mrow>
+      <mi>sin</mi>
+      <mo data-mjx-texclass="NONE">&#x2061;</mo>
+      <mrow>
+        <mn>2</mn>
+        <mo>&#x2062;</mo>
+        <mi>x</mi>
+      </mrow>
+    </mrow>
+  </mrow>
+</math></div>
+
+
+<h3 id="h-247">5. 做题识别顺序</h3>
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <menclose notation="box">
+    <mrow data-mjx-texclass="ORD">
+      <mstyle scriptlevel="0">
+        <mrow data-mjx-texclass="ORD">
+          <mrow>
+            <mn>1</mn>
+            <mo>&#xB1;</mo>
+            <mrow>
+              <mi>sin</mi>
+              <mo data-mjx-texclass="NONE">&#x2061;</mo>
+              <mi>x</mi>
+            </mrow>
+          </mrow>
+          <mo>,</mo>
+          <mrow>
+            <mtext>&#xA0;</mtext>
+            <mrow>
+              <mrow>
+                <mn>1</mn>
+                <mo>&#xB1;</mo>
+                <mrow>
+                  <mi>cos</mi>
+                  <mo data-mjx-texclass="NONE">&#x2061;</mo>
+                  <mi>x</mi>
+                </mrow>
+              </mrow>
+              <mo stretchy="false">&#x21D2;</mo>
+              <mtext>&#x534A;&#x89D2; / &#x914D;&#x5E73;&#x65B9;</mtext>
+            </mrow>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+  </menclose>
+</math></div>
+
+
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <menclose notation="box">
+    <mrow data-mjx-texclass="ORD">
+      <mstyle scriptlevel="0">
+        <mrow data-mjx-texclass="ORD">
+          <mtext>&#x6839;&#x53F7;</mtext>
+          <mo stretchy="false">&#x21D2;</mo>
+          <mtext>&#x627E;&#x5E73;&#x65B9; + &#x5224;&#x65AD;&#x7EDD;&#x5BF9;&#x503C;</mtext>
+        </mrow>
+      </mstyle>
+    </mrow>
+  </menclose>
+</math></div>
+
+
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <menclose notation="box">
+    <mrow data-mjx-texclass="ORD">
+      <mstyle scriptlevel="0">
+        <mrow data-mjx-texclass="ORD">
+          <mrow>
+            <mfrac>
+              <mrow>
+                <mi>sin</mi>
+                <mo data-mjx-texclass="NONE">&#x2061;</mo>
+                <mi>x</mi>
+              </mrow>
+              <mrow>
+                <mn>1</mn>
+                <mo>&#xB1;</mo>
+                <mrow>
+                  <mi>cos</mi>
+                  <mo data-mjx-texclass="NONE">&#x2061;</mo>
+                  <mi>x</mi>
+                </mrow>
+              </mrow>
+            </mfrac>
+            <mo stretchy="false">&#x21D2;</mo>
+            <mrow>
+              <mi>tan</mi>
+              <mo data-mjx-texclass="NONE">&#x2061;</mo>
+              <mfrac>
+                <mi>x</mi>
+                <mn>2</mn>
+              </mfrac>
+            </mrow>
+          </mrow>
+          <mo>,</mo>
+          <mrow>
+            <mtext>&#xA0;</mtext>
+            <mrow>
+              <mi>cot</mi>
+              <mo data-mjx-texclass="NONE">&#x2061;</mo>
+              <mfrac>
+                <mi>x</mi>
+                <mn>2</mn>
+              </mfrac>
+            </mrow>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+  </menclose>
+</math></div>
+
+
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <menclose notation="box">
+    <mrow data-mjx-texclass="ORD">
+      <mstyle scriptlevel="0">
+        <mrow data-mjx-texclass="ORD">
+          <mtext>&#x5076;&#x6B21;&#x5E42;</mtext>
+          <mo stretchy="false">&#x21D2;</mo>
+          <mtext>&#x964D;&#x5E42;</mtext>
+        </mrow>
+      </mstyle>
+    </mrow>
+  </menclose>
+</math></div>
+
+
+<blockquote><p>一句记忆：<strong>根号先找平方，<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mn>1</mn>
+  <mo>&#xB1;</mo>
+  <mrow>
+    <mi>cos</mi>
+    <mo data-mjx-texclass="NONE">&#x2061;</mo>
+    <mi>x</mi>
+  </mrow>
+</math> 先半角，<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi>sin</mi>
+  <mo data-mjx-texclass="NONE">&#x2061;</mo>
+  <mrow>
+    <mi>x</mi>
+    <mo>/</mo>
+    <mrow>
+      <mo stretchy="false">(</mo>
+      <mrow>
+        <mn>1</mn>
+        <mo>&#xB1;</mo>
+        <mrow>
+          <mi>cos</mi>
+          <mo data-mjx-texclass="NONE">&#x2061;</mo>
+          <mi>x</mi>
+        </mrow>
+      </mrow>
+      <mo stretchy="false">)</mo>
+    </mrow>
+  </mrow>
+</math> 先想半角正切。</strong></p>
+</blockquote><p>**出处口径：**张宇、Kria 考研高数中极限、积分、弧长等章节常用三角恒等变形。</p>
+<p>常用不等式</p>
+<p>|x+y| &lt;= |x| + |y|</p>
+<p>【x】&lt; = x</p>
+</article></main></div><script>function reveal(){const t=document.getElementById(decodeURIComponent(location.hash.slice(1)));if(!t)return;for(let p=t.parentElement;p;p=p.parentElement)if(p.tagName==="DETAILS")p.open=true;requestAnimationFrame(()=>t.scrollIntoView())}addEventListener("hashchange",reveal);reveal();if(matchMedia("(max-width:740px)").matches)document.querySelector(".directory").open=false</script><footer class="footer"><a href="../../../index.html">返回错题目录</a></footer></body></html>

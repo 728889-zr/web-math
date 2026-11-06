@@ -1,0 +1,2811 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>直线面 · 数学笔记</title><link rel="stylesheet" href="../../../site.css"></head><body><a class="skip" href="#main">跳到正文</a><header class="top"><div class="top-inner"><a class="brand" href="../../../index.html"><span class="brand-mark" aria-hidden="true">∑</span>数学笔记</a></div></header><div class="layout"><aside class="side"><details class="directory" open><summary>笔记目录</summary><nav aria-label="笔记目录"><details class="group"><summary>错题本</summary><a class="side-link" href="../../%E9%94%99%E9%A2%98%E6%9C%AC/%E6%A6%82%E7%8E%87%E9%94%99%E9%A2%98%E7%9B%AE%E5%BD%95.html">概率错题目录</a><a class="side-link" href="../../%E9%94%99%E9%A2%98%E6%9C%AC/%E9%AB%98%E6%95%B0%E9%94%99%E9%A2%98%E7%9B%AE%E5%BD%95.html">高数错题目录</a><a class="side-link" href="../../%E9%94%99%E9%A2%98%E6%9C%AC/%E7%BA%BF%E4%BB%A3%E9%94%99%E9%A2%98%E7%9B%AE%E5%BD%95.html">线代错题目录</a><a class="side-link" href="../../%E9%94%99%E9%A2%98%E6%9C%AC/%E7%9C%9F%E9%A2%98(1).html">真题(1)</a><a class="side-link" href="../../%E9%94%99%E9%A2%98%E6%9C%AC/%E7%9C%9F%E9%A2%98(2).html">真题(2)</a></details><details class="group" open><summary>高数</summary><details><summary>《高数强化》</summary><a class="side-link" href="../%E3%80%8A%E9%AB%98%E6%95%B0%E5%BC%BA%E5%8C%96%E3%80%8B/01-%E5%87%BD%E6%95%B0%E6%9E%81%E9%99%90%E4%B8%8E%E8%BF%9E%E7%BB%AD.html">01-函数极限与连续</a><a class="side-link" href="../%E3%80%8A%E9%AB%98%E6%95%B0%E5%BC%BA%E5%8C%96%E3%80%8B/03-%E4%B8%80%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E5%AD%A6%E7%9A%84%E6%A6%82%E5%BF%B5.html">03-一元函数微分学的概念</a><a class="side-link" href="../%E3%80%8A%E9%AB%98%E6%95%B0%E5%BC%BA%E5%8C%96%E3%80%8B/04-%E4%B8%80%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E5%AD%A6%E7%9A%84%E8%AE%A1%E7%AE%97.html">04-一元函数微分学的计算</a><a class="side-link" href="../%E3%80%8A%E9%AB%98%E6%95%B0%E5%BC%BA%E5%8C%96%E3%80%8B/05-%E4%B8%80%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E5%AD%A6%E7%9A%84%E5%BA%94%E7%94%A8.html">05-一元函数微分学的应用</a><a class="side-link" href="../%E3%80%8A%E9%AB%98%E6%95%B0%E5%BC%BA%E5%8C%96%E3%80%8B/08-%E4%B8%80%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6%E7%9A%84%E6%A6%82%E5%BF%B5%E4%B8%8E%E6%80%A7%E8%B4%A8.html">08-一元函数积分学的概念与性质</a><a class="side-link" href="../%E3%80%8A%E9%AB%98%E6%95%B0%E5%BC%BA%E5%8C%96%E3%80%8B/09-%E4%B8%80%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6%E7%9A%84%E8%AE%A1%E7%AE%97.html">09-一元函数积分学的计算</a><a class="side-link" href="../%E3%80%8A%E9%AB%98%E6%95%B0%E5%BC%BA%E5%8C%96%E3%80%8B/10-%E4%B8%80%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6%E7%9A%84%E5%BA%94%E7%94%A8.html">10-一元函数积分学的应用</a><a class="side-link" href="../%E3%80%8A%E9%AB%98%E6%95%B0%E5%BC%BA%E5%8C%96%E3%80%8B/13-%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E5%AD%A6.html">13-多元函数微分学</a><a class="side-link" href="../%E3%80%8A%E9%AB%98%E6%95%B0%E5%BC%BA%E5%8C%96%E3%80%8B/14-%E4%BA%8C%E9%87%8D%E7%A7%AF%E5%88%86.html">14-二重积分</a><a class="side-link" href="../%E3%80%8A%E9%AB%98%E6%95%B0%E5%BC%BA%E5%8C%96%E3%80%8B/15-%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B.html">15-微分方程</a><a class="side-link" href="../%E3%80%8A%E9%AB%98%E6%95%B0%E5%BC%BA%E5%8C%96%E3%80%8B/16-%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0.html">16-无穷级数</a><a class="side-link" href="../%E3%80%8A%E9%AB%98%E6%95%B0%E5%BC%BA%E5%8C%96%E3%80%8B/17-%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6%E7%9A%84%E9%A2%84%E5%A4%87%E7%9F%A5%E8%AF%86.html">17-多元函数积分学的预备知识</a><a class="side-link" href="../%E3%80%8A%E9%AB%98%E6%95%B0%E5%BC%BA%E5%8C%96%E3%80%8B/18-%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6.html">18-多元函数积分学</a><a class="side-link" href="../%E3%80%8A%E9%AB%98%E6%95%B0%E5%BC%BA%E5%8C%96%E3%80%8B/%E8%AE%A1%E7%AE%97%E5%85%AC%E5%BC%8F%E4%B8%B2%E8%AE%B0.html">计算公式串记</a></details><details><summary>多重积分</summary><a class="side-link" href="../%E5%A4%9A%E9%87%8D%E7%A7%AF%E5%88%86/%E4%BA%8C%E9%87%8D%E7%A7%AF%E5%88%86%E4%B8%AD%E5%88%A9%E7%94%A8%E4%BA%A4%E6%8D%A2%E5%AF%B9%E7%A7%B0%E6%80%A7%E5%8C%96%E7%AE%80.html">二重积分中利用交换对称性化简</a><a class="side-link" href="../%E5%A4%9A%E9%87%8D%E7%A7%AF%E5%88%86/%E7%A7%AF%E5%88%86%E6%98%A0%E5%B0%84%E5%8C%BA%E5%9F%9F.html">积分映射区域</a><a class="side-link" href="../%E5%A4%9A%E9%87%8D%E7%A7%AF%E5%88%86/%E8%80%83%E7%A0%94%E7%A7%AF%E5%88%86%E4%B8%AD%E7%9A%84%E7%A9%BA%E9%97%B4%E5%87%A0%E4%BD%95-%E6%95%B4%E5%90%88%E7%89%88.html">考研积分中的空间几何-整合版</a><a class="side-link" href="../%E5%A4%9A%E9%87%8D%E7%A7%AF%E5%88%86/%E8%BF%9E%E9%80%9A%E5%8C%BA%E5%9F%9F%E5%92%8C%E6%A0%BC%E6%9E%97%E5%85%AC%E5%BC%8F.html">连通区域和格林公式</a></details><details><summary>极限和微分</summary><a class="side-link" href="../%E6%9E%81%E9%99%90%E5%92%8C%E5%BE%AE%E5%88%86/%E6%9E%81%E9%99%90-%E7%96%91%E7%82%B9.html">极限-疑点</a><details><summary>一元微分</summary><a class="side-link" href="../%E6%9E%81%E9%99%90%E5%92%8C%E5%BE%AE%E5%88%86/%E4%B8%80%E5%85%83%E5%BE%AE%E5%88%86/%E8%B4%B9%E9%A9%AC%E5%AE%9A%E7%90%86.html">费马定理</a><a class="side-link" href="../%E6%9E%81%E9%99%90%E5%92%8C%E5%BE%AE%E5%88%86/%E4%B8%80%E5%85%83%E5%BE%AE%E5%88%86/%E6%9B%B2%E7%8E%87%E5%9C%86%E6%96%B9%E7%A8%8B.html">曲率圆方程</a><a class="side-link" href="../%E6%9E%81%E9%99%90%E5%92%8C%E5%BE%AE%E5%88%86/%E4%B8%80%E5%85%83%E5%BE%AE%E5%88%86/%E5%BE%AE%E5%88%86-%E5%BC%BA%E5%8C%96.html">微分-强化</a><a class="side-link" href="../%E6%9E%81%E9%99%90%E5%92%8C%E5%BE%AE%E5%88%86/%E4%B8%80%E5%85%83%E5%BE%AE%E5%88%86/%E5%BE%AE%E5%88%86%E5%BA%94%E7%94%A8-%E5%BC%BA%E5%8C%96.html">微分应用-强化</a><a class="side-link" href="../%E6%9E%81%E9%99%90%E5%92%8C%E5%BE%AE%E5%88%86/%E4%B8%80%E5%85%83%E5%BE%AE%E5%88%86/%E6%96%9C%E7%9B%B4%E7%BA%BF%E7%9A%84%E6%97%8B%E8%BD%AC%E4%BD%93%E5%BE%AE%E5%85%83.html">斜直线的旋转体微元</a><details><summary>专题</summary><a class="side-link" href="../%E6%9E%81%E9%99%90%E5%92%8C%E5%BE%AE%E5%88%86/%E4%B8%80%E5%85%83%E5%BE%AE%E5%88%86/%E4%B8%93%E9%A2%98/%E5%AF%BC%E6%95%B0%E6%AF%94%E4%B8%8E%E5%B9%B3%E5%9D%87%E5%8F%98%E5%8C%96%E7%8E%87%E5%8D%95%E8%B0%83%E6%80%A7.html">导数比与平均变化率单调性</a><a class="side-link" href="../%E6%9E%81%E9%99%90%E5%92%8C%E5%BE%AE%E5%88%86/%E4%B8%80%E5%85%83%E5%BE%AE%E5%88%86/%E4%B8%93%E9%A2%98/%E5%AF%BC%E6%95%B0%E5%80%BC%E4%B8%8E%E9%82%BB%E5%9F%9F%E5%8D%95%E8%B0%83%E6%80%A7.html">导数值与邻域单调性</a><a class="side-link" href="../%E6%9E%81%E9%99%90%E5%92%8C%E5%BE%AE%E5%88%86/%E4%B8%80%E5%85%83%E5%BE%AE%E5%88%86/%E4%B8%93%E9%A2%98/%E9%AB%98%E9%98%B6%E5%AF%BC%E6%95%B0%E4%B8%8E%E6%B3%B0%E5%8B%92%E7%B3%BB%E6%95%B0.html">高阶导数与泰勒系数</a><a class="side-link" href="../%E6%9E%81%E9%99%90%E5%92%8C%E5%BE%AE%E5%88%86/%E4%B8%80%E5%85%83%E5%BE%AE%E5%88%86/%E4%B8%93%E9%A2%98/%E5%87%BD%E6%95%B0%E6%9E%81%E9%99%90%E4%B8%8E%E5%AF%BC%E6%95%B0%E6%9E%81%E9%99%90.html">函数极限与导数极限</a><a class="side-link" href="../%E6%9E%81%E9%99%90%E5%92%8C%E5%BE%AE%E5%88%86/%E4%B8%80%E5%85%83%E5%BE%AE%E5%88%86/%E4%B8%93%E9%A2%98/%E7%BB%9D%E5%AF%B9%E5%80%BC%E5%87%BD%E6%95%B0%E9%9B%B6%E7%82%B9%E5%8F%AF%E5%AF%BC%E4%B8%8E%E5%8E%9F%E5%87%BD%E6%95%B0%E5%AF%BC%E6%95%B0.html">绝对值函数零点可导与原函数导数</a><a class="side-link" href="../%E6%9E%81%E9%99%90%E5%92%8C%E5%BE%AE%E5%88%86/%E4%B8%80%E5%85%83%E5%BE%AE%E5%88%86/%E4%B8%93%E9%A2%98/%E6%9C%89%E9%99%90%E6%B3%B0%E5%8B%92%E5%85%AC%E5%BC%8F%E4%B8%8E%E6%B3%B0%E5%8B%92%E7%BA%A7%E6%95%B0.html">有限泰勒公式与泰勒级数</a></details></details><details><summary>专题</summary><a class="side-link" href="../%E6%9E%81%E9%99%90%E5%92%8C%E5%BE%AE%E5%88%86/%E4%B8%93%E9%A2%98/%E6%9E%81%E9%99%90-%E5%8F%98%E4%B8%8A%E9%99%90%E7%A7%AF%E5%88%86%E7%AD%89%E4%BB%B7%E6%9B%BF%E6%8D%A2.html">极限-变上限积分等价替换</a><a class="side-link" href="../%E6%9E%81%E9%99%90%E5%92%8C%E5%BE%AE%E5%88%86/%E4%B8%93%E9%A2%98/%E6%9E%81%E9%99%90-%E5%AF%BC%E6%95%B0%E6%9E%81%E9%99%90%E4%B8%8E%E5%87%BD%E6%95%B0%E5%A2%9E%E9%95%BF%E7%8E%87.html">极限-导数极限与函数增长率</a><a class="side-link" href="../%E6%9E%81%E9%99%90%E5%92%8C%E5%BE%AE%E5%88%86/%E4%B8%93%E9%A2%98/%E6%9E%81%E9%99%90-%E9%80%92%E6%8E%A8%E6%95%B0%E5%88%97%E7%9A%84%E5%8D%95%E8%B0%83%E6%9C%89%E7%95%8C%E8%AF%81%E6%98%8E.html">极限-递推数列的单调有界证明</a><a class="side-link" href="../%E6%9E%81%E9%99%90%E5%92%8C%E5%BE%AE%E5%88%86/%E4%B8%93%E9%A2%98/%E6%9E%81%E9%99%90-%E5%8F%8C%E4%BE%A7%E6%9E%81%E9%99%90%E4%B8%8E%E5%80%92%E6%95%B0%E6%8D%A2%E5%85%83.html">极限-双侧极限与倒数换元</a><a class="side-link" href="../%E6%9E%81%E9%99%90%E5%92%8C%E5%BE%AE%E5%88%86/%E4%B8%93%E9%A2%98/%E6%9E%81%E9%99%90-%E6%8C%87%E6%95%B0%E5%86%85%E9%83%A8%E7%9A%84%E7%AD%89%E4%BB%B7%E6%9B%BF%E6%8D%A2.html">极限-指数内部的等价替换</a></details></details><details open><summary>空间几何和多元微分</summary><a class="side-link" href="%E6%8A%BD%E8%B1%A1%E9%9A%90%E5%87%BD%E6%95%B0%E6%B1%82%E5%81%8F%E5%AF%BC.html">抽象隐函数求偏导</a><a class="side-link" href="%E5%88%86%E6%AE%B5%E5%87%BD%E6%95%B0%E6%9E%81%E5%80%BC%E5%88%A4%E6%96%AD%EF%BC%9A%E5%AE%9A%E4%B9%89%E6%B3%95%E4%BC%98%E5%85%88.html">分段函数极值判断：定义法优先</a><a class="side-link" href="%E6%B1%82%E9%94%A5%E9%9D%A2%E6%96%B9%E7%A8%8B.html">求锥面方程</a><a class="side-link" href="%E7%9B%B4%E7%BA%BF%E9%9D%A2.html" aria-current="page">直线面</a></details><details><summary>无穷级数</summary><a class="side-link" href="../%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/%E5%B8%B8%E8%A7%81%E9%BA%A6%E5%85%8B%E5%8A%B3%E6%9E%97%E7%BA%A7%E6%95%B0%E5%B1%95%E5%BC%80.html">常见麦克劳林级数展开</a><a class="side-link" href="../%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/%E5%B9%82%E7%BA%A7%E6%95%B0%EF%BC%9A%E6%94%B6%E6%95%9B%E5%9F%9F%E4%B8%8E%E5%92%8C%E5%87%BD%E6%95%B0.html">幂级数：收敛域与和函数</a><a class="side-link" href="../%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/%E7%BC%BA%E9%A1%B9%E5%B9%82%E7%BA%A7%E6%95%B0.html">缺项幂级数</a><a class="side-link" href="../%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/%E6%9D%A1%E4%BB%B6%E6%94%B6%E6%95%9B%E4%B8%8E%E5%B9%82%E7%BA%A7%E6%95%B0%E6%94%B6%E6%95%9B%E5%8D%8A%E5%BE%84.html">条件收敛与幂级数收敛半径</a><a class="side-link" href="../%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0%E6%95%9B%E6%95%A3%E6%80%A7%E5%88%A4%E5%88%AB.html">无穷级数敛散性判别</a><details><summary>幂级数专题</summary><a class="side-link" href="../%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/%E5%B9%82%E7%BA%A7%E6%95%B0%E4%B8%93%E9%A2%98/%E5%B9%82%E7%BA%A7%E6%95%B0-%E5%AF%B9%E6%95%B0%E5%87%BD%E6%95%B0%E5%B1%95%E5%BC%80.html">幂级数-对数函数展开</a><a class="side-link" href="../%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/%E5%B9%82%E7%BA%A7%E6%95%B0%E4%B8%93%E9%A2%98/%E5%B9%82%E7%BA%A7%E6%95%B0-%E5%A4%9A%E4%B8%AA%E7%BA%A7%E6%95%B0%E4%B8%8E%E6%B1%82%E5%92%8C%E6%B5%81%E7%A8%8B.html">幂级数-多个级数与求和流程</a><a class="side-link" href="../%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/%E5%B9%82%E7%BA%A7%E6%95%B0%E4%B8%93%E9%A2%98/%E5%B9%82%E7%BA%A7%E6%95%B0-%E5%88%A4%E6%96%AD%E6%B5%81%E7%A8%8B%E4%B8%8E%E6%98%93%E9%94%99%E7%82%B9.html">幂级数-判断流程与易错点</a><a class="side-link" href="../%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/%E5%B9%82%E7%BA%A7%E6%95%B0%E4%B8%93%E9%A2%98/%E5%B9%82%E7%BA%A7%E6%95%B0-%E6%94%B6%E6%95%9B%E5%8D%8A%E5%BE%84%E4%B8%8E%E7%AB%AF%E7%82%B9.html">幂级数-收敛半径与端点</a><a class="side-link" href="../%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/%E5%B9%82%E7%BA%A7%E6%95%B0%E4%B8%93%E9%A2%98/%E5%B9%82%E7%BA%A7%E6%95%B0-%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%E4%B8%8E%E6%8A%BD%E8%B1%A1%E7%B3%BB%E6%95%B0%E6%B1%82%E5%92%8C.html">幂级数-微分方程与抽象系数求和</a><a class="side-link" href="../%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/%E5%B9%82%E7%BA%A7%E6%95%B0%E4%B8%93%E9%A2%98/%E5%B9%82%E7%BA%A7%E6%95%B0-%E6%9C%89%E7%90%86%E5%87%BD%E6%95%B0%E5%B1%95%E5%BC%80.html">幂级数-有理函数展开</a><a class="side-link" href="../%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/%E5%B9%82%E7%BA%A7%E6%95%B0%E4%B8%93%E9%A2%98/%E5%B9%82%E7%BA%A7%E6%95%B0-%E9%80%90%E9%A1%B9%E6%B1%82%E5%AF%BC%E4%B8%8E%E9%80%90%E9%A1%B9%E7%A7%AF%E5%88%86.html">幂级数-逐项求导与逐项积分</a><a class="side-link" href="../%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/%E5%B9%82%E7%BA%A7%E6%95%B0%E4%B8%93%E9%A2%98/%E5%B9%82%E7%BA%A7%E6%95%B0-%E7%BB%84%E5%90%88%E5%B1%95%E5%BC%80%E4%B8%8E%E7%B3%BB%E6%95%B0%E8%AE%A1%E7%AE%97.html">幂级数-组合展开与系数计算</a></details></details><details><summary>一元积分</summary><a class="side-link" href="../%E4%B8%80%E5%85%83%E7%A7%AF%E5%88%86/%E5%8F%8D%E5%B8%B8%E7%A7%AF%E5%88%86%20%2B%20%E6%9C%89%E7%95%8C%E5%AF%BC%E6%95%B0%E7%BB%BC%E5%90%88%E5%88%A4%E6%96%AD.html">反常积分 + 有界导数综合判断</a><a class="side-link" href="../%E4%B8%80%E5%85%83%E7%A7%AF%E5%88%86/%E5%8F%8D%E5%B8%B8%E7%A7%AF%E5%88%86%E4%B8%AD%E7%9A%84%E7%AD%89%E4%BB%B7%E6%AF%94%E8%BE%83%E5%88%A4%E6%95%9B.html">反常积分中的等价比较判敛</a><a class="side-link" href="../%E4%B8%80%E5%85%83%E7%A7%AF%E5%88%86/%E7%A7%AF%E5%88%86%E8%8C%83%E5%9B%B4%E4%BC%B0%E8%AE%A1.html">积分范围估计</a><a class="side-link" href="../%E4%B8%80%E5%85%83%E7%A7%AF%E5%88%86/%E7%A7%AF%E5%88%86%E8%AE%A1%E7%AE%97-%E5%BC%BA%E5%8C%96.html">积分计算-强化</a><a class="side-link" href="../%E4%B8%80%E5%85%83%E7%A7%AF%E5%88%86/%E6%9E%81%E5%9D%90%E6%A0%87%E8%BD%AC%E6%8D%A2.html">极坐标转换</a><a class="side-link" href="../%E4%B8%80%E5%85%83%E7%A7%AF%E5%88%86/%E6%9F%AF%E8%A5%BF%E4%B8%8D%E7%AD%89%E5%BC%8F%E7%A7%AF%E5%88%86%E5%BA%94%E7%94%A8.html">柯西不等式积分应用</a><a class="side-link" href="../%E4%B8%80%E5%85%83%E7%A7%AF%E5%88%86/%E8%A1%B0%E5%87%8F%E6%8C%AF%E8%8D%A1%E6%9B%B2%E7%BA%BF.html">衰减振荡曲线</a><details><summary>专题</summary><a class="side-link" href="../%E4%B8%80%E5%85%83%E7%A7%AF%E5%88%86/%E4%B8%93%E9%A2%98/%E5%AF%B9%E7%A7%B0%E5%8C%BA%E9%97%B4%E7%A7%AF%E5%88%86%E4%B8%8E%E5%8C%BA%E9%97%B4%E5%86%8D%E7%8E%B0.html">对称区间积分与区间再现</a><a class="side-link" href="../%E4%B8%80%E5%85%83%E7%A7%AF%E5%88%86/%E4%B8%93%E9%A2%98/%E6%A0%B9%E5%BC%8F%E7%A7%AF%E5%88%86%E4%B8%8E%E8%8E%AB%E6%AF%94%E4%B9%8C%E6%96%AF%E6%8D%A2%E5%85%83.html">根式积分与莫比乌斯换元</a><a class="side-link" href="../%E4%B8%80%E5%85%83%E7%A7%AF%E5%88%86/%E4%B8%93%E9%A2%98/%E5%BD%A2%E5%BF%83%E8%AF%81%E6%98%8E%E4%B8%8E%E7%A7%AF%E5%88%86%E4%B8%8D%E7%AD%89%E5%BC%8F.html">形心证明与积分不等式</a></details></details></details><details class="group"><summary>线代</summary><details><summary>《线代强化》</summary><a class="side-link" href="../../%E7%BA%BF%E4%BB%A3%E7%AC%94%E8%AE%B0/%E3%80%8A%E7%BA%BF%E4%BB%A3%E5%BC%BA%E5%8C%96%E3%80%8B/%E7%AC%AC01%E8%AE%B2_%E8%A1%8C%E5%88%97%E5%BC%8F.html">第01讲_行列式</a><a class="side-link" href="../../%E7%BA%BF%E4%BB%A3%E7%AC%94%E8%AE%B0/%E3%80%8A%E7%BA%BF%E4%BB%A3%E5%BC%BA%E5%8C%96%E3%80%8B/%E7%AC%AC02%E8%AE%B2_%E4%BD%99%E5%AD%90%E5%BC%8F%E5%92%8C%E4%BB%A3%E6%95%B0%E4%BD%99%E5%AD%90%E5%BC%8F%E7%9A%84%E8%AE%A1%E7%AE%97.html">第02讲_余子式和代数余子式的计算</a><a class="side-link" href="../../%E7%BA%BF%E4%BB%A3%E7%AC%94%E8%AE%B0/%E3%80%8A%E7%BA%BF%E4%BB%A3%E5%BC%BA%E5%8C%96%E3%80%8B/%E7%AC%AC03%E8%AE%B2_%E7%9F%A9%E9%98%B5%E8%BF%90%E7%AE%97.html">第03讲_矩阵运算</a><a class="side-link" href="../../%E7%BA%BF%E4%BB%A3%E7%AC%94%E8%AE%B0/%E3%80%8A%E7%BA%BF%E4%BB%A3%E5%BC%BA%E5%8C%96%E3%80%8B/%E7%AC%AC04%E8%AE%B2_%E7%9F%A9%E9%98%B5%E7%9A%84%E7%A7%A9.html">第04讲_矩阵的秩</a><a class="side-link" href="../../%E7%BA%BF%E4%BB%A3%E7%AC%94%E8%AE%B0/%E3%80%8A%E7%BA%BF%E4%BB%A3%E5%BC%BA%E5%8C%96%E3%80%8B/%E7%AC%AC05%E8%AE%B2_%E7%BA%BF%E6%80%A7%E6%96%B9%E7%A8%8B%E7%BB%84.html">第05讲_线性方程组</a><a class="side-link" href="../../%E7%BA%BF%E4%BB%A3%E7%AC%94%E8%AE%B0/%E3%80%8A%E7%BA%BF%E4%BB%A3%E5%BC%BA%E5%8C%96%E3%80%8B/%E7%AC%AC06%E8%AE%B2_%E5%90%91%E9%87%8F%E7%BB%84.html">第06讲_向量组</a><a class="side-link" href="../../%E7%BA%BF%E4%BB%A3%E7%AC%94%E8%AE%B0/%E3%80%8A%E7%BA%BF%E4%BB%A3%E5%BC%BA%E5%8C%96%E3%80%8B/%E7%AC%AC07%E8%AE%B2_%E7%89%B9%E5%BE%81%E5%80%BC%E4%B8%8E%E7%89%B9%E5%BE%81%E5%90%91%E9%87%8F.html">第07讲_特征值与特征向量</a><a class="side-link" href="../../%E7%BA%BF%E4%BB%A3%E7%AC%94%E8%AE%B0/%E3%80%8A%E7%BA%BF%E4%BB%A3%E5%BC%BA%E5%8C%96%E3%80%8B/%E7%AC%AC08%E8%AE%B2_%E7%9B%B8%E4%BC%BC%E7%90%86%E8%AE%BA.html">第08讲_相似理论</a><a class="side-link" href="../../%E7%BA%BF%E4%BB%A3%E7%AC%94%E8%AE%B0/%E3%80%8A%E7%BA%BF%E4%BB%A3%E5%BC%BA%E5%8C%96%E3%80%8B/%E7%AC%AC09%E8%AE%B2_%E4%BA%8C%E6%AC%A1%E5%9E%8B.html">第09讲_二次型</a></details><details><summary>二次型</summary><a class="side-link" href="../../%E7%BA%BF%E4%BB%A3%E7%AC%94%E8%AE%B0/%E4%BA%8C%E6%AC%A1%E5%9E%8B/%E4%BA%8C%E6%AC%A1%E5%9E%8B%E5%8F%98%E6%8D%A2.html">二次型变换</a><a class="side-link" href="../../%E7%BA%BF%E4%BB%A3%E7%AC%94%E8%AE%B0/%E4%BA%8C%E6%AC%A1%E5%9E%8B/%E4%BA%8C%E6%AC%A1%E5%9E%8B%E5%92%8C%E6%9B%B2%E9%9D%A2.html">二次型和曲面</a><a class="side-link" href="../../%E7%BA%BF%E4%BB%A3%E7%AC%94%E8%AE%B0/%E4%BA%8C%E6%AC%A1%E5%9E%8B/%E4%BA%8C%E6%AC%A1%E5%9E%8B%E6%9C%80%E5%80%BC%E9%97%AE%E9%A2%98.html">二次型最值问题</a><a class="side-link" href="../../%E7%BA%BF%E4%BB%A3%E7%AC%94%E8%AE%B0/%E4%BA%8C%E6%AC%A1%E5%9E%8B/%E5%AE%9E%E5%AF%B9%E7%A7%B0%E7%9F%A9%E9%98%B5.html">实对称矩阵</a></details><details><summary>方程组</summary><a class="side-link" href="../../%E7%BA%BF%E4%BB%A3%E7%AC%94%E8%AE%B0/%E6%96%B9%E7%A8%8B%E7%BB%84/%E6%96%B9%E7%A8%8B%E7%BB%84%E8%A7%A3.html">方程组解</a><a class="side-link" href="../../%E7%BA%BF%E4%BB%A3%E7%AC%94%E8%AE%B0/%E6%96%B9%E7%A8%8B%E7%BB%84/%E7%A9%BA%E9%97%B4%E4%B8%AD%E5%9D%90%E6%A0%87%E9%97%AE%E9%A2%98%E8%BD%AC%E6%8D%A2.html">空间中坐标问题转换</a></details></details><details class="group"><summary>概率</summary><details><summary>《概率强化》</summary><a class="side-link" href="../../%E6%A6%82%E7%8E%87%E7%AC%94%E8%AE%B0/%E3%80%8A%E6%A6%82%E7%8E%87%E5%BC%BA%E5%8C%96%E3%80%8B/01-%E7%AC%AC1%E8%AE%B2-%E9%9A%8F%E6%9C%BA%E4%BA%8B%E4%BB%B6%E5%92%8C%E6%A6%82%E7%8E%87.html">01-第1讲-随机事件和概率</a><a class="side-link" href="../../%E6%A6%82%E7%8E%87%E7%AC%94%E8%AE%B0/%E3%80%8A%E6%A6%82%E7%8E%87%E5%BC%BA%E5%8C%96%E3%80%8B/02-%E7%AC%AC2%E8%AE%B2-%E4%B8%80%E7%BB%B4%E9%9A%8F%E6%9C%BA%E5%8F%98%E9%87%8F%E5%8F%8A%E5%85%B6%E5%88%86%E5%B8%83.html">02-第2讲-一维随机变量及其分布</a><a class="side-link" href="../../%E6%A6%82%E7%8E%87%E7%AC%94%E8%AE%B0/%E3%80%8A%E6%A6%82%E7%8E%87%E5%BC%BA%E5%8C%96%E3%80%8B/03-%E7%AC%AC3%E8%AE%B2-%E4%B8%80%E7%BB%B4%E9%9A%8F%E6%9C%BA%E5%8F%98%E9%87%8F%E5%87%BD%E6%95%B0%E7%9A%84%E5%88%86%E5%B8%83.html">03-第3讲-一维随机变量函数的分布</a><a class="side-link" href="../../%E6%A6%82%E7%8E%87%E7%AC%94%E8%AE%B0/%E3%80%8A%E6%A6%82%E7%8E%87%E5%BC%BA%E5%8C%96%E3%80%8B/04-%E7%AC%AC4%E8%AE%B2-%E5%A4%9A%E7%BB%B4%E9%9A%8F%E6%9C%BA%E5%8F%98%E9%87%8F%E5%8F%8A%E5%85%B6%E5%88%86%E5%B8%83.html">04-第4讲-多维随机变量及其分布</a><a class="side-link" href="../../%E6%A6%82%E7%8E%87%E7%AC%94%E8%AE%B0/%E3%80%8A%E6%A6%82%E7%8E%87%E5%BC%BA%E5%8C%96%E3%80%8B/05-%E7%AC%AC5%E8%AE%B2-%E5%A4%9A%E7%BB%B4%E9%9A%8F%E6%9C%BA%E5%8F%98%E9%87%8F%E5%87%BD%E6%95%B0%E7%9A%84%E5%88%86%E5%B8%83.html">05-第5讲-多维随机变量函数的分布</a><a class="side-link" href="../../%E6%A6%82%E7%8E%87%E7%AC%94%E8%AE%B0/%E3%80%8A%E6%A6%82%E7%8E%87%E5%BC%BA%E5%8C%96%E3%80%8B/06-%E7%AC%AC6%E8%AE%B2-%E6%95%B0%E5%AD%97%E7%89%B9%E5%BE%81.html">06-第6讲-数字特征</a><a class="side-link" href="../../%E6%A6%82%E7%8E%87%E7%AC%94%E8%AE%B0/%E3%80%8A%E6%A6%82%E7%8E%87%E5%BC%BA%E5%8C%96%E3%80%8B/07-%E7%AC%AC7%E8%AE%B2-%E5%A4%A7%E6%95%B0%E5%AE%9A%E5%BE%8B%E4%B8%8E%E4%B8%AD%E5%BF%83%E6%9E%81%E9%99%90%E5%AE%9A%E7%90%86.html">07-第7讲-大数定律与中心极限定理</a><a class="side-link" href="../../%E6%A6%82%E7%8E%87%E7%AC%94%E8%AE%B0/%E3%80%8A%E6%A6%82%E7%8E%87%E5%BC%BA%E5%8C%96%E3%80%8B/08-%E7%AC%AC8%E8%AE%B2-%E7%BB%9F%E8%AE%A1%E9%87%8F%E5%8F%8A%E5%85%B6%E5%88%86%E5%B8%83.html">08-第8讲-统计量及其分布</a><a class="side-link" href="../../%E6%A6%82%E7%8E%87%E7%AC%94%E8%AE%B0/%E3%80%8A%E6%A6%82%E7%8E%87%E5%BC%BA%E5%8C%96%E3%80%8B/09-%E7%AC%AC9%E8%AE%B2-%E5%8F%82%E6%95%B0%E4%BC%B0%E8%AE%A1%E4%B8%8E%E5%81%87%E8%AE%BE%E6%A3%80%E9%AA%8C.html">09-第9讲-参数估计与假设检验</a><a class="side-link" href="../../%E6%A6%82%E7%8E%87%E7%AC%94%E8%AE%B0/%E3%80%8A%E6%A6%82%E7%8E%87%E5%BC%BA%E5%8C%96%E3%80%8B/10-%E9%99%84%E5%BD%95-%E6%9D%A1%E4%BB%B6%E6%95%B0%E5%AD%97%E7%89%B9%E5%BE%81.html">10-附录-条件数字特征</a><a class="side-link" href="../../%E6%A6%82%E7%8E%87%E7%AC%94%E8%AE%B0/%E3%80%8A%E6%A6%82%E7%8E%87%E5%BC%BA%E5%8C%96%E3%80%8B/11-%E9%AB%98%E9%A2%91%E5%85%AC%E5%BC%8F%E9%80%9F%E6%9F%A5.html">11-高频公式速查</a></details><details><summary>多维变量</summary><a class="side-link" href="../../%E6%A6%82%E7%8E%87%E7%AC%94%E8%AE%B0/%E5%A4%9A%E7%BB%B4%E5%8F%98%E9%87%8F/%E4%BA%8C%E7%BB%B4%E9%9A%8F%E6%9C%BA%E5%8F%98%E9%87%8F%E5%87%BD%E6%95%B0%E7%9A%84%E5%88%86%E5%B8%83.html">二维随机变量函数的分布</a><a class="side-link" href="../../%E6%A6%82%E7%8E%87%E7%AC%94%E8%AE%B0/%E5%A4%9A%E7%BB%B4%E5%8F%98%E9%87%8F/%E4%BA%8C%E7%BB%B4%E6%AD%A3%E6%80%81%E5%88%86%E5%B8%83.html">二维正态分布</a><a class="side-link" href="../../%E6%A6%82%E7%8E%87%E7%AC%94%E8%AE%B0/%E5%A4%9A%E7%BB%B4%E5%8F%98%E9%87%8F/%E6%9D%A1%E4%BB%B6%E5%AF%86%E5%BA%A6%E4%B9%8B%E6%AF%94%E6%B1%82%E8%BE%B9%E7%BC%98%E5%AF%86%E5%BA%A6.html">条件密度之比求边缘密度</a><a class="side-link" href="../../%E6%A6%82%E7%8E%87%E7%AC%94%E8%AE%B0/%E5%A4%9A%E7%BB%B4%E5%8F%98%E9%87%8F/%E5%85%88%E6%8B%86%E5%8F%98%E9%87%8F%E5%9F%9F%E5%86%8D%E5%88%86%E6%AE%B5%E7%A7%AF%E5%88%86.html">先拆变量域再分段积分</a></details><details><summary>数字特征</summary><a class="side-link" href="../../%E6%A6%82%E7%8E%87%E7%AC%94%E8%AE%B0/%E6%95%B0%E5%AD%97%E7%89%B9%E5%BE%81/%E6%9D%A1%E4%BB%B6%E6%9C%9F%E6%9C%9B%E4%B8%8E%E5%85%A8%E6%9C%9F%E6%9C%9B.html">条件期望与全期望</a></details><details><summary>条件概率</summary><a class="side-link" href="../../%E6%A6%82%E7%8E%87%E7%AC%94%E8%AE%B0/%E6%9D%A1%E4%BB%B6%E6%A6%82%E7%8E%87/%E8%B4%9D%E5%8F%B6%E6%96%AF%E6%A6%82%E5%9E%8B.html">贝叶斯概型</a><a class="side-link" href="../../%E6%A6%82%E7%8E%87%E7%AC%94%E8%AE%B0/%E6%9D%A1%E4%BB%B6%E6%A6%82%E7%8E%87/%E6%A6%82%E7%8E%87%E4%B8%AD%E4%BA%8B%E4%BB%B6%E4%B8%8E%E6%9D%A1%E4%BB%B6%E6%A6%82%E7%8E%87%E7%9A%84%E5%B8%B8%E8%A7%81%E5%8F%98%E6%8D%A2.html">概率中事件与条件概率的常见变换</a><a class="side-link" href="../../%E6%A6%82%E7%8E%87%E7%AC%94%E8%AE%B0/%E6%9D%A1%E4%BB%B6%E6%A6%82%E7%8E%87/%E6%9D%A1%E4%BB%B6%E6%A6%82%E7%8E%87%E3%80%81%E6%9D%A1%E4%BB%B6%E5%88%86%E5%B8%83%E4%B8%8E%E2%80%9C%E5%9B%BA%E5%AE%9A%E4%B8%80%E4%B8%AA%E9%9A%8F%E6%9C%BA%E5%8F%98%E9%87%8F%E2%80%9D%E7%9A%84%E7%BB%9F%E4%B8%80%E7%90%86%E8%A7%A3.html">条件概率、条件分布与“固定一个随机变量”的统一理解</a></details><details><summary>统计量及分布</summary><a class="side-link" href="../../%E6%A6%82%E7%8E%87%E7%AC%94%E8%AE%B0/%E7%BB%9F%E8%AE%A1%E9%87%8F%E5%8F%8A%E5%88%86%E5%B8%83/%E4%BC%B0%E8%AE%A1%E9%87%8F%E3%80%81%E4%BC%B0%E8%AE%A1%E5%80%BC%E4%B8%8E%E6%97%A0%E5%81%8F%E4%BC%B0%E8%AE%A1.html">估计量、估计值与无偏估计</a><a class="side-link" href="../../%E6%A6%82%E7%8E%87%E7%AC%94%E8%AE%B0/%E7%BB%9F%E8%AE%A1%E9%87%8F%E5%8F%8A%E5%88%86%E5%B8%83/%E7%A6%BB%E6%95%A3%E5%9E%8B%E6%9C%80%E5%A4%A7%E4%BC%BC%E7%84%B6%E4%BC%B0%E8%AE%A1.html">离散型最大似然估计</a><a class="side-link" href="../../%E6%A6%82%E7%8E%87%E7%AC%94%E8%AE%B0/%E7%BB%9F%E8%AE%A1%E9%87%8F%E5%8F%8A%E5%88%86%E5%B8%83/%E6%A0%B7%E6%9C%AC%E5%AE%B9%E9%87%8F%E4%B8%8D%E7%AD%89%E5%BC%8F.html">样本容量不等式</a><a class="side-link" href="../../%E6%A6%82%E7%8E%87%E7%AC%94%E8%AE%B0/%E7%BB%9F%E8%AE%A1%E9%87%8F%E5%8F%8A%E5%88%86%E5%B8%83/%E6%9C%89%E5%85%B3%E4%BC%B0%E8%AE%A1%E9%87%8F%E7%9A%84%E5%88%86%E5%B8%83.html">有关估计量的分布</a><a class="side-link" href="../../%E6%A6%82%E7%8E%87%E7%AC%94%E8%AE%B0/%E7%BB%9F%E8%AE%A1%E9%87%8F%E5%8F%8A%E5%88%86%E5%B8%83/%E6%AD%A3%E6%80%81%E5%88%86%E5%B8%83%E4%B8%8E%E6%AD%A3%E6%80%81%E6%A0%B7%E6%9C%AC%E5%B8%B8%E7%94%A8%E6%80%A7%E8%B4%A8.html">正态分布与正态样本常用性质</a><details><summary>样本容量专题</summary><a class="side-link" href="../../%E6%A6%82%E7%8E%87%E7%AC%94%E8%AE%B0/%E7%BB%9F%E8%AE%A1%E9%87%8F%E5%8F%8A%E5%88%86%E5%B8%83/%E6%A0%B7%E6%9C%AC%E5%AE%B9%E9%87%8F%E4%B8%93%E9%A2%98/%E6%A0%B7%E6%9C%AC%E5%AE%B9%E9%87%8F-%E5%B9%B3%E6%96%B9%E6%9C%9F%E6%9C%9B%E4%B8%8E%E5%9D%87%E6%96%B9%E8%AF%AF%E5%B7%AE.html">样本容量-平方期望与均方误差</a><a class="side-link" href="../../%E6%A6%82%E7%8E%87%E7%AC%94%E8%AE%B0/%E7%BB%9F%E8%AE%A1%E9%87%8F%E5%8F%8A%E5%88%86%E5%B8%83/%E6%A0%B7%E6%9C%AC%E5%AE%B9%E9%87%8F%E4%B8%93%E9%A2%98/%E6%A0%B7%E6%9C%AC%E5%AE%B9%E9%87%8F-%E5%88%87%E6%AF%94%E9%9B%AA%E5%A4%AB%E4%B8%8E%E5%88%A4%E6%96%AD%E6%B5%81%E7%A8%8B.html">样本容量-切比雪夫与判断流程</a><a class="side-link" href="../../%E6%A6%82%E7%8E%87%E7%AC%94%E8%AE%B0/%E7%BB%9F%E8%AE%A1%E9%87%8F%E5%8F%8A%E5%88%86%E5%B8%83/%E6%A0%B7%E6%9C%AC%E5%AE%B9%E9%87%8F%E4%B8%93%E9%A2%98/%E6%A0%B7%E6%9C%AC%E5%AE%B9%E9%87%8F-%E6%AD%A3%E6%80%81%E6%A6%82%E7%8E%87%E4%B8%8E%E6%A0%87%E5%87%86%E5%8C%96.html">样本容量-正态概率与标准化</a></details><details><summary>正态专题</summary><a class="side-link" href="../../%E6%A6%82%E7%8E%87%E7%AC%94%E8%AE%B0/%E7%BB%9F%E8%AE%A1%E9%87%8F%E5%8F%8A%E5%88%86%E5%B8%83/%E6%AD%A3%E6%80%81%E4%B8%93%E9%A2%98/%E6%AD%A3%E6%80%81-%E7%9F%A9%E4%B8%8E%E7%BB%9D%E5%AF%B9%E5%80%BC%E5%8F%8A%E7%BA%BF%E6%80%A7%E5%8F%98%E6%8D%A2.html">正态-矩与绝对值及线性变换</a><a class="side-link" href="../../%E6%A6%82%E7%8E%87%E7%AC%94%E8%AE%B0/%E7%BB%9F%E8%AE%A1%E9%87%8F%E5%8F%8A%E5%88%86%E5%B8%83/%E6%AD%A3%E6%80%81%E4%B8%93%E9%A2%98/%E6%AD%A3%E6%80%81-%E6%A0%B7%E6%9C%AC%E5%9D%87%E5%80%BC%E4%B8%8E%E6%A0%B7%E6%9C%AC%E6%96%B9%E5%B7%AE.html">正态-样本均值与样本方差</a></details></details><details><summary>一维变量</summary><a class="side-link" href="../../%E6%A6%82%E7%8E%87%E7%AC%94%E8%AE%B0/%E4%B8%80%E7%BB%B4%E5%8F%98%E9%87%8F/%E6%94%BE%E7%90%83%E9%97%AE%E9%A2%98.html">放球问题</a><a class="side-link" href="../../%E6%A6%82%E7%8E%87%E7%AC%94%E8%AE%B0/%E4%B8%80%E7%BB%B4%E5%8F%98%E9%87%8F/%E6%A6%82%E7%8E%87%E7%A7%AF%E5%88%86%E5%8F%98%E6%8D%A2.html">概率积分变换</a><a class="side-link" href="../../%E6%A6%82%E7%8E%87%E7%AC%94%E8%AE%B0/%E4%B8%80%E7%BB%B4%E5%8F%98%E9%87%8F/%E6%B3%8A%E6%9D%BE%E7%A8%80%E7%96%8F%E5%8C%96.html">泊松稀疏化</a><details><summary>放球抽球专题</summary><a class="side-link" href="../../%E6%A6%82%E7%8E%87%E7%AC%94%E8%AE%B0/%E4%B8%80%E7%BB%B4%E5%8F%98%E9%87%8F/%E6%94%BE%E7%90%83%E6%8A%BD%E7%90%83%E4%B8%93%E9%A2%98/%E6%8A%BD%E7%90%83-%E6%94%BE%E5%9B%9E%E4%B8%8E%E4%B8%8D%E6%94%BE%E5%9B%9E.html">抽球-放回与不放回</a><a class="side-link" href="../../%E6%A6%82%E7%8E%87%E7%AC%94%E8%AE%B0/%E4%B8%80%E7%BB%B4%E5%8F%98%E9%87%8F/%E6%94%BE%E7%90%83%E6%8A%BD%E7%90%83%E4%B8%93%E9%A2%98/%E6%8A%BD%E7%90%83-%E9%A6%96%E6%AC%A1%E6%88%90%E5%8A%9F%E6%A8%A1%E5%9E%8B.html">抽球-首次成功模型</a><a class="side-link" href="../../%E6%A6%82%E7%8E%87%E7%AC%94%E8%AE%B0/%E4%B8%80%E7%BB%B4%E5%8F%98%E9%87%8F/%E6%94%BE%E7%90%83%E6%8A%BD%E7%90%83%E4%B8%93%E9%A2%98/%E6%94%BE%E7%90%83-%E5%9F%BA%E6%9C%AC%E6%A8%A1%E5%9E%8B%E4%B8%8E%E6%8C%87%E5%AE%9A%E7%9B%92%E8%AE%A1%E6%95%B0.html">放球-基本模型与指定盒计数</a><a class="side-link" href="../../%E6%A6%82%E7%8E%87%E7%AC%94%E8%AE%B0/%E4%B8%80%E7%BB%B4%E5%8F%98%E9%87%8F/%E6%94%BE%E7%90%83%E6%8A%BD%E7%90%83%E4%B8%93%E9%A2%98/%E6%94%BE%E7%90%83-%E7%9B%B8%E5%90%8C%E7%90%83%E4%B8%8E%E6%8F%92%E6%9D%BF%E6%B3%95.html">放球-相同球与插板法</a><a class="side-link" href="../../%E6%A6%82%E7%8E%87%E7%AC%94%E8%AE%B0/%E4%B8%80%E7%BB%B4%E5%8F%98%E9%87%8F/%E6%94%BE%E7%90%83%E6%8A%BD%E7%90%83%E4%B8%93%E9%A2%98/%E6%94%BE%E7%90%83-%E5%8D%A0%E7%9B%92%E4%BA%8B%E4%BB%B6%E4%B8%8E%E7%A9%BA%E7%9B%92%E6%9C%9F%E6%9C%9B.html">放球-占盒事件与空盒期望</a></details></details></details></nav></details></aside><main class="note" id="main"><div class="breadcrumb"><a href="../../../index.html">错题目录</a></div><div class="note-head"><h1>直线面</h1></div><details class="page-toc"><summary>本页定位</summary><ul><li><a href="#h-1">空间两直线位置关系判断</a></li><li><a href="#h-8">1. 先统一符号：方向、位置是两类信息</a></li><li><a href="#h-35">2. 叉乘到底在判断什么？</a></li><li><a href="#h-99">4. 方向不平行时：混合积为什么能判断共面？</a></li><li><a href="#h-101">4.1 必须先把“平面”说清楚</a></li><li><a href="#h-151">4.3 从向量分解、体积再理解一次</a></li><li><a href="#h-180">5. 修正后的图示：四种情形放在同一套坐标中</a></li><li><a href="#h-210">6. 考试直接使用的判定表</a></li><li><a href="#h-244">7. 常见题面：怎样提取点和方向？</a></li><li><a href="#h-246">7.1 对称式</a></li><li><a href="#h-265">7.2 两个平面的交线</a></li><li><a href="#h-292">8. 易错点与原图需要澄清的地方</a></li><li><a href="#h-309">9. 与距离公式的联系（选读）</a></li><li><a href="#h-336">关联阅读</a></li></ul></details><article class="prose"><h1 id="h-1">空间两直线位置关系判断</h1>
+<blockquote><p><strong>先用叉乘判断方向是否平行，再按分支判断位置。</strong></p>
+<ul>
+<li>方向平行：看连接向量是否也沿着直线方向，区分<strong>重合、平行不重合</strong>。</li>
+<li>方向不平行：看连接向量是否有法向分量，区分<strong>相交、异面</strong>。</li>
+</ul>
+</blockquote><h2 id="h-8">1. 先统一符号：方向、位置是两类信息</h2>
+<p>用参数方程表示两条直线：</p>
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <msub>
+    <mi>&#x2113;</mi>
+    <mn>1</mn>
+  </msub>
+  <mo>:</mo>
+  <mrow>
+    <mtext>&#xA0;</mtext>
+    <mrow>
+      <mi mathvariant="bold-italic">r</mi>
+      <mo>=</mo>
+      <mrow>
+        <msub>
+          <mi mathvariant="bold-italic">p</mi>
+          <mn>1</mn>
+        </msub>
+        <mo>+</mo>
+        <mrow>
+          <mi>t</mi>
+          <mo>&#x2062;</mo>
+          <msub>
+            <mi mathvariant="bold-italic">s</mi>
+            <mn>1</mn>
+          </msub>
+        </mrow>
+      </mrow>
+    </mrow>
+  </mrow>
+  <mo>,</mo>
+  <mrow>
+    <mstyle scriptlevel="0">
+      <mspace width="2em"></mspace>
+    </mstyle>
+    <msub>
+      <mi>&#x2113;</mi>
+      <mn>2</mn>
+    </msub>
+  </mrow>
+  <mo>:</mo>
+  <mrow>
+    <mtext>&#xA0;</mtext>
+    <mrow>
+      <mi mathvariant="bold-italic">r</mi>
+      <mo>=</mo>
+      <mrow>
+        <msub>
+          <mi mathvariant="bold-italic">p</mi>
+          <mn>2</mn>
+        </msub>
+        <mo>+</mo>
+        <mrow>
+          <mi>u</mi>
+          <mo>&#x2062;</mo>
+          <msub>
+            <mi mathvariant="bold-italic">s</mi>
+            <mn>2</mn>
+          </msub>
+        </mrow>
+      </mrow>
+    </mrow>
+  </mrow>
+  <mo>,</mo>
+  <mrow>
+    <mstyle scriptlevel="0">
+      <mspace width="2em"></mspace>
+    </mstyle>
+    <mi>t</mi>
+  </mrow>
+  <mo>,</mo>
+  <mrow>
+    <mi>u</mi>
+    <mo>&#x2208;</mo>
+    <mrow data-mjx-texclass="ORD">
+      <mi mathvariant="double-struck">R</mi>
+    </mrow>
+  </mrow>
+  <mo>.</mo>
+</math></div>
+
+
+<p>其中：</p>
+<ul>
+<li><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <msub>
+    <mi>P</mi>
+    <mn>1</mn>
+  </msub>
+  <mo>&#x2208;</mo>
+  <msub>
+    <mi>&#x2113;</mi>
+    <mn>1</mn>
+  </msub>
+</math>，<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <msub>
+    <mi>P</mi>
+    <mn>2</mn>
+  </msub>
+  <mo>&#x2208;</mo>
+  <msub>
+    <mi>&#x2113;</mi>
+    <mn>2</mn>
+  </msub>
+</math>；<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <msub>
+    <mi mathvariant="bold-italic">p</mi>
+    <mn>1</mn>
+  </msub>
+  <mo>,</mo>
+  <msub>
+    <mi mathvariant="bold-italic">p</mi>
+    <mn>2</mn>
+  </msub>
+</math> 是它们的位置向量。</li>
+<li><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <msub>
+    <mi mathvariant="bold-italic">s</mi>
+    <mn>1</mn>
+  </msub>
+  <mo>,</mo>
+  <msub>
+    <mi mathvariant="bold-italic">s</mi>
+    <mn>2</mn>
+  </msub>
+</math> 是两条直线的<strong>方向向量，必须非零</strong>。</li>
+<li>连接向量统一取为 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi mathvariant="bold-italic">d</mi>
+  <mo>=</mo>
+  <mover>
+    <mrow>
+      <msub>
+        <mi>P</mi>
+        <mn>1</mn>
+      </msub>
+      <mo>&#x2062;</mo>
+      <msub>
+        <mi>P</mi>
+        <mn>2</mn>
+      </msub>
+    </mrow>
+    <mo>&#x2192;</mo>
+  </mover>
+  <mo>=</mo>
+  <mrow>
+    <msub>
+      <mi mathvariant="bold-italic">p</mi>
+      <mn>2</mn>
+    </msub>
+    <mo>&#x2212;</mo>
+    <msub>
+      <mi mathvariant="bold-italic">p</mi>
+      <mn>1</mn>
+    </msub>
+  </mrow>
+</math>。</li>
+</ul>
+<p>定义两个判定量：</p>
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mrow>
+    <menclose notation="box">
+      <mrow data-mjx-texclass="ORD">
+        <mstyle scriptlevel="0">
+          <mrow data-mjx-texclass="ORD">
+            <mi mathvariant="bold-italic">n</mi>
+            <mo>=</mo>
+            <mrow>
+              <msub>
+                <mi mathvariant="bold-italic">s</mi>
+                <mn>1</mn>
+              </msub>
+              <mo>&#xD7;</mo>
+              <msub>
+                <mi mathvariant="bold-italic">s</mi>
+                <mn>2</mn>
+              </msub>
+            </mrow>
+          </mrow>
+        </mstyle>
+      </mrow>
+    </menclose>
+    <mstyle scriptlevel="0">
+      <mspace width="2em"></mspace>
+    </mstyle>
+    <menclose notation="box">
+      <mrow data-mjx-texclass="ORD">
+        <mstyle scriptlevel="0">
+          <mrow data-mjx-texclass="ORD">
+            <mi>D</mi>
+            <mo>=</mo>
+            <mrow>
+              <mi mathvariant="bold-italic">d</mi>
+              <mo>&#x22C5;</mo>
+              <mi mathvariant="bold-italic">n</mi>
+            </mrow>
+          </mrow>
+        </mstyle>
+      </mrow>
+    </menclose>
+  </mrow>
+  <mo>.</mo>
+</math></div>
+
+
+<p>注意：<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi mathvariant="bold-italic">n</mi>
+</math> 是<strong>向量</strong>，<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi>D</mi>
+</math> 是<strong>数</strong>。方向向量只告诉我们直线朝哪里延伸；还必须结合 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi mathvariant="bold-italic">d</mi>
+</math>，才能知道两条直线在哪里。</p>
+<h2 id="h-35">2. 叉乘到底在判断什么？</h2>
+<p>对两个非零向量，叉乘的模长为</p>
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mrow>
+    <mrow>
+      <mo data-mjx-texclass="ORD" fence="false" stretchy="false">&#x2016;</mo>
+      <mrow>
+        <msub>
+          <mi mathvariant="bold-italic">s</mi>
+          <mn>1</mn>
+        </msub>
+        <mo>&#xD7;</mo>
+        <msub>
+          <mi mathvariant="bold-italic">s</mi>
+          <mn>2</mn>
+        </msub>
+      </mrow>
+      <mo data-mjx-texclass="ORD" fence="false" stretchy="false">&#x2016;</mo>
+    </mrow>
+    <mo>=</mo>
+    <mrow>
+      <mrow>
+        <mo data-mjx-texclass="ORD" fence="false" stretchy="false">&#x2016;</mo>
+        <msub>
+          <mi mathvariant="bold-italic">s</mi>
+          <mn>1</mn>
+        </msub>
+        <mo data-mjx-texclass="ORD" fence="false" stretchy="false">&#x2016;</mo>
+      </mrow>
+      <mstyle scriptlevel="0">
+        <mspace width="0.167em"></mspace>
+      </mstyle>
+      <mo>&#x2062;</mo>
+      <mrow>
+        <mo data-mjx-texclass="ORD" fence="false" stretchy="false">&#x2016;</mo>
+        <msub>
+          <mi mathvariant="bold-italic">s</mi>
+          <mn>2</mn>
+        </msub>
+        <mo data-mjx-texclass="ORD" fence="false" stretchy="false">&#x2016;</mo>
+      </mrow>
+      <mo>&#x2062;</mo>
+      <mrow>
+        <mi>sin</mi>
+        <mo data-mjx-texclass="NONE">&#x2061;</mo>
+        <mi>&#x3B8;</mi>
+      </mrow>
+    </mrow>
+  </mrow>
+  <mo>,</mo>
+  <mrow>
+    <mstyle scriptlevel="0">
+      <mspace width="2em"></mspace>
+    </mstyle>
+    <mrow>
+      <mn>0</mn>
+      <mo>&#x2264;</mo>
+      <mi>&#x3B8;</mi>
+      <mo>&#x2264;</mo>
+      <mi>&#x3C0;</mi>
+    </mrow>
+  </mrow>
+  <mo>.</mo>
+</math></div>
+
+
+<p>它等于两个向量张成的平行四边形的面积。因此：</p>
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mrow>
+    <mrow>
+      <mi mathvariant="bold-italic">n</mi>
+      <mo>=</mo>
+      <mn mathvariant="bold">0</mn>
+      <mstyle scriptlevel="0">
+        <mspace width="0.278em"></mspace>
+      </mstyle>
+      <mo stretchy="false">&#x27FA;</mo>
+      <mstyle scriptlevel="0">
+        <mspace width="0.278em"></mspace>
+      </mstyle>
+      <mi>&#x3B8;</mi>
+      <mo>=</mo>
+      <mn>0</mn>
+    </mrow>
+    <mtext>&#xA0;&#x6216;&#xA0;</mtext>
+    <mrow>
+      <mi>&#x3C0;</mi>
+      <mstyle scriptlevel="0">
+        <mspace width="0.278em"></mspace>
+      </mstyle>
+      <mo stretchy="false">&#x27FA;</mo>
+      <mstyle scriptlevel="0">
+        <mspace width="0.278em"></mspace>
+      </mstyle>
+      <msub>
+        <mi mathvariant="bold-italic">s</mi>
+        <mn>1</mn>
+      </msub>
+    </mrow>
+  </mrow>
+  <mo>,</mo>
+  <mrow>
+    <msub>
+      <mi mathvariant="bold-italic">s</mi>
+      <mn>2</mn>
+    </msub>
+    <mtext>&#xA0;&#x5171;&#x7EBF;</mtext>
+  </mrow>
+  <mo>.</mo>
+</math></div>
+
+
+<p>这里的“共线”说的是<strong>两个方向向量线性相关</strong>，包含同向、反向；不代表两条直线已经重合。</p>
+<p>若 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi mathvariant="bold-italic">n</mi>
+  <mo>&#x2260;</mo>
+  <mn mathvariant="bold">0</mn>
+</math>，则</p>
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mrow>
+    <mi mathvariant="bold-italic">n</mi>
+    <mo>&#x27C2;</mo>
+    <msub>
+      <mi mathvariant="bold-italic">s</mi>
+      <mn>1</mn>
+    </msub>
+  </mrow>
+  <mo>,</mo>
+  <mrow>
+    <mstyle scriptlevel="0">
+      <mspace width="2em"></mspace>
+    </mstyle>
+    <mrow>
+      <mi mathvariant="bold-italic">n</mi>
+      <mo>&#x27C2;</mo>
+      <msub>
+        <mi mathvariant="bold-italic">s</mi>
+        <mn>2</mn>
+      </msub>
+    </mrow>
+  </mrow>
+  <mo>.</mo>
+</math></div>
+
+
+<p>把两个方向向量平移到同一个起点，它们张成一个二维方向平面；叉乘给出这个方向平面的法向量，朝向由右手定则确定。</p>
+<blockquote><p><strong>叉乘非零，只说明方向不平行，不能直接判断相交。</strong></p>
+<p>空间中方向不平行的两条直线，既可能相交，也可能异面。另须注意：叉乘为零时，零向量没有确定方向，不能把它当作平面的法向量。</p>
+</blockquote><h2 id="h-69">3. 方向平行时：为什么再算 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi mathvariant="bold-italic">d</mi>
+  <mo>&#xD7;</mo>
+  <msub>
+    <mi mathvariant="bold-italic">s</mi>
+    <mn>1</mn>
+  </msub>
+</math>？</h2>
+<p>现在已知 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi mathvariant="bold-italic">n</mi>
+  <mo>=</mo>
+  <mn mathvariant="bold">0</mn>
+</math>，即 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <msub>
+    <mi mathvariant="bold-italic">s</mi>
+    <mn>2</mn>
+  </msub>
+</math> 与 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <msub>
+    <mi mathvariant="bold-italic">s</mi>
+    <mn>1</mn>
+  </msub>
+</math> 共线。</p>
+<p>要区分重合与平行不重合，只需判断 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <msub>
+    <mi>P</mi>
+    <mn>2</mn>
+  </msub>
+</math> 是否在 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <msub>
+    <mi>&#x2113;</mi>
+    <mn>1</mn>
+  </msub>
+</math> 上：</p>
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mtable displaystyle="true" columnalign="right left" columnspacing="0em" rowspacing="3pt" data-break-align="bottom top">
+    <mtr>
+      <mtd>
+        <mrow>
+          <msub>
+            <mi>P</mi>
+            <mn>2</mn>
+          </msub>
+          <mo>&#x2208;</mo>
+          <msub>
+            <mi>&#x2113;</mi>
+            <mn>1</mn>
+          </msub>
+        </mrow>
+      </mtd>
+      <mtd>
+        <mstyle indentshift="2em">
+          <mstyle scriptlevel="0">
+            <mspace width="0.278em"></mspace>
+          </mstyle>
+          <mrow>
+            <mrow></mrow>
+            <mo stretchy="false">&#x27FA;</mo>
+            <mstyle scriptlevel="0">
+              <mspace width="0.278em"></mspace>
+            </mstyle>
+            <mrow>
+              <mtext>&#x5B58;&#x5728;&#x5B9E;&#x6570;&#xA0;</mtext>
+              <mo>&#x2062;</mo>
+              <mi>&#x3BB;</mi>
+            </mrow>
+          </mrow>
+          <mo>,</mo>
+          <mrow>
+            <mstyle scriptlevel="0">
+              <mspace width="1em"></mspace>
+            </mstyle>
+            <mrow>
+              <msub>
+                <mi mathvariant="bold-italic">p</mi>
+                <mn>2</mn>
+              </msub>
+              <mo>=</mo>
+              <mrow>
+                <msub>
+                  <mi mathvariant="bold-italic">p</mi>
+                  <mn>1</mn>
+                </msub>
+                <mo>+</mo>
+                <mrow>
+                  <mi>&#x3BB;</mi>
+                  <mo>&#x2062;</mo>
+                  <msub>
+                    <mi mathvariant="bold-italic">s</mi>
+                    <mn>1</mn>
+                  </msub>
+                </mrow>
+              </mrow>
+            </mrow>
+          </mrow>
+        </mstyle>
+      </mtd>
+    </mtr>
+    <mtr>
+      <mtd></mtd>
+      <mtd>
+        <mstyle indentshift="2em">
+          <mstyle scriptlevel="0">
+            <mspace width="0.278em"></mspace>
+          </mstyle>
+          <mo stretchy="false">&#x27FA;</mo>
+          <mrow>
+            <mstyle scriptlevel="0">
+              <mspace width="0.278em"></mspace>
+            </mstyle>
+            <mo>&#x2062;</mo>
+            <mi mathvariant="bold-italic">d</mi>
+          </mrow>
+          <mo>=</mo>
+          <mrow>
+            <mi>&#x3BB;</mi>
+            <mo>&#x2062;</mo>
+            <msub>
+              <mi mathvariant="bold-italic">s</mi>
+              <mn>1</mn>
+            </msub>
+          </mrow>
+        </mstyle>
+      </mtd>
+    </mtr>
+    <mtr>
+      <mtd></mtd>
+      <mtd>
+        <mstyle indentshift="2em">
+          <mstyle scriptlevel="0">
+            <mspace width="0.278em"></mspace>
+          </mstyle>
+          <mrow>
+            <mrow></mrow>
+            <mo stretchy="false">&#x27FA;</mo>
+            <mstyle scriptlevel="0">
+              <mspace width="0.278em"></mspace>
+            </mstyle>
+            <mrow>
+              <mi mathvariant="bold-italic">d</mi>
+              <mo>&#xD7;</mo>
+              <msub>
+                <mi mathvariant="bold-italic">s</mi>
+                <mn>1</mn>
+              </msub>
+            </mrow>
+            <mo>=</mo>
+            <mn mathvariant="bold">0</mn>
+          </mrow>
+          <mo>.</mo>
+        </mstyle>
+      </mtd>
+    </mtr>
+  </mtable>
+</math></div>
+
+
+<p>因此：</p>
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <menclose notation="box">
+    <mrow data-mjx-texclass="ORD">
+      <mstyle scriptlevel="0">
+        <mrow data-mjx-texclass="ORD">
+          <mstyle scriptlevel="0">
+            <mtable columnspacing="1em" rowspacing="0.7em 0.4em" columnalign="left left" data-frame-styles="" framespacing=".5em .125em">
+              <mtr>
+                <mtd>
+                  <mrow>
+                    <mrow>
+                      <mi mathvariant="bold-italic">n</mi>
+                      <mo>=</mo>
+                      <mn mathvariant="bold">0</mn>
+                    </mrow>
+                    <mo>,</mo>
+                    <mrow>
+                      <mtext>&#xA0;</mtext>
+                      <mrow>
+                        <mrow>
+                          <mi mathvariant="bold-italic">d</mi>
+                          <mo>&#xD7;</mo>
+                          <msub>
+                            <mi mathvariant="bold-italic">s</mi>
+                            <mn>1</mn>
+                          </msub>
+                        </mrow>
+                        <mo>=</mo>
+                        <mn mathvariant="bold">0</mn>
+                      </mrow>
+                    </mrow>
+                  </mrow>
+                </mtd>
+                <mtd>
+                  <mrow>
+                    <mrow>
+                      <mrow></mrow>
+                      <mo stretchy="false">&#x27F9;</mo>
+                      <mtext>&#x91CD;&#x5408;</mtext>
+                    </mrow>
+                    <mo>;</mo>
+                  </mrow>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mrow>
+                    <mrow>
+                      <mi mathvariant="bold-italic">n</mi>
+                      <mo>=</mo>
+                      <mn mathvariant="bold">0</mn>
+                    </mrow>
+                    <mo>,</mo>
+                    <mrow>
+                      <mtext>&#xA0;</mtext>
+                      <mrow>
+                        <mrow>
+                          <mi mathvariant="bold-italic">d</mi>
+                          <mo>&#xD7;</mo>
+                          <msub>
+                            <mi mathvariant="bold-italic">s</mi>
+                            <mn>1</mn>
+                          </msub>
+                        </mrow>
+                        <mo>&#x2260;</mo>
+                        <mn mathvariant="bold">0</mn>
+                      </mrow>
+                    </mrow>
+                  </mrow>
+                </mtd>
+                <mtd>
+                  <mrow>
+                    <mrow>
+                      <mrow></mrow>
+                      <mo stretchy="false">&#x27F9;</mo>
+                      <mtext>&#x5E73;&#x884C;&#x4E0D;&#x91CD;&#x5408;</mtext>
+                    </mrow>
+                    <mo>.</mo>
+                  </mrow>
+                </mtd>
+              </mtr>
+            </mtable>
+          </mstyle>
+        </mrow>
+      </mstyle>
+    </mrow>
+  </menclose>
+</math></div>
+
+
+<p>当 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <msub>
+    <mi>P</mi>
+    <mn>1</mn>
+  </msub>
+  <mo>=</mo>
+  <msub>
+    <mi>P</mi>
+    <mn>2</mn>
+  </msub>
+</math> 时，<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi mathvariant="bold-italic">d</mi>
+  <mo>=</mo>
+  <mn mathvariant="bold">0</mn>
+</math>，上述结论仍成立：方向平行且有公共点，就只能重合。</p>
+<h2 id="h-99">4. 方向不平行时：混合积为什么能判断共面？</h2>
+<h3 id="h-101">4.1 必须先把“平面”说清楚</h3>
+<p>现在已知 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi mathvariant="bold-italic">n</mi>
+  <mo>&#x2260;</mo>
+  <mn mathvariant="bold">0</mn>
+</math>。固定经过 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <msub>
+    <mi>P</mi>
+    <mn>1</mn>
+  </msub>
+</math> 的参考平面</p>
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <menclose notation="box">
+    <mrow data-mjx-texclass="ORD">
+      <mstyle scriptlevel="0">
+        <mrow data-mjx-texclass="ORD">
+          <mrow>
+            <mi mathvariant="normal">&#x3A0;</mi>
+            <mo>=</mo>
+            <mrow>
+              <mo fence="false" stretchy="false">{</mo>
+              <mrow>
+                <mrow>
+                  <msub>
+                    <mi mathvariant="bold-italic">p</mi>
+                    <mn>1</mn>
+                  </msub>
+                  <mo>+</mo>
+                  <mrow>
+                    <mi>a</mi>
+                    <mo>&#x2062;</mo>
+                    <msub>
+                      <mi mathvariant="bold-italic">s</mi>
+                      <mn>1</mn>
+                    </msub>
+                  </mrow>
+                  <mo>+</mo>
+                  <mrow>
+                    <mi>b</mi>
+                    <mo>&#x2062;</mo>
+                    <msub>
+                      <mi mathvariant="bold-italic">s</mi>
+                      <mn>2</mn>
+                    </msub>
+                  </mrow>
+                </mrow>
+                <mo>:</mo>
+                <mi>a</mi>
+                <mo>,</mo>
+                <mrow>
+                  <mi>b</mi>
+                  <mo>&#x2208;</mo>
+                  <mrow data-mjx-texclass="ORD">
+                    <mi mathvariant="double-struck">R</mi>
+                  </mrow>
+                </mrow>
+              </mrow>
+              <mo fence="false" stretchy="false">}</mo>
+            </mrow>
+          </mrow>
+          <mo>.</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+  </menclose>
+</math></div>
+
+
+<p>它包含 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <msub>
+    <mi>&#x2113;</mi>
+    <mn>1</mn>
+  </msub>
+</math>，并以 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi mathvariant="bold-italic">n</mi>
+</math> 为法向量，方程为</p>
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <menclose notation="box">
+    <mrow data-mjx-texclass="ORD">
+      <mstyle scriptlevel="0">
+        <mrow data-mjx-texclass="ORD">
+          <mrow>
+            <mi mathvariant="bold-italic">n</mi>
+            <mo>&#x22C5;</mo>
+            <mrow>
+              <mo stretchy="false">(</mo>
+              <mrow>
+                <mi mathvariant="bold-italic">r</mi>
+                <mo>&#x2212;</mo>
+                <msub>
+                  <mi mathvariant="bold-italic">p</mi>
+                  <mn>1</mn>
+                </msub>
+              </mrow>
+              <mo stretchy="false">)</mo>
+            </mrow>
+          </mrow>
+          <mo>=</mo>
+          <mn>0.</mn>
+        </mrow>
+      </mstyle>
+    </mrow>
+  </menclose>
+</math></div>
+
+
+<p>所以，“<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <msub>
+    <mi mathvariant="bold-italic">s</mi>
+    <mn>1</mn>
+  </msub>
+  <mo>,</mo>
+  <msub>
+    <mi mathvariant="bold-italic">s</mi>
+    <mn>2</mn>
+  </msub>
+</math> 确定一个平面”更准确地说是：<strong>它们先确定平面的方向，再指定经过 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <msub>
+    <mi>P</mi>
+    <mn>1</mn>
+  </msub>
+</math>，才确定实际的参考平面 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi mathvariant="normal">&#x3A0;</mi>
+</math>。</strong></p>
+<h3 id="h-120">4.2 混合积检测的是 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <msub>
+    <mi>P</mi>
+    <mn>2</mn>
+  </msub>
+</math> 相对这个平面的法向位置</h3>
+<p>因为 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi mathvariant="bold-italic">d</mi>
+  <mo>=</mo>
+  <mrow>
+    <msub>
+      <mi mathvariant="bold-italic">p</mi>
+      <mn>2</mn>
+    </msub>
+    <mo>&#x2212;</mo>
+    <msub>
+      <mi mathvariant="bold-italic">p</mi>
+      <mn>1</mn>
+    </msub>
+  </mrow>
+</math>，所以</p>
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mrow>
+    <mi>D</mi>
+    <mo>=</mo>
+    <mrow>
+      <mi mathvariant="bold-italic">d</mi>
+      <mo>&#x22C5;</mo>
+      <mi mathvariant="bold-italic">n</mi>
+    </mrow>
+    <mo>=</mo>
+    <mn>0</mn>
+    <mstyle scriptlevel="0">
+      <mspace width="0.278em"></mspace>
+    </mstyle>
+    <mo stretchy="false">&#x27FA;</mo>
+    <mstyle scriptlevel="0">
+      <mspace width="0.278em"></mspace>
+    </mstyle>
+    <mrow>
+      <msub>
+        <mi>P</mi>
+        <mn>2</mn>
+      </msub>
+      <mo>&#x2208;</mo>
+      <mi mathvariant="normal">&#x3A0;</mi>
+    </mrow>
+  </mrow>
+  <mo>.</mo>
+</math></div>
+
+
+<p>还要说明：为什么检查一个点 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <msub>
+    <mi>P</mi>
+    <mn>2</mn>
+  </msub>
+</math> 就够了？取 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <msub>
+    <mi>&#x2113;</mi>
+    <mn>2</mn>
+  </msub>
+</math> 上任意一点 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi>X</mi>
+</math>，则</p>
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mrow>
+    <mi mathvariant="bold-italic">x</mi>
+    <mo>=</mo>
+    <mrow>
+      <msub>
+        <mi mathvariant="bold-italic">p</mi>
+        <mn>2</mn>
+      </msub>
+      <mo>+</mo>
+      <mrow>
+        <mi>u</mi>
+        <mo>&#x2062;</mo>
+        <msub>
+          <mi mathvariant="bold-italic">s</mi>
+          <mn>2</mn>
+        </msub>
+      </mrow>
+    </mrow>
+  </mrow>
+  <mo>,</mo>
+</math></div>
+
+
+<p>从而</p>
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mrow>
+    <mrow>
+      <mi mathvariant="bold-italic">n</mi>
+      <mo>&#x22C5;</mo>
+      <mrow>
+        <mo stretchy="false">(</mo>
+        <mrow>
+          <mi mathvariant="bold-italic">x</mi>
+          <mo>&#x2212;</mo>
+          <msub>
+            <mi mathvariant="bold-italic">p</mi>
+            <mn>1</mn>
+          </msub>
+        </mrow>
+        <mo stretchy="false">)</mo>
+      </mrow>
+    </mrow>
+    <mo>=</mo>
+    <mrow>
+      <mrow>
+        <mi mathvariant="bold-italic">n</mi>
+        <mo>&#x22C5;</mo>
+        <mi mathvariant="bold-italic">d</mi>
+      </mrow>
+      <mo>+</mo>
+      <mrow>
+        <mi>u</mi>
+        <mo>&#x2062;</mo>
+        <munder>
+          <mrow data-mjx-texclass="OP">
+            <mstyle scriptlevel="0">
+              <munder>
+                <mrow>
+                  <mi mathvariant="bold-italic">n</mi>
+                  <mo>&#x22C5;</mo>
+                  <msub>
+                    <mi mathvariant="bold-italic">s</mi>
+                    <mn>2</mn>
+                  </msub>
+                </mrow>
+                <mo>&#x23DF;</mo>
+              </munder>
+            </mstyle>
+          </mrow>
+          <mrow data-mjx-texclass="ORD">
+            <mn>0</mn>
+          </mrow>
+        </munder>
+      </mrow>
+    </mrow>
+    <mo>=</mo>
+    <mi>D</mi>
+  </mrow>
+  <mo>.</mo>
+</math></div>
+
+
+<p><strong>沿着 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <msub>
+    <mi>&#x2113;</mi>
+    <mn>2</mn>
+  </msub>
+</math> 移动时，它相对 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi mathvariant="normal">&#x3A0;</mi>
+</math> 的法向位置不变。</strong></p>
+<ul>
+<li>若 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi>D</mi>
+  <mo>=</mo>
+  <mn>0</mn>
+</math>，则 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <msub>
+    <mi>&#x2113;</mi>
+    <mn>2</mn>
+  </msub>
+</math> 整条位于 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi mathvariant="normal">&#x3A0;</mi>
+</math> 内。两条直线共面且方向不平行，因此<strong>有且只有一个交点</strong>。</li>
+<li>若 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi>D</mi>
+  <mo>&#x2260;</mo>
+  <mn>0</mn>
+</math>，则 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <msub>
+    <mi>&#x2113;</mi>
+    <mn>2</mn>
+  </msub>
+</math> 整条位于 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi mathvariant="normal">&#x3A0;</mi>
+</math> 外，并与 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi mathvariant="normal">&#x3A0;</mi>
+</math> 平行。它不可能与位于 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi mathvariant="normal">&#x3A0;</mi>
+</math> 内的 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <msub>
+    <mi>&#x2113;</mi>
+    <mn>1</mn>
+  </msub>
+</math> 相交；再结合方向不平行，得两直线<strong>异面</strong>。</li>
+</ul>
+<p>这里的“<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <msub>
+    <mi>&#x2113;</mi>
+    <mn>2</mn>
+  </msub>
+</math> 与 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi mathvariant="normal">&#x3A0;</mi>
+</math> 平行”不等于“<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <msub>
+    <mi>&#x2113;</mi>
+    <mn>2</mn>
+  </msub>
+</math> 与 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <msub>
+    <mi>&#x2113;</mi>
+    <mn>1</mn>
+  </msub>
+</math> 平行”：一条直线可以沿平面内的另一种方向延伸。</p>
+<h3 id="h-151">4.3 从向量分解、体积再理解一次</h3>
+<p>当 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi mathvariant="bold-italic">n</mi>
+  <mo>&#x2260;</mo>
+  <mn mathvariant="bold">0</mn>
+</math> 时，把连接向量分解为沿平面的分量与法向分量：</p>
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mrow>
+    <mi mathvariant="bold-italic">d</mi>
+    <mo>=</mo>
+    <mrow>
+      <msub>
+        <mi mathvariant="bold-italic">d</mi>
+        <mrow data-mjx-texclass="ORD">
+          <mo>&#x2225;</mo>
+        </mrow>
+      </msub>
+      <mo>+</mo>
+      <msub>
+        <mi mathvariant="bold-italic">d</mi>
+        <mrow data-mjx-texclass="ORD">
+          <mo>&#x27C2;</mo>
+        </mrow>
+      </msub>
+    </mrow>
+  </mrow>
+  <mo>,</mo>
+  <mrow>
+    <mstyle scriptlevel="0">
+      <mspace width="2em"></mspace>
+    </mstyle>
+    <menclose notation="box">
+      <mrow data-mjx-texclass="ORD">
+        <mstyle scriptlevel="0">
+          <mrow data-mjx-texclass="ORD">
+            <mrow>
+              <msub>
+                <mi mathvariant="bold-italic">d</mi>
+                <mrow data-mjx-texclass="ORD">
+                  <mo>&#x27C2;</mo>
+                </mrow>
+              </msub>
+              <mo>=</mo>
+              <mrow>
+                <mfrac>
+                  <mrow>
+                    <mi mathvariant="bold-italic">d</mi>
+                    <mo>&#x22C5;</mo>
+                    <mi mathvariant="bold-italic">n</mi>
+                  </mrow>
+                  <mrow>
+                    <msup>
+                      <mrow>
+                        <mo data-mjx-texclass="ORD" fence="false" stretchy="false">&#x2016;</mo>
+                        <mi mathvariant="bold-italic">n</mi>
+                        <mo data-mjx-texclass="ORD" fence="false" stretchy="false">&#x2016;</mo>
+                      </mrow>
+                      <mn>2</mn>
+                    </msup>
+                  </mrow>
+                </mfrac>
+                <mo>&#x2062;</mo>
+                <mi mathvariant="bold-italic">n</mi>
+              </mrow>
+            </mrow>
+            <mo>.</mo>
+          </mrow>
+        </mstyle>
+      </mrow>
+    </menclose>
+  </mrow>
+</math></div>
+
+
+<ul>
+<li><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi>D</mi>
+  <mo>=</mo>
+  <mn>0</mn>
+</math>：法向分量为零，连接向量完全由 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <msub>
+    <mi mathvariant="bold-italic">s</mi>
+    <mn>1</mn>
+  </msub>
+  <mo>,</mo>
+  <msub>
+    <mi mathvariant="bold-italic">s</mi>
+    <mn>2</mn>
+  </msub>
+</math> 线性表示。</li>
+<li><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi>D</mi>
+  <mo>&#x2260;</mo>
+  <mn>0</mn>
+</math>：存在非零法向分量，<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <msub>
+    <mi>P</mi>
+    <mn>2</mn>
+  </msub>
+</math> 偏离了参考平面。</li>
+</ul>
+<p>同时，<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mo data-mjx-texclass="ORD" stretchy="false">|</mo>
+  <mi>D</mi>
+  <mo data-mjx-texclass="ORD" stretchy="false">|</mo>
+</math> 等于 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi mathvariant="bold-italic">d</mi>
+  <mo>,</mo>
+  <msub>
+    <mi mathvariant="bold-italic">s</mi>
+    <mn>1</mn>
+  </msub>
+  <mo>,</mo>
+  <msub>
+    <mi mathvariant="bold-italic">s</mi>
+    <mn>2</mn>
+  </msub>
+</math> 张成的平行六面体的体积。体积为零意味着三个向量线性相关；在 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <msub>
+    <mi mathvariant="bold-italic">s</mi>
+    <mn>1</mn>
+  </msub>
+  <mo>,</mo>
+  <msub>
+    <mi mathvariant="bold-italic">s</mi>
+    <mn>2</mn>
+  </msub>
+</math> 已经线性无关的前提下，恰好表示</p>
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mrow>
+    <mi mathvariant="bold-italic">d</mi>
+    <mo>&#x2208;</mo>
+    <mrow>
+      <mi>span</mi>
+      <mo data-mjx-texclass="NONE">&#x2061;</mo>
+      <mrow>
+        <mo fence="false" stretchy="false">{</mo>
+        <mrow>
+          <msub>
+            <mi mathvariant="bold-italic">s</mi>
+            <mn>1</mn>
+          </msub>
+          <mo>,</mo>
+          <msub>
+            <mi mathvariant="bold-italic">s</mi>
+            <mn>2</mn>
+          </msub>
+        </mrow>
+        <mo fence="false" stretchy="false">}</mo>
+      </mrow>
+    </mrow>
+  </mrow>
+  <mo>.</mo>
+</math></div>
+
+
+<p>相交条件也可直接由参数方程读出：</p>
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mrow>
+    <mrow>
+      <msub>
+        <mi mathvariant="bold-italic">p</mi>
+        <mn>1</mn>
+      </msub>
+      <mo>+</mo>
+      <mrow>
+        <mi>t</mi>
+        <mo>&#x2062;</mo>
+        <msub>
+          <mi mathvariant="bold-italic">s</mi>
+          <mn>1</mn>
+        </msub>
+      </mrow>
+    </mrow>
+    <mo>=</mo>
+    <mrow>
+      <msub>
+        <mi mathvariant="bold-italic">p</mi>
+        <mn>2</mn>
+      </msub>
+      <mo>+</mo>
+      <mrow>
+        <mi>u</mi>
+        <mo>&#x2062;</mo>
+        <msub>
+          <mi mathvariant="bold-italic">s</mi>
+          <mn>2</mn>
+        </msub>
+      </mrow>
+    </mrow>
+    <mstyle scriptlevel="0">
+      <mspace width="0.278em"></mspace>
+    </mstyle>
+    <mo stretchy="false">&#x27FA;</mo>
+    <mstyle scriptlevel="0">
+      <mspace width="0.278em"></mspace>
+    </mstyle>
+    <mi mathvariant="bold-italic">d</mi>
+    <mo>=</mo>
+    <mrow>
+      <mrow>
+        <mi>t</mi>
+        <mo>&#x2062;</mo>
+        <msub>
+          <mi mathvariant="bold-italic">s</mi>
+          <mn>1</mn>
+        </msub>
+      </mrow>
+      <mo>&#x2212;</mo>
+      <mrow>
+        <mi>u</mi>
+        <mo>&#x2062;</mo>
+        <msub>
+          <mi mathvariant="bold-italic">s</mi>
+          <mn>2</mn>
+        </msub>
+      </mrow>
+    </mrow>
+  </mrow>
+  <mo>.</mo>
+</math></div>
+
+
+<h2 id="h-180">5. 修正后的图示：四种情形放在同一套坐标中</h2>
+<p><img src="../../../files/%E9%AB%98%E6%95%B0%E7%AC%94%E8%AE%B0/%E7%A9%BA%E9%97%B4%E5%87%A0%E4%BD%95%E5%92%8C%E5%A4%9A%E5%85%83%E5%BE%AE%E5%88%86/assets/%E7%A9%BA%E9%97%B4%E4%B8%A4%E7%9B%B4%E7%BA%BF%E4%BD%8D%E7%BD%AE%E5%85%B3%E7%B3%BB.png" alt="四种位置关系的准确示意图"></p>
+<blockquote><p>图示采用统一的平行投影，几何对象由下列参数方程确定。投影保持平行关系，但不保持长度和角度；<strong>屏幕上看起来相交，不代表空间中真的相交；看起来不是直角，也不能据此否定垂直关系。</strong> 蓝线是 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <msub>
+    <mi>&#x2113;</mi>
+    <mn>1</mn>
+  </msub>
+</math>，橙线是 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <msub>
+    <mi>&#x2113;</mi>
+    <mn>2</mn>
+  </msub>
+</math>。</p>
+</blockquote><p>上排选取 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi>z</mi>
+  <mo>=</mo>
+  <mn>0</mn>
+</math> 作为包含两条直线的示意平面，并不表示两个平行方向可以唯一确定平面；下排的 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi mathvariant="normal">&#x3A0;</mi>
+</math> 则按第 4 节的定义确定。</p>
+<p>四幅图统一取</p>
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <msub>
+    <mi>&#x2113;</mi>
+    <mn>1</mn>
+  </msub>
+  <mo>:</mo>
+  <mrow>
+    <mrow>
+      <mo stretchy="false">(</mo>
+      <mrow>
+        <mi>x</mi>
+        <mo>,</mo>
+        <mi>y</mi>
+        <mo>,</mo>
+        <mi>z</mi>
+      </mrow>
+      <mo stretchy="false">)</mo>
+    </mrow>
+    <mo>=</mo>
+    <mrow>
+      <mo stretchy="false">(</mo>
+      <mrow>
+        <mi>t</mi>
+        <mo>,</mo>
+        <mn>0</mn>
+        <mo>,</mo>
+        <mn>0</mn>
+      </mrow>
+      <mo stretchy="false">)</mo>
+    </mrow>
+  </mrow>
+  <mo>,</mo>
+  <mrow>
+    <mstyle scriptlevel="0">
+      <mspace width="2em"></mspace>
+    </mstyle>
+    <mrow>
+      <msub>
+        <mi>P</mi>
+        <mn>1</mn>
+      </msub>
+      <mo>=</mo>
+      <mrow>
+        <mo stretchy="false">(</mo>
+        <mrow>
+          <mn>0</mn>
+          <mo>,</mo>
+          <mn>0</mn>
+          <mo>,</mo>
+          <mn>0</mn>
+        </mrow>
+        <mo stretchy="false">)</mo>
+      </mrow>
+    </mrow>
+  </mrow>
+  <mo>,</mo>
+  <mrow>
+    <mstyle scriptlevel="0">
+      <mspace width="2em"></mspace>
+    </mstyle>
+    <mrow>
+      <msub>
+        <mi mathvariant="bold-italic">s</mi>
+        <mn>1</mn>
+      </msub>
+      <mo>=</mo>
+      <mrow>
+        <mo stretchy="false">(</mo>
+        <mrow>
+          <mn>1</mn>
+          <mo>,</mo>
+          <mn>0</mn>
+          <mo>,</mo>
+          <mn>0</mn>
+        </mrow>
+        <mo stretchy="false">)</mo>
+      </mrow>
+    </mrow>
+  </mrow>
+  <mo>.</mo>
+</math></div>
+
+
+<table>
+<thead>
+<tr>
+<th>关系</th>
+<th><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <msub>
+    <mi>&#x2113;</mi>
+    <mn>2</mn>
+  </msub>
+</math> 的参数方程</th>
+<th>选取 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <msub>
+    <mi>P</mi>
+    <mn>2</mn>
+  </msub>
+</math>、<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <msub>
+    <mi mathvariant="bold-italic">s</mi>
+    <mn>2</mn>
+  </msub>
+</math></th>
+<th>判定结果</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>重合</td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mrow>
+    <mo stretchy="false">(</mo>
+    <mrow>
+      <mi>x</mi>
+      <mo>,</mo>
+      <mi>y</mi>
+      <mo>,</mo>
+      <mi>z</mi>
+    </mrow>
+    <mo stretchy="false">)</mo>
+  </mrow>
+  <mo>=</mo>
+  <mrow>
+    <mo stretchy="false">(</mo>
+    <mrow>
+      <mrow>
+        <mn>1</mn>
+        <mo>+</mo>
+        <mi>u</mi>
+      </mrow>
+      <mo>,</mo>
+      <mn>0</mn>
+      <mo>,</mo>
+      <mn>0</mn>
+    </mrow>
+    <mo stretchy="false">)</mo>
+  </mrow>
+</math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <msub>
+    <mi>P</mi>
+    <mn>2</mn>
+  </msub>
+  <mo>=</mo>
+  <mrow>
+    <mo stretchy="false">(</mo>
+    <mrow>
+      <mn>1</mn>
+      <mo>,</mo>
+      <mn>0</mn>
+      <mo>,</mo>
+      <mn>0</mn>
+    </mrow>
+    <mo stretchy="false">)</mo>
+  </mrow>
+</math>，<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <msub>
+    <mi mathvariant="bold-italic">s</mi>
+    <mn>2</mn>
+  </msub>
+  <mo>=</mo>
+  <mrow>
+    <mo stretchy="false">(</mo>
+    <mrow>
+      <mn>1</mn>
+      <mo>,</mo>
+      <mn>0</mn>
+      <mo>,</mo>
+      <mn>0</mn>
+    </mrow>
+    <mo stretchy="false">)</mo>
+  </mrow>
+</math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi mathvariant="bold-italic">n</mi>
+  <mo>=</mo>
+  <mn mathvariant="bold">0</mn>
+</math>，<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mrow>
+    <mi mathvariant="bold-italic">d</mi>
+    <mo>&#xD7;</mo>
+    <msub>
+      <mi mathvariant="bold-italic">s</mi>
+      <mn>1</mn>
+    </msub>
+  </mrow>
+  <mo>=</mo>
+  <mn mathvariant="bold">0</mn>
+</math></td>
+</tr>
+<tr>
+<td>平行不重合</td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mrow>
+    <mo stretchy="false">(</mo>
+    <mrow>
+      <mi>x</mi>
+      <mo>,</mo>
+      <mi>y</mi>
+      <mo>,</mo>
+      <mi>z</mi>
+    </mrow>
+    <mo stretchy="false">)</mo>
+  </mrow>
+  <mo>=</mo>
+  <mrow>
+    <mo stretchy="false">(</mo>
+    <mrow>
+      <mi>u</mi>
+      <mo>,</mo>
+      <mn>1</mn>
+      <mo>,</mo>
+      <mn>0</mn>
+    </mrow>
+    <mo stretchy="false">)</mo>
+  </mrow>
+</math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <msub>
+    <mi>P</mi>
+    <mn>2</mn>
+  </msub>
+  <mo>=</mo>
+  <mrow>
+    <mo stretchy="false">(</mo>
+    <mrow>
+      <mn>0</mn>
+      <mo>,</mo>
+      <mn>1</mn>
+      <mo>,</mo>
+      <mn>0</mn>
+    </mrow>
+    <mo stretchy="false">)</mo>
+  </mrow>
+</math>，<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <msub>
+    <mi mathvariant="bold-italic">s</mi>
+    <mn>2</mn>
+  </msub>
+  <mo>=</mo>
+  <mrow>
+    <mo stretchy="false">(</mo>
+    <mrow>
+      <mn>1</mn>
+      <mo>,</mo>
+      <mn>0</mn>
+      <mo>,</mo>
+      <mn>0</mn>
+    </mrow>
+    <mo stretchy="false">)</mo>
+  </mrow>
+</math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi mathvariant="bold-italic">n</mi>
+  <mo>=</mo>
+  <mn mathvariant="bold">0</mn>
+</math>，<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mrow>
+    <mi mathvariant="bold-italic">d</mi>
+    <mo>&#xD7;</mo>
+    <msub>
+      <mi mathvariant="bold-italic">s</mi>
+      <mn>1</mn>
+    </msub>
+  </mrow>
+  <mo>=</mo>
+  <mrow>
+    <mo stretchy="false">(</mo>
+    <mrow>
+      <mn>0</mn>
+      <mo>,</mo>
+      <mn>0</mn>
+      <mo>,</mo>
+      <mrow>
+        <mo>&#x2212;</mo>
+        <mn>1</mn>
+      </mrow>
+    </mrow>
+    <mo stretchy="false">)</mo>
+  </mrow>
+</math></td>
+</tr>
+<tr>
+<td>相交</td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mrow>
+    <mo stretchy="false">(</mo>
+    <mrow>
+      <mi>x</mi>
+      <mo>,</mo>
+      <mi>y</mi>
+      <mo>,</mo>
+      <mi>z</mi>
+    </mrow>
+    <mo stretchy="false">)</mo>
+  </mrow>
+  <mo>=</mo>
+  <mrow>
+    <mo stretchy="false">(</mo>
+    <mrow>
+      <mn>1</mn>
+      <mo>,</mo>
+      <mi>u</mi>
+      <mo>,</mo>
+      <mn>0</mn>
+    </mrow>
+    <mo stretchy="false">)</mo>
+  </mrow>
+</math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <msub>
+    <mi>P</mi>
+    <mn>2</mn>
+  </msub>
+  <mo>=</mo>
+  <mrow>
+    <mo stretchy="false">(</mo>
+    <mrow>
+      <mn>1</mn>
+      <mo>,</mo>
+      <mn>1</mn>
+      <mo>,</mo>
+      <mn>0</mn>
+    </mrow>
+    <mo stretchy="false">)</mo>
+  </mrow>
+</math>，<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <msub>
+    <mi mathvariant="bold-italic">s</mi>
+    <mn>2</mn>
+  </msub>
+  <mo>=</mo>
+  <mrow>
+    <mo stretchy="false">(</mo>
+    <mrow>
+      <mn>0</mn>
+      <mo>,</mo>
+      <mn>1</mn>
+      <mo>,</mo>
+      <mn>0</mn>
+    </mrow>
+    <mo stretchy="false">)</mo>
+  </mrow>
+</math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi mathvariant="bold-italic">n</mi>
+  <mo>=</mo>
+  <mrow>
+    <mo stretchy="false">(</mo>
+    <mrow>
+      <mn>0</mn>
+      <mo>,</mo>
+      <mn>0</mn>
+      <mo>,</mo>
+      <mn>1</mn>
+    </mrow>
+    <mo stretchy="false">)</mo>
+  </mrow>
+</math>，<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi>D</mi>
+  <mo>=</mo>
+  <mn>0</mn>
+</math>；交点 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi>I</mi>
+  <mo>=</mo>
+  <mrow>
+    <mo stretchy="false">(</mo>
+    <mrow>
+      <mn>1</mn>
+      <mo>,</mo>
+      <mn>0</mn>
+      <mo>,</mo>
+      <mn>0</mn>
+    </mrow>
+    <mo stretchy="false">)</mo>
+  </mrow>
+</math></td>
+</tr>
+<tr>
+<td>异面</td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mrow>
+    <mo stretchy="false">(</mo>
+    <mrow>
+      <mi>x</mi>
+      <mo>,</mo>
+      <mi>y</mi>
+      <mo>,</mo>
+      <mi>z</mi>
+    </mrow>
+    <mo stretchy="false">)</mo>
+  </mrow>
+  <mo>=</mo>
+  <mrow>
+    <mo stretchy="false">(</mo>
+    <mrow>
+      <mn>1</mn>
+      <mo>,</mo>
+      <mi>u</mi>
+      <mo>,</mo>
+      <mn>1</mn>
+    </mrow>
+    <mo stretchy="false">)</mo>
+  </mrow>
+</math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <msub>
+    <mi>P</mi>
+    <mn>2</mn>
+  </msub>
+  <mo>=</mo>
+  <mrow>
+    <mo stretchy="false">(</mo>
+    <mrow>
+      <mn>1</mn>
+      <mo>,</mo>
+      <mn>1</mn>
+      <mo>,</mo>
+      <mn>1</mn>
+    </mrow>
+    <mo stretchy="false">)</mo>
+  </mrow>
+</math>，<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <msub>
+    <mi mathvariant="bold-italic">s</mi>
+    <mn>2</mn>
+  </msub>
+  <mo>=</mo>
+  <mrow>
+    <mo stretchy="false">(</mo>
+    <mrow>
+      <mn>0</mn>
+      <mo>,</mo>
+      <mn>1</mn>
+      <mo>,</mo>
+      <mn>0</mn>
+    </mrow>
+    <mo stretchy="false">)</mo>
+  </mrow>
+</math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi mathvariant="bold-italic">n</mi>
+  <mo>=</mo>
+  <mrow>
+    <mo stretchy="false">(</mo>
+    <mrow>
+      <mn>0</mn>
+      <mo>,</mo>
+      <mn>0</mn>
+      <mo>,</mo>
+      <mn>1</mn>
+    </mrow>
+    <mo stretchy="false">)</mo>
+  </mrow>
+</math>，<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi>D</mi>
+  <mo>=</mo>
+  <mn>1</mn>
+</math></td>
+</tr>
+</tbody></table>
+<p>读图时重点比较下排两幅：</p>
+<ol>
+<li>两幅图的方向向量完全相同，参考平面都是 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi mathvariant="normal">&#x3A0;</mi>
+  <mo>:</mo>
+  <mrow>
+    <mi>z</mi>
+    <mo>=</mo>
+    <mn>0</mn>
+  </mrow>
+</math>。</li>
+<li>左图 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <msub>
+    <mi>P</mi>
+    <mn>2</mn>
+  </msub>
+  <mo>=</mo>
+  <mrow>
+    <mo stretchy="false">(</mo>
+    <mrow>
+      <mn>1</mn>
+      <mo>,</mo>
+      <mn>1</mn>
+      <mo>,</mo>
+      <mn>0</mn>
+    </mrow>
+    <mo stretchy="false">)</mo>
+  </mrow>
+</math> 在平面内，所以橙线与蓝线相交于 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi>I</mi>
+</math>。</li>
+<li>右图仅把橙线沿法向抬高了一个单位，取 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <msub>
+    <mi>P</mi>
+    <mn>2</mn>
+  </msub>
+  <mo>=</mo>
+  <mrow>
+    <mo stretchy="false">(</mo>
+    <mrow>
+      <mn>1</mn>
+      <mo>,</mo>
+      <mn>1</mn>
+      <mo>,</mo>
+      <mn>1</mn>
+    </mrow>
+    <mo stretchy="false">)</mo>
+  </mrow>
+</math>。此时橙线位于 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi>z</mi>
+  <mo>=</mo>
+  <mn>1</mn>
+</math>，蓝线位于 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi>z</mi>
+  <mo>=</mo>
+  <mn>0</mn>
+</math>，两者不相交且方向不平行，所以异面。</li>
+<li>右图中 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi>Q</mi>
+  <mo>=</mo>
+  <mrow>
+    <mo stretchy="false">(</mo>
+    <mrow>
+      <mn>1</mn>
+      <mo>,</mo>
+      <mn>1</mn>
+      <mo>,</mo>
+      <mn>0</mn>
+    </mrow>
+    <mo stretchy="false">)</mo>
+  </mrow>
+</math> 是 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <msub>
+    <mi>P</mi>
+    <mn>2</mn>
+  </msub>
+</math> 在 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi mathvariant="normal">&#x3A0;</mi>
+</math> 上的正交投影；<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mover>
+    <mrow>
+      <mi>Q</mi>
+      <mo>&#x2062;</mo>
+      <msub>
+        <mi>P</mi>
+        <mn>2</mn>
+      </msub>
+    </mrow>
+    <mo>&#x2192;</mo>
+  </mover>
+  <mo>=</mo>
+  <msub>
+    <mi mathvariant="bold-italic">d</mi>
+    <mo>&#x27C2;</mo>
+  </msub>
+  <mo>=</mo>
+  <mrow>
+    <mo stretchy="false">(</mo>
+    <mrow>
+      <mn>0</mn>
+      <mo>,</mo>
+      <mn>0</mn>
+      <mo>,</mo>
+      <mn>1</mn>
+    </mrow>
+    <mo stretchy="false">)</mo>
+  </mrow>
+</math>。紫色虚线是法向分量，<strong>不是第二条直线</strong>。</li>
+</ol>
+<h2 id="h-210">6. 考试直接使用的判定表</h2>
+<p>先算 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi mathvariant="bold-italic">n</mi>
+  <mo>=</mo>
+  <mrow>
+    <msub>
+      <mi mathvariant="bold-italic">s</mi>
+      <mn>1</mn>
+    </msub>
+    <mo>&#xD7;</mo>
+    <msub>
+      <mi mathvariant="bold-italic">s</mi>
+      <mn>2</mn>
+    </msub>
+  </mrow>
+</math>，再沿对应分支计算。</p>
+<table>
+<thead>
+<tr>
+<th>第一步：方向</th>
+<th>第二步：位置</th>
+<th>最终关系</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi mathvariant="bold-italic">n</mi>
+  <mo>=</mo>
+  <mn mathvariant="bold">0</mn>
+</math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mrow>
+    <mi mathvariant="bold-italic">d</mi>
+    <mo>&#xD7;</mo>
+    <msub>
+      <mi mathvariant="bold-italic">s</mi>
+      <mn>1</mn>
+    </msub>
+  </mrow>
+  <mo>=</mo>
+  <mn mathvariant="bold">0</mn>
+</math></td>
+<td>重合</td>
+</tr>
+<tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi mathvariant="bold-italic">n</mi>
+  <mo>=</mo>
+  <mn mathvariant="bold">0</mn>
+</math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mrow>
+    <mi mathvariant="bold-italic">d</mi>
+    <mo>&#xD7;</mo>
+    <msub>
+      <mi mathvariant="bold-italic">s</mi>
+      <mn>1</mn>
+    </msub>
+  </mrow>
+  <mo>&#x2260;</mo>
+  <mn mathvariant="bold">0</mn>
+</math></td>
+<td>平行不重合</td>
+</tr>
+<tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi mathvariant="bold-italic">n</mi>
+  <mo>&#x2260;</mo>
+  <mn mathvariant="bold">0</mn>
+</math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi>D</mi>
+  <mo>=</mo>
+  <mrow>
+    <mi mathvariant="bold-italic">d</mi>
+    <mo>&#x22C5;</mo>
+    <mi mathvariant="bold-italic">n</mi>
+  </mrow>
+  <mo>=</mo>
+  <mn>0</mn>
+</math></td>
+<td>相交</td>
+</tr>
+<tr>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi mathvariant="bold-italic">n</mi>
+  <mo>&#x2260;</mo>
+  <mn mathvariant="bold">0</mn>
+</math></td>
+<td><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi>D</mi>
+  <mo>=</mo>
+  <mrow>
+    <mi mathvariant="bold-italic">d</mi>
+    <mo>&#x22C5;</mo>
+    <mi mathvariant="bold-italic">n</mi>
+  </mrow>
+  <mo>&#x2260;</mo>
+  <mn>0</mn>
+</math></td>
+<td>异面</td>
+</tr>
+</tbody></table>
+<p>坐标计算时，若 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <msub>
+    <mi mathvariant="bold-italic">s</mi>
+    <mi>i</mi>
+  </msub>
+  <mo>=</mo>
+  <mrow>
+    <mo stretchy="false">(</mo>
+    <mrow>
+      <msub>
+        <mi>a</mi>
+        <mi>i</mi>
+      </msub>
+      <mo>,</mo>
+      <msub>
+        <mi>b</mi>
+        <mi>i</mi>
+      </msub>
+      <mo>,</mo>
+      <msub>
+        <mi>c</mi>
+        <mi>i</mi>
+      </msub>
+    </mrow>
+    <mo stretchy="false">)</mo>
+  </mrow>
+</math>，则</p>
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mrow>
+    <mi mathvariant="bold-italic">n</mi>
+    <mo>=</mo>
+    <mrow data-mjx-texclass="INNER">
+      <mo data-mjx-texclass="OPEN">|</mo>
+      <mstyle scriptlevel="0">
+        <mtable columnspacing="1em" rowspacing="4pt">
+          <mtr>
+            <mtd>
+              <mi mathvariant="bold-italic">i</mi>
+            </mtd>
+            <mtd>
+              <mi mathvariant="bold-italic">j</mi>
+            </mtd>
+            <mtd>
+              <mi mathvariant="bold-italic">k</mi>
+            </mtd>
+          </mtr>
+          <mtr>
+            <mtd>
+              <msub>
+                <mi>a</mi>
+                <mn>1</mn>
+              </msub>
+            </mtd>
+            <mtd>
+              <msub>
+                <mi>b</mi>
+                <mn>1</mn>
+              </msub>
+            </mtd>
+            <mtd>
+              <msub>
+                <mi>c</mi>
+                <mn>1</mn>
+              </msub>
+            </mtd>
+          </mtr>
+          <mtr>
+            <mtd>
+              <msub>
+                <mi>a</mi>
+                <mn>2</mn>
+              </msub>
+            </mtd>
+            <mtd>
+              <msub>
+                <mi>b</mi>
+                <mn>2</mn>
+              </msub>
+            </mtd>
+            <mtd>
+              <msub>
+                <mi>c</mi>
+                <mn>2</mn>
+              </msub>
+            </mtd>
+          </mtr>
+        </mtable>
+      </mstyle>
+      <mo data-mjx-texclass="CLOSE">|</mo>
+    </mrow>
+    <mo>=</mo>
+    <mrow>
+      <mo stretchy="false">(</mo>
+      <mrow>
+        <mrow>
+          <mrow>
+            <msub>
+              <mi>b</mi>
+              <mn>1</mn>
+            </msub>
+            <mo>&#x2062;</mo>
+            <msub>
+              <mi>c</mi>
+              <mn>2</mn>
+            </msub>
+          </mrow>
+          <mo>&#x2212;</mo>
+          <mrow>
+            <msub>
+              <mi>c</mi>
+              <mn>1</mn>
+            </msub>
+            <mo>&#x2062;</mo>
+            <msub>
+              <mi>b</mi>
+              <mn>2</mn>
+            </msub>
+          </mrow>
+        </mrow>
+        <mo>,</mo>
+        <mrow>
+          <mtext>&#xA0;</mtext>
+          <mrow>
+            <mrow>
+              <msub>
+                <mi>c</mi>
+                <mn>1</mn>
+              </msub>
+              <mo>&#x2062;</mo>
+              <msub>
+                <mi>a</mi>
+                <mn>2</mn>
+              </msub>
+            </mrow>
+            <mo>&#x2212;</mo>
+            <mrow>
+              <msub>
+                <mi>a</mi>
+                <mn>1</mn>
+              </msub>
+              <mo>&#x2062;</mo>
+              <msub>
+                <mi>c</mi>
+                <mn>2</mn>
+              </msub>
+            </mrow>
+          </mrow>
+        </mrow>
+        <mo>,</mo>
+        <mrow>
+          <mtext>&#xA0;</mtext>
+          <mrow>
+            <mrow>
+              <msub>
+                <mi>a</mi>
+                <mn>1</mn>
+              </msub>
+              <mo>&#x2062;</mo>
+              <msub>
+                <mi>b</mi>
+                <mn>2</mn>
+              </msub>
+            </mrow>
+            <mo>&#x2212;</mo>
+            <mrow>
+              <msub>
+                <mi>b</mi>
+                <mn>1</mn>
+              </msub>
+              <mo>&#x2062;</mo>
+              <msub>
+                <mi>a</mi>
+                <mn>2</mn>
+              </msub>
+            </mrow>
+          </mrow>
+        </mrow>
+      </mrow>
+      <mo stretchy="false">)</mo>
+    </mrow>
+  </mrow>
+  <mo>.</mo>
+</math></div>
+
+
+<p>若 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi mathvariant="bold-italic">d</mi>
+  <mo>=</mo>
+  <mrow>
+    <mo stretchy="false">(</mo>
+    <mrow>
+      <msub>
+        <mi>d</mi>
+        <mi>x</mi>
+      </msub>
+      <mo>,</mo>
+      <msub>
+        <mi>d</mi>
+        <mi>y</mi>
+      </msub>
+      <mo>,</mo>
+      <msub>
+        <mi>d</mi>
+        <mi>z</mi>
+      </msub>
+    </mrow>
+    <mo stretchy="false">)</mo>
+  </mrow>
+</math>，则混合积可直接写成行列式：</p>
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mrow>
+    <mi>D</mi>
+    <mo>=</mo>
+    <mrow data-mjx-texclass="INNER">
+      <mo data-mjx-texclass="OPEN">|</mo>
+      <mstyle scriptlevel="0">
+        <mtable columnspacing="1em" rowspacing="4pt">
+          <mtr>
+            <mtd>
+              <msub>
+                <mi>d</mi>
+                <mi>x</mi>
+              </msub>
+            </mtd>
+            <mtd>
+              <msub>
+                <mi>d</mi>
+                <mi>y</mi>
+              </msub>
+            </mtd>
+            <mtd>
+              <msub>
+                <mi>d</mi>
+                <mi>z</mi>
+              </msub>
+            </mtd>
+          </mtr>
+          <mtr>
+            <mtd>
+              <msub>
+                <mi>a</mi>
+                <mn>1</mn>
+              </msub>
+            </mtd>
+            <mtd>
+              <msub>
+                <mi>b</mi>
+                <mn>1</mn>
+              </msub>
+            </mtd>
+            <mtd>
+              <msub>
+                <mi>c</mi>
+                <mn>1</mn>
+              </msub>
+            </mtd>
+          </mtr>
+          <mtr>
+            <mtd>
+              <msub>
+                <mi>a</mi>
+                <mn>2</mn>
+              </msub>
+            </mtd>
+            <mtd>
+              <msub>
+                <mi>b</mi>
+                <mn>2</mn>
+              </msub>
+            </mtd>
+            <mtd>
+              <msub>
+                <mi>c</mi>
+                <mn>2</mn>
+              </msub>
+            </mtd>
+          </mtr>
+        </mtable>
+      </mstyle>
+      <mo data-mjx-texclass="CLOSE">|</mo>
+    </mrow>
+  </mrow>
+  <mo>.</mo>
+</math></div>
+
+
+<h2 id="h-244">7. 常见题面：怎样提取点和方向？</h2>
+<h3 id="h-246">7.1 对称式</h3>
+<p>若各分母均非零，</p>
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mrow>
+    <mfrac>
+      <mrow>
+        <mi>x</mi>
+        <mo>&#x2212;</mo>
+        <msub>
+          <mi>x</mi>
+          <mn>0</mn>
+        </msub>
+      </mrow>
+      <mi>a</mi>
+    </mfrac>
+    <mo>=</mo>
+    <mfrac>
+      <mrow>
+        <mi>y</mi>
+        <mo>&#x2212;</mo>
+        <msub>
+          <mi>y</mi>
+          <mn>0</mn>
+        </msub>
+      </mrow>
+      <mi>b</mi>
+    </mfrac>
+    <mo>=</mo>
+    <mfrac>
+      <mrow>
+        <mi>z</mi>
+        <mo>&#x2212;</mo>
+        <msub>
+          <mi>z</mi>
+          <mn>0</mn>
+        </msub>
+      </mrow>
+      <mi>c</mi>
+    </mfrac>
+  </mrow>
+  <mo>,</mo>
+</math></div>
+
+
+<p>可取 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <msub>
+    <mi>P</mi>
+    <mn>0</mn>
+  </msub>
+  <mo>=</mo>
+  <mrow>
+    <mo stretchy="false">(</mo>
+    <mrow>
+      <msub>
+        <mi>x</mi>
+        <mn>0</mn>
+      </msub>
+      <mo>,</mo>
+      <msub>
+        <mi>y</mi>
+        <mn>0</mn>
+      </msub>
+      <mo>,</mo>
+      <msub>
+        <mi>z</mi>
+        <mn>0</mn>
+      </msub>
+    </mrow>
+    <mo stretchy="false">)</mo>
+  </mrow>
+</math>，<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi mathvariant="bold-italic">s</mi>
+  <mo>=</mo>
+  <mrow>
+    <mo stretchy="false">(</mo>
+    <mrow>
+      <mi>a</mi>
+      <mo>,</mo>
+      <mi>b</mi>
+      <mo>,</mo>
+      <mi>c</mi>
+    </mrow>
+    <mo stretchy="false">)</mo>
+  </mrow>
+</math>。</p>
+<p><strong>某个方向分量为零时，不能真的除以零。</strong> 例如 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi mathvariant="bold-italic">s</mi>
+  <mo>=</mo>
+  <mrow>
+    <mo stretchy="false">(</mo>
+    <mrow>
+      <mn>0</mn>
+      <mo>,</mo>
+      <mi>b</mi>
+      <mo>,</mo>
+      <mi>c</mi>
+    </mrow>
+    <mo stretchy="false">)</mo>
+  </mrow>
+</math>，且 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi>b</mi>
+  <mo>,</mo>
+  <mrow>
+    <mi>c</mi>
+    <mo>&#x2260;</mo>
+    <mn>0</mn>
+  </mrow>
+</math>，应写成</p>
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mrow>
+    <mi>x</mi>
+    <mo>=</mo>
+    <msub>
+      <mi>x</mi>
+      <mn>0</mn>
+    </msub>
+  </mrow>
+  <mo>,</mo>
+  <mrow>
+    <mstyle scriptlevel="0">
+      <mspace width="2em"></mspace>
+    </mstyle>
+    <mrow>
+      <mfrac>
+        <mrow>
+          <mi>y</mi>
+          <mo>&#x2212;</mo>
+          <msub>
+            <mi>y</mi>
+            <mn>0</mn>
+          </msub>
+        </mrow>
+        <mi>b</mi>
+      </mfrac>
+      <mo>=</mo>
+      <mfrac>
+        <mrow>
+          <mi>z</mi>
+          <mo>&#x2212;</mo>
+          <msub>
+            <mi>z</mi>
+            <mn>0</mn>
+          </msub>
+        </mrow>
+        <mi>c</mi>
+      </mfrac>
+    </mrow>
+  </mrow>
+  <mo>,</mo>
+</math></div>
+
+
+<p>或直接使用参数方程 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mrow>
+    <mi>x</mi>
+    <mo>=</mo>
+    <msub>
+      <mi>x</mi>
+      <mn>0</mn>
+    </msub>
+  </mrow>
+  <mo>,</mo>
+  <mrow>
+    <mtext>&#xA0;</mtext>
+    <mrow>
+      <mi>y</mi>
+      <mo>=</mo>
+      <mrow>
+        <msub>
+          <mi>y</mi>
+          <mn>0</mn>
+        </msub>
+        <mo>+</mo>
+        <mrow>
+          <mi>b</mi>
+          <mo>&#x2062;</mo>
+          <mi>t</mi>
+        </mrow>
+      </mrow>
+    </mrow>
+  </mrow>
+  <mo>,</mo>
+  <mrow>
+    <mtext>&#xA0;</mtext>
+    <mrow>
+      <mi>z</mi>
+      <mo>=</mo>
+      <mrow>
+        <msub>
+          <mi>z</mi>
+          <mn>0</mn>
+        </msub>
+        <mo>+</mo>
+        <mrow>
+          <mi>c</mi>
+          <mo>&#x2062;</mo>
+          <mi>t</mi>
+        </mrow>
+      </mrow>
+    </mrow>
+  </mrow>
+</math>。</p>
+<h3 id="h-265">7.2 两个平面的交线</h3>
+<p>若直线由</p>
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mrow data-mjx-texclass="INNER">
+    <mo data-mjx-texclass="OPEN">{</mo>
+    <mstyle scriptlevel="0">
+      <mtable columnspacing="1em" rowspacing=".2em" columnalign="left left">
+        <mtr>
+          <mtd>
+            <mrow>
+              <mrow>
+                <mrow>
+                  <mrow>
+                    <msub>
+                      <mi>A</mi>
+                      <mn>1</mn>
+                    </msub>
+                    <mo>&#x2062;</mo>
+                    <mi>x</mi>
+                  </mrow>
+                  <mo>+</mo>
+                  <mrow>
+                    <msub>
+                      <mi>B</mi>
+                      <mn>1</mn>
+                    </msub>
+                    <mo>&#x2062;</mo>
+                    <mi>y</mi>
+                  </mrow>
+                  <mo>+</mo>
+                  <mrow>
+                    <msub>
+                      <mi>C</mi>
+                      <mn>1</mn>
+                    </msub>
+                    <mo>&#x2062;</mo>
+                    <mi>z</mi>
+                  </mrow>
+                  <mo>+</mo>
+                  <msub>
+                    <mi>D</mi>
+                    <mn>1</mn>
+                  </msub>
+                </mrow>
+                <mo>=</mo>
+                <mn>0</mn>
+              </mrow>
+              <mo>,</mo>
+            </mrow>
+          </mtd>
+        </mtr>
+        <mtr>
+          <mtd>
+            <mrow>
+              <mrow>
+                <mrow>
+                  <msub>
+                    <mi>A</mi>
+                    <mn>2</mn>
+                  </msub>
+                  <mo>&#x2062;</mo>
+                  <mi>x</mi>
+                </mrow>
+                <mo>+</mo>
+                <mrow>
+                  <msub>
+                    <mi>B</mi>
+                    <mn>2</mn>
+                  </msub>
+                  <mo>&#x2062;</mo>
+                  <mi>y</mi>
+                </mrow>
+                <mo>+</mo>
+                <mrow>
+                  <msub>
+                    <mi>C</mi>
+                    <mn>2</mn>
+                  </msub>
+                  <mo>&#x2062;</mo>
+                  <mi>z</mi>
+                </mrow>
+                <mo>+</mo>
+                <msub>
+                  <mi>D</mi>
+                  <mn>2</mn>
+                </msub>
+              </mrow>
+              <mo>=</mo>
+              <mn>0</mn>
+            </mrow>
+          </mtd>
+        </mtr>
+      </mtable>
+    </mstyle>
+    <mo data-mjx-texclass="CLOSE" fence="true" stretchy="true" symmetric="true"></mo>
+  </mrow>
+</math></div>
+
+
+<p>表示，设两个平面的法向量分别为 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <msub>
+    <mi mathvariant="bold-italic">N</mi>
+    <mn>1</mn>
+  </msub>
+  <mo>,</mo>
+  <msub>
+    <mi mathvariant="bold-italic">N</mi>
+    <mn>2</mn>
+  </msub>
+</math>。在</p>
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mrow>
+    <msub>
+      <mi mathvariant="bold-italic">N</mi>
+      <mn>1</mn>
+    </msub>
+    <mo>&#xD7;</mo>
+    <msub>
+      <mi mathvariant="bold-italic">N</mi>
+      <mn>2</mn>
+    </msub>
+  </mrow>
+  <mo>&#x2260;</mo>
+  <mn mathvariant="bold">0</mn>
+</math></div>
+
+
+<p>的前提下，可取交线方向向量</p>
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <menclose notation="box">
+    <mrow data-mjx-texclass="ORD">
+      <mstyle scriptlevel="0">
+        <mrow data-mjx-texclass="ORD">
+          <mrow>
+            <mi mathvariant="bold-italic">s</mi>
+            <mo>=</mo>
+            <mrow>
+              <msub>
+                <mi mathvariant="bold-italic">N</mi>
+                <mn>1</mn>
+              </msub>
+              <mo>&#xD7;</mo>
+              <msub>
+                <mi mathvariant="bold-italic">N</mi>
+                <mn>2</mn>
+              </msub>
+            </mrow>
+          </mrow>
+          <mo>.</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+  </menclose>
+</math></div>
+
+
+<p>因为交线方向同时垂直于两个平面的法向量。再联立两平面方程，取方便的坐标值，求交线上一点。</p>
+<p>若两个法向量平行，两个平面可能平行或重合，不能据此得到唯一的交线。</p>
+<h2 id="h-292">8. 易错点与原图需要澄清的地方</h2>
+<ol>
+<li><strong>“方向平行”不等于“直线重合”。</strong> 叉乘为零后，仍须检查连接向量。</li>
+<li><strong>“共面就相交”缺少前提。</strong> 应写成“方向不平行且共面，才有唯一交点”。平行不重合的两条直线也共面。</li>
+<li><strong>不能只用 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi>D</mi>
+  <mo>=</mo>
+  <mn>0</mn>
+</math> 判相交。</strong> 若方向平行，<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi mathvariant="bold-italic">n</mi>
+  <mo>=</mo>
+  <mn mathvariant="bold">0</mn>
+</math>，则 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi>D</mi>
+</math> 自动为零，无论两条直线重合还是平行不重合。</li>
+<li><strong>参考平面必须固定经过一个已知点。</strong> 在方向不平行的分支，本笔记统一用经过 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <msub>
+    <mi>P</mi>
+    <mn>1</mn>
+  </msub>
+</math>、方向由 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <msub>
+    <mi mathvariant="bold-italic">s</mi>
+    <mn>1</mn>
+  </msub>
+  <mo>,</mo>
+  <msub>
+    <mi mathvariant="bold-italic">s</mi>
+    <mn>2</mn>
+  </msub>
+</math> 张成的 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi mathvariant="normal">&#x3A0;</mi>
+</math>；“<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi mathvariant="bold-italic">d</mi>
+</math> 在平面内”指它属于相应的二维向量子空间，以 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <msub>
+    <mi>P</mi>
+    <mn>1</mn>
+  </msub>
+</math> 为起点放置时，终点 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <msub>
+    <mi>P</mi>
+    <mn>2</mn>
+  </msub>
+</math> 就在 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi mathvariant="normal">&#x3A0;</mi>
+</math> 上。</li>
+<li><strong>图中须区分连接向量、直线、法向投影线。</strong> 原图相交情形的连接箭头终点与 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <msub>
+    <mi>P</mi>
+    <mn>2</mn>
+  </msub>
+</math> 标注不够清楚，异面情形也没有完整展示通过 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <msub>
+    <mi>P</mi>
+    <mn>2</mn>
+  </msub>
+</math>、方向为 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <msub>
+    <mi mathvariant="bold-italic">s</mi>
+    <mn>2</mn>
+  </msub>
+</math> 的第二条直线。修订图明确标出交点 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi>I</mi>
+</math>、第二条直线以及投影点 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi>Q</mi>
+</math>。</li>
+<li><strong>相交与异面不能只凭二维图的视觉效果判断。</strong> 示意图帮助理解，最终以参数方程、叉乘和混合积为准。</li>
+</ol>
+<p>选点和定向不影响结论：若换取直线上其他点，连接向量变为</p>
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mrow>
+    <msup>
+      <mi mathvariant="bold-italic">d</mi>
+      <mo data-mjx-alternate="1">&#x2032;</mo>
+    </msup>
+    <mo>=</mo>
+    <mrow>
+      <mrow>
+        <mi mathvariant="bold-italic">d</mi>
+        <mo>+</mo>
+        <mrow>
+          <mi>v</mi>
+          <mo>&#x2062;</mo>
+          <msub>
+            <mi mathvariant="bold-italic">s</mi>
+            <mn>2</mn>
+          </msub>
+        </mrow>
+      </mrow>
+      <mo>&#x2212;</mo>
+      <mrow>
+        <mi>w</mi>
+        <mo>&#x2062;</mo>
+        <msub>
+          <mi mathvariant="bold-italic">s</mi>
+          <mn>1</mn>
+        </msub>
+      </mrow>
+    </mrow>
+  </mrow>
+  <mo>,</mo>
+</math></div>
+
+
+<p>则 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mrow>
+    <msup>
+      <mi mathvariant="bold-italic">d</mi>
+      <mo data-mjx-alternate="1">&#x2032;</mo>
+    </msup>
+    <mo>&#x22C5;</mo>
+    <mi mathvariant="bold-italic">n</mi>
+  </mrow>
+  <mo>=</mo>
+  <mrow>
+    <mi mathvariant="bold-italic">d</mi>
+    <mo>&#x22C5;</mo>
+    <mi mathvariant="bold-italic">n</mi>
+  </mrow>
+</math>；在方向平行的分支，也有 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mrow>
+    <msup>
+      <mi mathvariant="bold-italic">d</mi>
+      <mo data-mjx-alternate="1">&#x2032;</mo>
+    </msup>
+    <mo>&#xD7;</mo>
+    <msub>
+      <mi mathvariant="bold-italic">s</mi>
+      <mn>1</mn>
+    </msub>
+  </mrow>
+  <mo>=</mo>
+  <mrow>
+    <mi mathvariant="bold-italic">d</mi>
+    <mo>&#xD7;</mo>
+    <msub>
+      <mi mathvariant="bold-italic">s</mi>
+      <mn>1</mn>
+    </msub>
+  </mrow>
+</math>。把连接向量反向或交换叉乘顺序，至多改变相关结果的符号，不改变零与非零的判定。</p>
+<h2 id="h-309">9. 与距离公式的联系（选读）</h2>
+<p>方向不平行时，两直线的距离就是连接向量法向分量的长度：</p>
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <menclose notation="box">
+    <mrow data-mjx-texclass="ORD">
+      <mstyle scriptlevel="0">
+        <mrow data-mjx-texclass="ORD">
+          <mrow>
+            <mrow>
+              <mi>dist</mi>
+              <mo data-mjx-texclass="NONE">&#x2061;</mo>
+              <mrow>
+                <mo stretchy="false">(</mo>
+                <mrow>
+                  <msub>
+                    <mi>&#x2113;</mi>
+                    <mn>1</mn>
+                  </msub>
+                  <mo>,</mo>
+                  <msub>
+                    <mi>&#x2113;</mi>
+                    <mn>2</mn>
+                  </msub>
+                </mrow>
+                <mo stretchy="false">)</mo>
+              </mrow>
+            </mrow>
+            <mo>=</mo>
+            <mfrac>
+              <mrow>
+                <mo data-mjx-texclass="ORD" stretchy="false">|</mo>
+                <mrow>
+                  <mi mathvariant="bold-italic">d</mi>
+                  <mo>&#x22C5;</mo>
+                  <mrow>
+                    <mo stretchy="false">(</mo>
+                    <mrow>
+                      <msub>
+                        <mi mathvariant="bold-italic">s</mi>
+                        <mn>1</mn>
+                      </msub>
+                      <mo>&#xD7;</mo>
+                      <msub>
+                        <mi mathvariant="bold-italic">s</mi>
+                        <mn>2</mn>
+                      </msub>
+                    </mrow>
+                    <mo stretchy="false">)</mo>
+                  </mrow>
+                </mrow>
+                <mo data-mjx-texclass="ORD" stretchy="false">|</mo>
+              </mrow>
+              <mrow>
+                <mo data-mjx-texclass="ORD" fence="false" stretchy="false">&#x2016;</mo>
+                <mrow>
+                  <msub>
+                    <mi mathvariant="bold-italic">s</mi>
+                    <mn>1</mn>
+                  </msub>
+                  <mo>&#xD7;</mo>
+                  <msub>
+                    <mi mathvariant="bold-italic">s</mi>
+                    <mn>2</mn>
+                  </msub>
+                </mrow>
+                <mo data-mjx-texclass="ORD" fence="false" stretchy="false">&#x2016;</mo>
+              </mrow>
+            </mfrac>
+          </mrow>
+          <mo>.</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+  </menclose>
+</math></div>
+
+
+<p>相交时它为零，异面时它大于零。分母非零是这个公式的使用前提。</p>
+<p>方向平行时，使用</p>
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <menclose notation="box">
+    <mrow data-mjx-texclass="ORD">
+      <mstyle scriptlevel="0">
+        <mrow data-mjx-texclass="ORD">
+          <mrow>
+            <mrow>
+              <mi>dist</mi>
+              <mo data-mjx-texclass="NONE">&#x2061;</mo>
+              <mrow>
+                <mo stretchy="false">(</mo>
+                <mrow>
+                  <msub>
+                    <mi>&#x2113;</mi>
+                    <mn>1</mn>
+                  </msub>
+                  <mo>,</mo>
+                  <msub>
+                    <mi>&#x2113;</mi>
+                    <mn>2</mn>
+                  </msub>
+                </mrow>
+                <mo stretchy="false">)</mo>
+              </mrow>
+            </mrow>
+            <mo>=</mo>
+            <mfrac>
+              <mrow>
+                <mo data-mjx-texclass="ORD" fence="false" stretchy="false">&#x2016;</mo>
+                <mrow>
+                  <mi mathvariant="bold-italic">d</mi>
+                  <mo>&#xD7;</mo>
+                  <msub>
+                    <mi mathvariant="bold-italic">s</mi>
+                    <mn>1</mn>
+                  </msub>
+                </mrow>
+                <mo data-mjx-texclass="ORD" fence="false" stretchy="false">&#x2016;</mo>
+              </mrow>
+              <mrow>
+                <mo data-mjx-texclass="ORD" fence="false" stretchy="false">&#x2016;</mo>
+                <msub>
+                  <mi mathvariant="bold-italic">s</mi>
+                  <mn>1</mn>
+                </msub>
+                <mo data-mjx-texclass="ORD" fence="false" stretchy="false">&#x2016;</mo>
+              </mrow>
+            </mfrac>
+          </mrow>
+          <mo>.</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+  </menclose>
+</math></div>
+
+
+<p>这也对应同一套判定：距离为零则重合，大于零则平行不重合。</p>
+<hr>
+<h2 id="h-336">关联阅读</h2>
+<p><strong>延伸阅读：</strong> <a href="../%E3%80%8A%E9%AB%98%E6%95%B0%E5%BC%BA%E5%8C%96%E3%80%8B/13-%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E5%AD%A6.html">13-第13讲 多元函数微分学</a></p>
+<p>配图另附 <a href="../../../files/%E9%AB%98%E6%95%B0%E7%AC%94%E8%AE%B0/%E7%A9%BA%E9%97%B4%E5%87%A0%E4%BD%95%E5%92%8C%E5%A4%9A%E5%85%83%E5%BE%AE%E5%88%86/assets/%E7%A9%BA%E9%97%B4%E4%B8%A4%E7%9B%B4%E7%BA%BF%E4%BD%8D%E7%BD%AE%E5%85%B3%E7%B3%BB.svg">SVG 矢量版</a>，可放大查看。</p>
+</article></main></div><script>function reveal(){const t=document.getElementById(decodeURIComponent(location.hash.slice(1)));if(!t)return;for(let p=t.parentElement;p;p=p.parentElement)if(p.tagName==="DETAILS")p.open=true;requestAnimationFrame(()=>t.scrollIntoView())}addEventListener("hashchange",reveal);reveal();if(matchMedia("(max-width:740px)").matches)document.querySelector(".directory").open=false</script><footer class="footer"><a href="../../../index.html">返回错题目录</a></footer></body></html>

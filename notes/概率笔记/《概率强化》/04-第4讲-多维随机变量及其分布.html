@@ -1,0 +1,1837 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>04-第4讲-多维随机变量及其分布 · 数学笔记</title><link rel="stylesheet" href="../../../site.css"></head><body><a class="skip" href="#main">跳到正文</a><header class="top"><div class="top-inner"><a class="brand" href="../../../index.html"><span class="brand-mark" aria-hidden="true">∑</span>数学笔记</a></div></header><div class="layout"><aside class="side"><details class="directory" open><summary>笔记目录</summary><nav aria-label="笔记目录"><details class="group"><summary>错题本</summary><a class="side-link" href="../../%E9%94%99%E9%A2%98%E6%9C%AC/%E6%A6%82%E7%8E%87%E9%94%99%E9%A2%98%E7%9B%AE%E5%BD%95.html">概率错题目录</a><a class="side-link" href="../../%E9%94%99%E9%A2%98%E6%9C%AC/%E9%AB%98%E6%95%B0%E9%94%99%E9%A2%98%E7%9B%AE%E5%BD%95.html">高数错题目录</a><a class="side-link" href="../../%E9%94%99%E9%A2%98%E6%9C%AC/%E7%BA%BF%E4%BB%A3%E9%94%99%E9%A2%98%E7%9B%AE%E5%BD%95.html">线代错题目录</a><a class="side-link" href="../../%E9%94%99%E9%A2%98%E6%9C%AC/%E7%9C%9F%E9%A2%98(1).html">真题(1)</a><a class="side-link" href="../../%E9%94%99%E9%A2%98%E6%9C%AC/%E7%9C%9F%E9%A2%98(2).html">真题(2)</a></details><details class="group"><summary>高数</summary><details><summary>《高数强化》</summary><a class="side-link" href="../../%E9%AB%98%E6%95%B0%E7%AC%94%E8%AE%B0/%E3%80%8A%E9%AB%98%E6%95%B0%E5%BC%BA%E5%8C%96%E3%80%8B/01-%E5%87%BD%E6%95%B0%E6%9E%81%E9%99%90%E4%B8%8E%E8%BF%9E%E7%BB%AD.html">01-函数极限与连续</a><a class="side-link" href="../../%E9%AB%98%E6%95%B0%E7%AC%94%E8%AE%B0/%E3%80%8A%E9%AB%98%E6%95%B0%E5%BC%BA%E5%8C%96%E3%80%8B/03-%E4%B8%80%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E5%AD%A6%E7%9A%84%E6%A6%82%E5%BF%B5.html">03-一元函数微分学的概念</a><a class="side-link" href="../../%E9%AB%98%E6%95%B0%E7%AC%94%E8%AE%B0/%E3%80%8A%E9%AB%98%E6%95%B0%E5%BC%BA%E5%8C%96%E3%80%8B/04-%E4%B8%80%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E5%AD%A6%E7%9A%84%E8%AE%A1%E7%AE%97.html">04-一元函数微分学的计算</a><a class="side-link" href="../../%E9%AB%98%E6%95%B0%E7%AC%94%E8%AE%B0/%E3%80%8A%E9%AB%98%E6%95%B0%E5%BC%BA%E5%8C%96%E3%80%8B/05-%E4%B8%80%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E5%AD%A6%E7%9A%84%E5%BA%94%E7%94%A8.html">05-一元函数微分学的应用</a><a class="side-link" href="../../%E9%AB%98%E6%95%B0%E7%AC%94%E8%AE%B0/%E3%80%8A%E9%AB%98%E6%95%B0%E5%BC%BA%E5%8C%96%E3%80%8B/08-%E4%B8%80%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6%E7%9A%84%E6%A6%82%E5%BF%B5%E4%B8%8E%E6%80%A7%E8%B4%A8.html">08-一元函数积分学的概念与性质</a><a class="side-link" href="../../%E9%AB%98%E6%95%B0%E7%AC%94%E8%AE%B0/%E3%80%8A%E9%AB%98%E6%95%B0%E5%BC%BA%E5%8C%96%E3%80%8B/09-%E4%B8%80%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6%E7%9A%84%E8%AE%A1%E7%AE%97.html">09-一元函数积分学的计算</a><a class="side-link" href="../../%E9%AB%98%E6%95%B0%E7%AC%94%E8%AE%B0/%E3%80%8A%E9%AB%98%E6%95%B0%E5%BC%BA%E5%8C%96%E3%80%8B/10-%E4%B8%80%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6%E7%9A%84%E5%BA%94%E7%94%A8.html">10-一元函数积分学的应用</a><a class="side-link" href="../../%E9%AB%98%E6%95%B0%E7%AC%94%E8%AE%B0/%E3%80%8A%E9%AB%98%E6%95%B0%E5%BC%BA%E5%8C%96%E3%80%8B/13-%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E5%AD%A6.html">13-多元函数微分学</a><a class="side-link" href="../../%E9%AB%98%E6%95%B0%E7%AC%94%E8%AE%B0/%E3%80%8A%E9%AB%98%E6%95%B0%E5%BC%BA%E5%8C%96%E3%80%8B/14-%E4%BA%8C%E9%87%8D%E7%A7%AF%E5%88%86.html">14-二重积分</a><a class="side-link" href="../../%E9%AB%98%E6%95%B0%E7%AC%94%E8%AE%B0/%E3%80%8A%E9%AB%98%E6%95%B0%E5%BC%BA%E5%8C%96%E3%80%8B/15-%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B.html">15-微分方程</a><a class="side-link" href="../../%E9%AB%98%E6%95%B0%E7%AC%94%E8%AE%B0/%E3%80%8A%E9%AB%98%E6%95%B0%E5%BC%BA%E5%8C%96%E3%80%8B/16-%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0.html">16-无穷级数</a><a class="side-link" href="../../%E9%AB%98%E6%95%B0%E7%AC%94%E8%AE%B0/%E3%80%8A%E9%AB%98%E6%95%B0%E5%BC%BA%E5%8C%96%E3%80%8B/17-%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6%E7%9A%84%E9%A2%84%E5%A4%87%E7%9F%A5%E8%AF%86.html">17-多元函数积分学的预备知识</a><a class="side-link" href="../../%E9%AB%98%E6%95%B0%E7%AC%94%E8%AE%B0/%E3%80%8A%E9%AB%98%E6%95%B0%E5%BC%BA%E5%8C%96%E3%80%8B/18-%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6.html">18-多元函数积分学</a><a class="side-link" href="../../%E9%AB%98%E6%95%B0%E7%AC%94%E8%AE%B0/%E3%80%8A%E9%AB%98%E6%95%B0%E5%BC%BA%E5%8C%96%E3%80%8B/%E8%AE%A1%E7%AE%97%E5%85%AC%E5%BC%8F%E4%B8%B2%E8%AE%B0.html">计算公式串记</a></details><details><summary>多重积分</summary><a class="side-link" href="../../%E9%AB%98%E6%95%B0%E7%AC%94%E8%AE%B0/%E5%A4%9A%E9%87%8D%E7%A7%AF%E5%88%86/%E4%BA%8C%E9%87%8D%E7%A7%AF%E5%88%86%E4%B8%AD%E5%88%A9%E7%94%A8%E4%BA%A4%E6%8D%A2%E5%AF%B9%E7%A7%B0%E6%80%A7%E5%8C%96%E7%AE%80.html">二重积分中利用交换对称性化简</a><a class="side-link" href="../../%E9%AB%98%E6%95%B0%E7%AC%94%E8%AE%B0/%E5%A4%9A%E9%87%8D%E7%A7%AF%E5%88%86/%E7%A7%AF%E5%88%86%E6%98%A0%E5%B0%84%E5%8C%BA%E5%9F%9F.html">积分映射区域</a><a class="side-link" href="../../%E9%AB%98%E6%95%B0%E7%AC%94%E8%AE%B0/%E5%A4%9A%E9%87%8D%E7%A7%AF%E5%88%86/%E8%80%83%E7%A0%94%E7%A7%AF%E5%88%86%E4%B8%AD%E7%9A%84%E7%A9%BA%E9%97%B4%E5%87%A0%E4%BD%95-%E6%95%B4%E5%90%88%E7%89%88.html">考研积分中的空间几何-整合版</a><a class="side-link" href="../../%E9%AB%98%E6%95%B0%E7%AC%94%E8%AE%B0/%E5%A4%9A%E9%87%8D%E7%A7%AF%E5%88%86/%E8%BF%9E%E9%80%9A%E5%8C%BA%E5%9F%9F%E5%92%8C%E6%A0%BC%E6%9E%97%E5%85%AC%E5%BC%8F.html">连通区域和格林公式</a></details><details><summary>极限和微分</summary><a class="side-link" href="../../%E9%AB%98%E6%95%B0%E7%AC%94%E8%AE%B0/%E6%9E%81%E9%99%90%E5%92%8C%E5%BE%AE%E5%88%86/%E6%9E%81%E9%99%90-%E7%96%91%E7%82%B9.html">极限-疑点</a><details><summary>一元微分</summary><a class="side-link" href="../../%E9%AB%98%E6%95%B0%E7%AC%94%E8%AE%B0/%E6%9E%81%E9%99%90%E5%92%8C%E5%BE%AE%E5%88%86/%E4%B8%80%E5%85%83%E5%BE%AE%E5%88%86/%E8%B4%B9%E9%A9%AC%E5%AE%9A%E7%90%86.html">费马定理</a><a class="side-link" href="../../%E9%AB%98%E6%95%B0%E7%AC%94%E8%AE%B0/%E6%9E%81%E9%99%90%E5%92%8C%E5%BE%AE%E5%88%86/%E4%B8%80%E5%85%83%E5%BE%AE%E5%88%86/%E6%9B%B2%E7%8E%87%E5%9C%86%E6%96%B9%E7%A8%8B.html">曲率圆方程</a><a class="side-link" href="../../%E9%AB%98%E6%95%B0%E7%AC%94%E8%AE%B0/%E6%9E%81%E9%99%90%E5%92%8C%E5%BE%AE%E5%88%86/%E4%B8%80%E5%85%83%E5%BE%AE%E5%88%86/%E5%BE%AE%E5%88%86-%E5%BC%BA%E5%8C%96.html">微分-强化</a><a class="side-link" href="../../%E9%AB%98%E6%95%B0%E7%AC%94%E8%AE%B0/%E6%9E%81%E9%99%90%E5%92%8C%E5%BE%AE%E5%88%86/%E4%B8%80%E5%85%83%E5%BE%AE%E5%88%86/%E5%BE%AE%E5%88%86%E5%BA%94%E7%94%A8-%E5%BC%BA%E5%8C%96.html">微分应用-强化</a><a class="side-link" href="../../%E9%AB%98%E6%95%B0%E7%AC%94%E8%AE%B0/%E6%9E%81%E9%99%90%E5%92%8C%E5%BE%AE%E5%88%86/%E4%B8%80%E5%85%83%E5%BE%AE%E5%88%86/%E6%96%9C%E7%9B%B4%E7%BA%BF%E7%9A%84%E6%97%8B%E8%BD%AC%E4%BD%93%E5%BE%AE%E5%85%83.html">斜直线的旋转体微元</a><details><summary>专题</summary><a class="side-link" href="../../%E9%AB%98%E6%95%B0%E7%AC%94%E8%AE%B0/%E6%9E%81%E9%99%90%E5%92%8C%E5%BE%AE%E5%88%86/%E4%B8%80%E5%85%83%E5%BE%AE%E5%88%86/%E4%B8%93%E9%A2%98/%E5%AF%BC%E6%95%B0%E6%AF%94%E4%B8%8E%E5%B9%B3%E5%9D%87%E5%8F%98%E5%8C%96%E7%8E%87%E5%8D%95%E8%B0%83%E6%80%A7.html">导数比与平均变化率单调性</a><a class="side-link" href="../../%E9%AB%98%E6%95%B0%E7%AC%94%E8%AE%B0/%E6%9E%81%E9%99%90%E5%92%8C%E5%BE%AE%E5%88%86/%E4%B8%80%E5%85%83%E5%BE%AE%E5%88%86/%E4%B8%93%E9%A2%98/%E5%AF%BC%E6%95%B0%E5%80%BC%E4%B8%8E%E9%82%BB%E5%9F%9F%E5%8D%95%E8%B0%83%E6%80%A7.html">导数值与邻域单调性</a><a class="side-link" href="../../%E9%AB%98%E6%95%B0%E7%AC%94%E8%AE%B0/%E6%9E%81%E9%99%90%E5%92%8C%E5%BE%AE%E5%88%86/%E4%B8%80%E5%85%83%E5%BE%AE%E5%88%86/%E4%B8%93%E9%A2%98/%E9%AB%98%E9%98%B6%E5%AF%BC%E6%95%B0%E4%B8%8E%E6%B3%B0%E5%8B%92%E7%B3%BB%E6%95%B0.html">高阶导数与泰勒系数</a><a class="side-link" href="../../%E9%AB%98%E6%95%B0%E7%AC%94%E8%AE%B0/%E6%9E%81%E9%99%90%E5%92%8C%E5%BE%AE%E5%88%86/%E4%B8%80%E5%85%83%E5%BE%AE%E5%88%86/%E4%B8%93%E9%A2%98/%E5%87%BD%E6%95%B0%E6%9E%81%E9%99%90%E4%B8%8E%E5%AF%BC%E6%95%B0%E6%9E%81%E9%99%90.html">函数极限与导数极限</a><a class="side-link" href="../../%E9%AB%98%E6%95%B0%E7%AC%94%E8%AE%B0/%E6%9E%81%E9%99%90%E5%92%8C%E5%BE%AE%E5%88%86/%E4%B8%80%E5%85%83%E5%BE%AE%E5%88%86/%E4%B8%93%E9%A2%98/%E7%BB%9D%E5%AF%B9%E5%80%BC%E5%87%BD%E6%95%B0%E9%9B%B6%E7%82%B9%E5%8F%AF%E5%AF%BC%E4%B8%8E%E5%8E%9F%E5%87%BD%E6%95%B0%E5%AF%BC%E6%95%B0.html">绝对值函数零点可导与原函数导数</a><a class="side-link" href="../../%E9%AB%98%E6%95%B0%E7%AC%94%E8%AE%B0/%E6%9E%81%E9%99%90%E5%92%8C%E5%BE%AE%E5%88%86/%E4%B8%80%E5%85%83%E5%BE%AE%E5%88%86/%E4%B8%93%E9%A2%98/%E6%9C%89%E9%99%90%E6%B3%B0%E5%8B%92%E5%85%AC%E5%BC%8F%E4%B8%8E%E6%B3%B0%E5%8B%92%E7%BA%A7%E6%95%B0.html">有限泰勒公式与泰勒级数</a></details></details><details><summary>专题</summary><a class="side-link" href="../../%E9%AB%98%E6%95%B0%E7%AC%94%E8%AE%B0/%E6%9E%81%E9%99%90%E5%92%8C%E5%BE%AE%E5%88%86/%E4%B8%93%E9%A2%98/%E6%9E%81%E9%99%90-%E5%8F%98%E4%B8%8A%E9%99%90%E7%A7%AF%E5%88%86%E7%AD%89%E4%BB%B7%E6%9B%BF%E6%8D%A2.html">极限-变上限积分等价替换</a><a class="side-link" href="../../%E9%AB%98%E6%95%B0%E7%AC%94%E8%AE%B0/%E6%9E%81%E9%99%90%E5%92%8C%E5%BE%AE%E5%88%86/%E4%B8%93%E9%A2%98/%E6%9E%81%E9%99%90-%E5%AF%BC%E6%95%B0%E6%9E%81%E9%99%90%E4%B8%8E%E5%87%BD%E6%95%B0%E5%A2%9E%E9%95%BF%E7%8E%87.html">极限-导数极限与函数增长率</a><a class="side-link" href="../../%E9%AB%98%E6%95%B0%E7%AC%94%E8%AE%B0/%E6%9E%81%E9%99%90%E5%92%8C%E5%BE%AE%E5%88%86/%E4%B8%93%E9%A2%98/%E6%9E%81%E9%99%90-%E9%80%92%E6%8E%A8%E6%95%B0%E5%88%97%E7%9A%84%E5%8D%95%E8%B0%83%E6%9C%89%E7%95%8C%E8%AF%81%E6%98%8E.html">极限-递推数列的单调有界证明</a><a class="side-link" href="../../%E9%AB%98%E6%95%B0%E7%AC%94%E8%AE%B0/%E6%9E%81%E9%99%90%E5%92%8C%E5%BE%AE%E5%88%86/%E4%B8%93%E9%A2%98/%E6%9E%81%E9%99%90-%E5%8F%8C%E4%BE%A7%E6%9E%81%E9%99%90%E4%B8%8E%E5%80%92%E6%95%B0%E6%8D%A2%E5%85%83.html">极限-双侧极限与倒数换元</a><a class="side-link" href="../../%E9%AB%98%E6%95%B0%E7%AC%94%E8%AE%B0/%E6%9E%81%E9%99%90%E5%92%8C%E5%BE%AE%E5%88%86/%E4%B8%93%E9%A2%98/%E6%9E%81%E9%99%90-%E6%8C%87%E6%95%B0%E5%86%85%E9%83%A8%E7%9A%84%E7%AD%89%E4%BB%B7%E6%9B%BF%E6%8D%A2.html">极限-指数内部的等价替换</a></details></details><details><summary>空间几何和多元微分</summary><a class="side-link" href="../../%E9%AB%98%E6%95%B0%E7%AC%94%E8%AE%B0/%E7%A9%BA%E9%97%B4%E5%87%A0%E4%BD%95%E5%92%8C%E5%A4%9A%E5%85%83%E5%BE%AE%E5%88%86/%E6%8A%BD%E8%B1%A1%E9%9A%90%E5%87%BD%E6%95%B0%E6%B1%82%E5%81%8F%E5%AF%BC.html">抽象隐函数求偏导</a><a class="side-link" href="../../%E9%AB%98%E6%95%B0%E7%AC%94%E8%AE%B0/%E7%A9%BA%E9%97%B4%E5%87%A0%E4%BD%95%E5%92%8C%E5%A4%9A%E5%85%83%E5%BE%AE%E5%88%86/%E5%88%86%E6%AE%B5%E5%87%BD%E6%95%B0%E6%9E%81%E5%80%BC%E5%88%A4%E6%96%AD%EF%BC%9A%E5%AE%9A%E4%B9%89%E6%B3%95%E4%BC%98%E5%85%88.html">分段函数极值判断：定义法优先</a><a class="side-link" href="../../%E9%AB%98%E6%95%B0%E7%AC%94%E8%AE%B0/%E7%A9%BA%E9%97%B4%E5%87%A0%E4%BD%95%E5%92%8C%E5%A4%9A%E5%85%83%E5%BE%AE%E5%88%86/%E6%B1%82%E9%94%A5%E9%9D%A2%E6%96%B9%E7%A8%8B.html">求锥面方程</a><a class="side-link" href="../../%E9%AB%98%E6%95%B0%E7%AC%94%E8%AE%B0/%E7%A9%BA%E9%97%B4%E5%87%A0%E4%BD%95%E5%92%8C%E5%A4%9A%E5%85%83%E5%BE%AE%E5%88%86/%E7%9B%B4%E7%BA%BF%E9%9D%A2.html">直线面</a></details><details><summary>无穷级数</summary><a class="side-link" href="../../%E9%AB%98%E6%95%B0%E7%AC%94%E8%AE%B0/%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/%E5%B8%B8%E8%A7%81%E9%BA%A6%E5%85%8B%E5%8A%B3%E6%9E%97%E7%BA%A7%E6%95%B0%E5%B1%95%E5%BC%80.html">常见麦克劳林级数展开</a><a class="side-link" href="../../%E9%AB%98%E6%95%B0%E7%AC%94%E8%AE%B0/%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/%E5%B9%82%E7%BA%A7%E6%95%B0%EF%BC%9A%E6%94%B6%E6%95%9B%E5%9F%9F%E4%B8%8E%E5%92%8C%E5%87%BD%E6%95%B0.html">幂级数：收敛域与和函数</a><a class="side-link" href="../../%E9%AB%98%E6%95%B0%E7%AC%94%E8%AE%B0/%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/%E7%BC%BA%E9%A1%B9%E5%B9%82%E7%BA%A7%E6%95%B0.html">缺项幂级数</a><a class="side-link" href="../../%E9%AB%98%E6%95%B0%E7%AC%94%E8%AE%B0/%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/%E6%9D%A1%E4%BB%B6%E6%94%B6%E6%95%9B%E4%B8%8E%E5%B9%82%E7%BA%A7%E6%95%B0%E6%94%B6%E6%95%9B%E5%8D%8A%E5%BE%84.html">条件收敛与幂级数收敛半径</a><a class="side-link" href="../../%E9%AB%98%E6%95%B0%E7%AC%94%E8%AE%B0/%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0%E6%95%9B%E6%95%A3%E6%80%A7%E5%88%A4%E5%88%AB.html">无穷级数敛散性判别</a><details><summary>幂级数专题</summary><a class="side-link" href="../../%E9%AB%98%E6%95%B0%E7%AC%94%E8%AE%B0/%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/%E5%B9%82%E7%BA%A7%E6%95%B0%E4%B8%93%E9%A2%98/%E5%B9%82%E7%BA%A7%E6%95%B0-%E5%AF%B9%E6%95%B0%E5%87%BD%E6%95%B0%E5%B1%95%E5%BC%80.html">幂级数-对数函数展开</a><a class="side-link" href="../../%E9%AB%98%E6%95%B0%E7%AC%94%E8%AE%B0/%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/%E5%B9%82%E7%BA%A7%E6%95%B0%E4%B8%93%E9%A2%98/%E5%B9%82%E7%BA%A7%E6%95%B0-%E5%A4%9A%E4%B8%AA%E7%BA%A7%E6%95%B0%E4%B8%8E%E6%B1%82%E5%92%8C%E6%B5%81%E7%A8%8B.html">幂级数-多个级数与求和流程</a><a class="side-link" href="../../%E9%AB%98%E6%95%B0%E7%AC%94%E8%AE%B0/%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/%E5%B9%82%E7%BA%A7%E6%95%B0%E4%B8%93%E9%A2%98/%E5%B9%82%E7%BA%A7%E6%95%B0-%E5%88%A4%E6%96%AD%E6%B5%81%E7%A8%8B%E4%B8%8E%E6%98%93%E9%94%99%E7%82%B9.html">幂级数-判断流程与易错点</a><a class="side-link" href="../../%E9%AB%98%E6%95%B0%E7%AC%94%E8%AE%B0/%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/%E5%B9%82%E7%BA%A7%E6%95%B0%E4%B8%93%E9%A2%98/%E5%B9%82%E7%BA%A7%E6%95%B0-%E6%94%B6%E6%95%9B%E5%8D%8A%E5%BE%84%E4%B8%8E%E7%AB%AF%E7%82%B9.html">幂级数-收敛半径与端点</a><a class="side-link" href="../../%E9%AB%98%E6%95%B0%E7%AC%94%E8%AE%B0/%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/%E5%B9%82%E7%BA%A7%E6%95%B0%E4%B8%93%E9%A2%98/%E5%B9%82%E7%BA%A7%E6%95%B0-%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%E4%B8%8E%E6%8A%BD%E8%B1%A1%E7%B3%BB%E6%95%B0%E6%B1%82%E5%92%8C.html">幂级数-微分方程与抽象系数求和</a><a class="side-link" href="../../%E9%AB%98%E6%95%B0%E7%AC%94%E8%AE%B0/%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/%E5%B9%82%E7%BA%A7%E6%95%B0%E4%B8%93%E9%A2%98/%E5%B9%82%E7%BA%A7%E6%95%B0-%E6%9C%89%E7%90%86%E5%87%BD%E6%95%B0%E5%B1%95%E5%BC%80.html">幂级数-有理函数展开</a><a class="side-link" href="../../%E9%AB%98%E6%95%B0%E7%AC%94%E8%AE%B0/%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/%E5%B9%82%E7%BA%A7%E6%95%B0%E4%B8%93%E9%A2%98/%E5%B9%82%E7%BA%A7%E6%95%B0-%E9%80%90%E9%A1%B9%E6%B1%82%E5%AF%BC%E4%B8%8E%E9%80%90%E9%A1%B9%E7%A7%AF%E5%88%86.html">幂级数-逐项求导与逐项积分</a><a class="side-link" href="../../%E9%AB%98%E6%95%B0%E7%AC%94%E8%AE%B0/%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/%E5%B9%82%E7%BA%A7%E6%95%B0%E4%B8%93%E9%A2%98/%E5%B9%82%E7%BA%A7%E6%95%B0-%E7%BB%84%E5%90%88%E5%B1%95%E5%BC%80%E4%B8%8E%E7%B3%BB%E6%95%B0%E8%AE%A1%E7%AE%97.html">幂级数-组合展开与系数计算</a></details></details><details><summary>一元积分</summary><a class="side-link" href="../../%E9%AB%98%E6%95%B0%E7%AC%94%E8%AE%B0/%E4%B8%80%E5%85%83%E7%A7%AF%E5%88%86/%E5%8F%8D%E5%B8%B8%E7%A7%AF%E5%88%86%20%2B%20%E6%9C%89%E7%95%8C%E5%AF%BC%E6%95%B0%E7%BB%BC%E5%90%88%E5%88%A4%E6%96%AD.html">反常积分 + 有界导数综合判断</a><a class="side-link" href="../../%E9%AB%98%E6%95%B0%E7%AC%94%E8%AE%B0/%E4%B8%80%E5%85%83%E7%A7%AF%E5%88%86/%E5%8F%8D%E5%B8%B8%E7%A7%AF%E5%88%86%E4%B8%AD%E7%9A%84%E7%AD%89%E4%BB%B7%E6%AF%94%E8%BE%83%E5%88%A4%E6%95%9B.html">反常积分中的等价比较判敛</a><a class="side-link" href="../../%E9%AB%98%E6%95%B0%E7%AC%94%E8%AE%B0/%E4%B8%80%E5%85%83%E7%A7%AF%E5%88%86/%E7%A7%AF%E5%88%86%E8%8C%83%E5%9B%B4%E4%BC%B0%E8%AE%A1.html">积分范围估计</a><a class="side-link" href="../../%E9%AB%98%E6%95%B0%E7%AC%94%E8%AE%B0/%E4%B8%80%E5%85%83%E7%A7%AF%E5%88%86/%E7%A7%AF%E5%88%86%E8%AE%A1%E7%AE%97-%E5%BC%BA%E5%8C%96.html">积分计算-强化</a><a class="side-link" href="../../%E9%AB%98%E6%95%B0%E7%AC%94%E8%AE%B0/%E4%B8%80%E5%85%83%E7%A7%AF%E5%88%86/%E6%9E%81%E5%9D%90%E6%A0%87%E8%BD%AC%E6%8D%A2.html">极坐标转换</a><a class="side-link" href="../../%E9%AB%98%E6%95%B0%E7%AC%94%E8%AE%B0/%E4%B8%80%E5%85%83%E7%A7%AF%E5%88%86/%E6%9F%AF%E8%A5%BF%E4%B8%8D%E7%AD%89%E5%BC%8F%E7%A7%AF%E5%88%86%E5%BA%94%E7%94%A8.html">柯西不等式积分应用</a><a class="side-link" href="../../%E9%AB%98%E6%95%B0%E7%AC%94%E8%AE%B0/%E4%B8%80%E5%85%83%E7%A7%AF%E5%88%86/%E8%A1%B0%E5%87%8F%E6%8C%AF%E8%8D%A1%E6%9B%B2%E7%BA%BF.html">衰减振荡曲线</a><details><summary>专题</summary><a class="side-link" href="../../%E9%AB%98%E6%95%B0%E7%AC%94%E8%AE%B0/%E4%B8%80%E5%85%83%E7%A7%AF%E5%88%86/%E4%B8%93%E9%A2%98/%E5%AF%B9%E7%A7%B0%E5%8C%BA%E9%97%B4%E7%A7%AF%E5%88%86%E4%B8%8E%E5%8C%BA%E9%97%B4%E5%86%8D%E7%8E%B0.html">对称区间积分与区间再现</a><a class="side-link" href="../../%E9%AB%98%E6%95%B0%E7%AC%94%E8%AE%B0/%E4%B8%80%E5%85%83%E7%A7%AF%E5%88%86/%E4%B8%93%E9%A2%98/%E6%A0%B9%E5%BC%8F%E7%A7%AF%E5%88%86%E4%B8%8E%E8%8E%AB%E6%AF%94%E4%B9%8C%E6%96%AF%E6%8D%A2%E5%85%83.html">根式积分与莫比乌斯换元</a><a class="side-link" href="../../%E9%AB%98%E6%95%B0%E7%AC%94%E8%AE%B0/%E4%B8%80%E5%85%83%E7%A7%AF%E5%88%86/%E4%B8%93%E9%A2%98/%E5%BD%A2%E5%BF%83%E8%AF%81%E6%98%8E%E4%B8%8E%E7%A7%AF%E5%88%86%E4%B8%8D%E7%AD%89%E5%BC%8F.html">形心证明与积分不等式</a></details></details></details><details class="group"><summary>线代</summary><details><summary>《线代强化》</summary><a class="side-link" href="../../%E7%BA%BF%E4%BB%A3%E7%AC%94%E8%AE%B0/%E3%80%8A%E7%BA%BF%E4%BB%A3%E5%BC%BA%E5%8C%96%E3%80%8B/%E7%AC%AC01%E8%AE%B2_%E8%A1%8C%E5%88%97%E5%BC%8F.html">第01讲_行列式</a><a class="side-link" href="../../%E7%BA%BF%E4%BB%A3%E7%AC%94%E8%AE%B0/%E3%80%8A%E7%BA%BF%E4%BB%A3%E5%BC%BA%E5%8C%96%E3%80%8B/%E7%AC%AC02%E8%AE%B2_%E4%BD%99%E5%AD%90%E5%BC%8F%E5%92%8C%E4%BB%A3%E6%95%B0%E4%BD%99%E5%AD%90%E5%BC%8F%E7%9A%84%E8%AE%A1%E7%AE%97.html">第02讲_余子式和代数余子式的计算</a><a class="side-link" href="../../%E7%BA%BF%E4%BB%A3%E7%AC%94%E8%AE%B0/%E3%80%8A%E7%BA%BF%E4%BB%A3%E5%BC%BA%E5%8C%96%E3%80%8B/%E7%AC%AC03%E8%AE%B2_%E7%9F%A9%E9%98%B5%E8%BF%90%E7%AE%97.html">第03讲_矩阵运算</a><a class="side-link" href="../../%E7%BA%BF%E4%BB%A3%E7%AC%94%E8%AE%B0/%E3%80%8A%E7%BA%BF%E4%BB%A3%E5%BC%BA%E5%8C%96%E3%80%8B/%E7%AC%AC04%E8%AE%B2_%E7%9F%A9%E9%98%B5%E7%9A%84%E7%A7%A9.html">第04讲_矩阵的秩</a><a class="side-link" href="../../%E7%BA%BF%E4%BB%A3%E7%AC%94%E8%AE%B0/%E3%80%8A%E7%BA%BF%E4%BB%A3%E5%BC%BA%E5%8C%96%E3%80%8B/%E7%AC%AC05%E8%AE%B2_%E7%BA%BF%E6%80%A7%E6%96%B9%E7%A8%8B%E7%BB%84.html">第05讲_线性方程组</a><a class="side-link" href="../../%E7%BA%BF%E4%BB%A3%E7%AC%94%E8%AE%B0/%E3%80%8A%E7%BA%BF%E4%BB%A3%E5%BC%BA%E5%8C%96%E3%80%8B/%E7%AC%AC06%E8%AE%B2_%E5%90%91%E9%87%8F%E7%BB%84.html">第06讲_向量组</a><a class="side-link" href="../../%E7%BA%BF%E4%BB%A3%E7%AC%94%E8%AE%B0/%E3%80%8A%E7%BA%BF%E4%BB%A3%E5%BC%BA%E5%8C%96%E3%80%8B/%E7%AC%AC07%E8%AE%B2_%E7%89%B9%E5%BE%81%E5%80%BC%E4%B8%8E%E7%89%B9%E5%BE%81%E5%90%91%E9%87%8F.html">第07讲_特征值与特征向量</a><a class="side-link" href="../../%E7%BA%BF%E4%BB%A3%E7%AC%94%E8%AE%B0/%E3%80%8A%E7%BA%BF%E4%BB%A3%E5%BC%BA%E5%8C%96%E3%80%8B/%E7%AC%AC08%E8%AE%B2_%E7%9B%B8%E4%BC%BC%E7%90%86%E8%AE%BA.html">第08讲_相似理论</a><a class="side-link" href="../../%E7%BA%BF%E4%BB%A3%E7%AC%94%E8%AE%B0/%E3%80%8A%E7%BA%BF%E4%BB%A3%E5%BC%BA%E5%8C%96%E3%80%8B/%E7%AC%AC09%E8%AE%B2_%E4%BA%8C%E6%AC%A1%E5%9E%8B.html">第09讲_二次型</a></details><details><summary>二次型</summary><a class="side-link" href="../../%E7%BA%BF%E4%BB%A3%E7%AC%94%E8%AE%B0/%E4%BA%8C%E6%AC%A1%E5%9E%8B/%E4%BA%8C%E6%AC%A1%E5%9E%8B%E5%8F%98%E6%8D%A2.html">二次型变换</a><a class="side-link" href="../../%E7%BA%BF%E4%BB%A3%E7%AC%94%E8%AE%B0/%E4%BA%8C%E6%AC%A1%E5%9E%8B/%E4%BA%8C%E6%AC%A1%E5%9E%8B%E5%92%8C%E6%9B%B2%E9%9D%A2.html">二次型和曲面</a><a class="side-link" href="../../%E7%BA%BF%E4%BB%A3%E7%AC%94%E8%AE%B0/%E4%BA%8C%E6%AC%A1%E5%9E%8B/%E4%BA%8C%E6%AC%A1%E5%9E%8B%E6%9C%80%E5%80%BC%E9%97%AE%E9%A2%98.html">二次型最值问题</a><a class="side-link" href="../../%E7%BA%BF%E4%BB%A3%E7%AC%94%E8%AE%B0/%E4%BA%8C%E6%AC%A1%E5%9E%8B/%E5%AE%9E%E5%AF%B9%E7%A7%B0%E7%9F%A9%E9%98%B5.html">实对称矩阵</a></details><details><summary>方程组</summary><a class="side-link" href="../../%E7%BA%BF%E4%BB%A3%E7%AC%94%E8%AE%B0/%E6%96%B9%E7%A8%8B%E7%BB%84/%E6%96%B9%E7%A8%8B%E7%BB%84%E8%A7%A3.html">方程组解</a><a class="side-link" href="../../%E7%BA%BF%E4%BB%A3%E7%AC%94%E8%AE%B0/%E6%96%B9%E7%A8%8B%E7%BB%84/%E7%A9%BA%E9%97%B4%E4%B8%AD%E5%9D%90%E6%A0%87%E9%97%AE%E9%A2%98%E8%BD%AC%E6%8D%A2.html">空间中坐标问题转换</a></details></details><details class="group" open><summary>概率</summary><details open><summary>《概率强化》</summary><a class="side-link" href="01-%E7%AC%AC1%E8%AE%B2-%E9%9A%8F%E6%9C%BA%E4%BA%8B%E4%BB%B6%E5%92%8C%E6%A6%82%E7%8E%87.html">01-第1讲-随机事件和概率</a><a class="side-link" href="02-%E7%AC%AC2%E8%AE%B2-%E4%B8%80%E7%BB%B4%E9%9A%8F%E6%9C%BA%E5%8F%98%E9%87%8F%E5%8F%8A%E5%85%B6%E5%88%86%E5%B8%83.html">02-第2讲-一维随机变量及其分布</a><a class="side-link" href="03-%E7%AC%AC3%E8%AE%B2-%E4%B8%80%E7%BB%B4%E9%9A%8F%E6%9C%BA%E5%8F%98%E9%87%8F%E5%87%BD%E6%95%B0%E7%9A%84%E5%88%86%E5%B8%83.html">03-第3讲-一维随机变量函数的分布</a><a class="side-link" href="04-%E7%AC%AC4%E8%AE%B2-%E5%A4%9A%E7%BB%B4%E9%9A%8F%E6%9C%BA%E5%8F%98%E9%87%8F%E5%8F%8A%E5%85%B6%E5%88%86%E5%B8%83.html" aria-current="page">04-第4讲-多维随机变量及其分布</a><a class="side-link" href="05-%E7%AC%AC5%E8%AE%B2-%E5%A4%9A%E7%BB%B4%E9%9A%8F%E6%9C%BA%E5%8F%98%E9%87%8F%E5%87%BD%E6%95%B0%E7%9A%84%E5%88%86%E5%B8%83.html">05-第5讲-多维随机变量函数的分布</a><a class="side-link" href="06-%E7%AC%AC6%E8%AE%B2-%E6%95%B0%E5%AD%97%E7%89%B9%E5%BE%81.html">06-第6讲-数字特征</a><a class="side-link" href="07-%E7%AC%AC7%E8%AE%B2-%E5%A4%A7%E6%95%B0%E5%AE%9A%E5%BE%8B%E4%B8%8E%E4%B8%AD%E5%BF%83%E6%9E%81%E9%99%90%E5%AE%9A%E7%90%86.html">07-第7讲-大数定律与中心极限定理</a><a class="side-link" href="08-%E7%AC%AC8%E8%AE%B2-%E7%BB%9F%E8%AE%A1%E9%87%8F%E5%8F%8A%E5%85%B6%E5%88%86%E5%B8%83.html">08-第8讲-统计量及其分布</a><a class="side-link" href="09-%E7%AC%AC9%E8%AE%B2-%E5%8F%82%E6%95%B0%E4%BC%B0%E8%AE%A1%E4%B8%8E%E5%81%87%E8%AE%BE%E6%A3%80%E9%AA%8C.html">09-第9讲-参数估计与假设检验</a><a class="side-link" href="10-%E9%99%84%E5%BD%95-%E6%9D%A1%E4%BB%B6%E6%95%B0%E5%AD%97%E7%89%B9%E5%BE%81.html">10-附录-条件数字特征</a><a class="side-link" href="11-%E9%AB%98%E9%A2%91%E5%85%AC%E5%BC%8F%E9%80%9F%E6%9F%A5.html">11-高频公式速查</a></details><details><summary>多维变量</summary><a class="side-link" href="../%E5%A4%9A%E7%BB%B4%E5%8F%98%E9%87%8F/%E4%BA%8C%E7%BB%B4%E9%9A%8F%E6%9C%BA%E5%8F%98%E9%87%8F%E5%87%BD%E6%95%B0%E7%9A%84%E5%88%86%E5%B8%83.html">二维随机变量函数的分布</a><a class="side-link" href="../%E5%A4%9A%E7%BB%B4%E5%8F%98%E9%87%8F/%E4%BA%8C%E7%BB%B4%E6%AD%A3%E6%80%81%E5%88%86%E5%B8%83.html">二维正态分布</a><a class="side-link" href="../%E5%A4%9A%E7%BB%B4%E5%8F%98%E9%87%8F/%E6%9D%A1%E4%BB%B6%E5%AF%86%E5%BA%A6%E4%B9%8B%E6%AF%94%E6%B1%82%E8%BE%B9%E7%BC%98%E5%AF%86%E5%BA%A6.html">条件密度之比求边缘密度</a><a class="side-link" href="../%E5%A4%9A%E7%BB%B4%E5%8F%98%E9%87%8F/%E5%85%88%E6%8B%86%E5%8F%98%E9%87%8F%E5%9F%9F%E5%86%8D%E5%88%86%E6%AE%B5%E7%A7%AF%E5%88%86.html">先拆变量域再分段积分</a></details><details><summary>数字特征</summary><a class="side-link" href="../%E6%95%B0%E5%AD%97%E7%89%B9%E5%BE%81/%E6%9D%A1%E4%BB%B6%E6%9C%9F%E6%9C%9B%E4%B8%8E%E5%85%A8%E6%9C%9F%E6%9C%9B.html">条件期望与全期望</a></details><details><summary>条件概率</summary><a class="side-link" href="../%E6%9D%A1%E4%BB%B6%E6%A6%82%E7%8E%87/%E8%B4%9D%E5%8F%B6%E6%96%AF%E6%A6%82%E5%9E%8B.html">贝叶斯概型</a><a class="side-link" href="../%E6%9D%A1%E4%BB%B6%E6%A6%82%E7%8E%87/%E6%A6%82%E7%8E%87%E4%B8%AD%E4%BA%8B%E4%BB%B6%E4%B8%8E%E6%9D%A1%E4%BB%B6%E6%A6%82%E7%8E%87%E7%9A%84%E5%B8%B8%E8%A7%81%E5%8F%98%E6%8D%A2.html">概率中事件与条件概率的常见变换</a><a class="side-link" href="../%E6%9D%A1%E4%BB%B6%E6%A6%82%E7%8E%87/%E6%9D%A1%E4%BB%B6%E6%A6%82%E7%8E%87%E3%80%81%E6%9D%A1%E4%BB%B6%E5%88%86%E5%B8%83%E4%B8%8E%E2%80%9C%E5%9B%BA%E5%AE%9A%E4%B8%80%E4%B8%AA%E9%9A%8F%E6%9C%BA%E5%8F%98%E9%87%8F%E2%80%9D%E7%9A%84%E7%BB%9F%E4%B8%80%E7%90%86%E8%A7%A3.html">条件概率、条件分布与“固定一个随机变量”的统一理解</a></details><details><summary>统计量及分布</summary><a class="side-link" href="../%E7%BB%9F%E8%AE%A1%E9%87%8F%E5%8F%8A%E5%88%86%E5%B8%83/%E4%BC%B0%E8%AE%A1%E9%87%8F%E3%80%81%E4%BC%B0%E8%AE%A1%E5%80%BC%E4%B8%8E%E6%97%A0%E5%81%8F%E4%BC%B0%E8%AE%A1.html">估计量、估计值与无偏估计</a><a class="side-link" href="../%E7%BB%9F%E8%AE%A1%E9%87%8F%E5%8F%8A%E5%88%86%E5%B8%83/%E7%A6%BB%E6%95%A3%E5%9E%8B%E6%9C%80%E5%A4%A7%E4%BC%BC%E7%84%B6%E4%BC%B0%E8%AE%A1.html">离散型最大似然估计</a><a class="side-link" href="../%E7%BB%9F%E8%AE%A1%E9%87%8F%E5%8F%8A%E5%88%86%E5%B8%83/%E6%A0%B7%E6%9C%AC%E5%AE%B9%E9%87%8F%E4%B8%8D%E7%AD%89%E5%BC%8F.html">样本容量不等式</a><a class="side-link" href="../%E7%BB%9F%E8%AE%A1%E9%87%8F%E5%8F%8A%E5%88%86%E5%B8%83/%E6%9C%89%E5%85%B3%E4%BC%B0%E8%AE%A1%E9%87%8F%E7%9A%84%E5%88%86%E5%B8%83.html">有关估计量的分布</a><a class="side-link" href="../%E7%BB%9F%E8%AE%A1%E9%87%8F%E5%8F%8A%E5%88%86%E5%B8%83/%E6%AD%A3%E6%80%81%E5%88%86%E5%B8%83%E4%B8%8E%E6%AD%A3%E6%80%81%E6%A0%B7%E6%9C%AC%E5%B8%B8%E7%94%A8%E6%80%A7%E8%B4%A8.html">正态分布与正态样本常用性质</a><details><summary>样本容量专题</summary><a class="side-link" href="../%E7%BB%9F%E8%AE%A1%E9%87%8F%E5%8F%8A%E5%88%86%E5%B8%83/%E6%A0%B7%E6%9C%AC%E5%AE%B9%E9%87%8F%E4%B8%93%E9%A2%98/%E6%A0%B7%E6%9C%AC%E5%AE%B9%E9%87%8F-%E5%B9%B3%E6%96%B9%E6%9C%9F%E6%9C%9B%E4%B8%8E%E5%9D%87%E6%96%B9%E8%AF%AF%E5%B7%AE.html">样本容量-平方期望与均方误差</a><a class="side-link" href="../%E7%BB%9F%E8%AE%A1%E9%87%8F%E5%8F%8A%E5%88%86%E5%B8%83/%E6%A0%B7%E6%9C%AC%E5%AE%B9%E9%87%8F%E4%B8%93%E9%A2%98/%E6%A0%B7%E6%9C%AC%E5%AE%B9%E9%87%8F-%E5%88%87%E6%AF%94%E9%9B%AA%E5%A4%AB%E4%B8%8E%E5%88%A4%E6%96%AD%E6%B5%81%E7%A8%8B.html">样本容量-切比雪夫与判断流程</a><a class="side-link" href="../%E7%BB%9F%E8%AE%A1%E9%87%8F%E5%8F%8A%E5%88%86%E5%B8%83/%E6%A0%B7%E6%9C%AC%E5%AE%B9%E9%87%8F%E4%B8%93%E9%A2%98/%E6%A0%B7%E6%9C%AC%E5%AE%B9%E9%87%8F-%E6%AD%A3%E6%80%81%E6%A6%82%E7%8E%87%E4%B8%8E%E6%A0%87%E5%87%86%E5%8C%96.html">样本容量-正态概率与标准化</a></details><details><summary>正态专题</summary><a class="side-link" href="../%E7%BB%9F%E8%AE%A1%E9%87%8F%E5%8F%8A%E5%88%86%E5%B8%83/%E6%AD%A3%E6%80%81%E4%B8%93%E9%A2%98/%E6%AD%A3%E6%80%81-%E7%9F%A9%E4%B8%8E%E7%BB%9D%E5%AF%B9%E5%80%BC%E5%8F%8A%E7%BA%BF%E6%80%A7%E5%8F%98%E6%8D%A2.html">正态-矩与绝对值及线性变换</a><a class="side-link" href="../%E7%BB%9F%E8%AE%A1%E9%87%8F%E5%8F%8A%E5%88%86%E5%B8%83/%E6%AD%A3%E6%80%81%E4%B8%93%E9%A2%98/%E6%AD%A3%E6%80%81-%E6%A0%B7%E6%9C%AC%E5%9D%87%E5%80%BC%E4%B8%8E%E6%A0%B7%E6%9C%AC%E6%96%B9%E5%B7%AE.html">正态-样本均值与样本方差</a></details></details><details><summary>一维变量</summary><a class="side-link" href="../%E4%B8%80%E7%BB%B4%E5%8F%98%E9%87%8F/%E6%94%BE%E7%90%83%E9%97%AE%E9%A2%98.html">放球问题</a><a class="side-link" href="../%E4%B8%80%E7%BB%B4%E5%8F%98%E9%87%8F/%E6%A6%82%E7%8E%87%E7%A7%AF%E5%88%86%E5%8F%98%E6%8D%A2.html">概率积分变换</a><a class="side-link" href="../%E4%B8%80%E7%BB%B4%E5%8F%98%E9%87%8F/%E6%B3%8A%E6%9D%BE%E7%A8%80%E7%96%8F%E5%8C%96.html">泊松稀疏化</a><details><summary>放球抽球专题</summary><a class="side-link" href="../%E4%B8%80%E7%BB%B4%E5%8F%98%E9%87%8F/%E6%94%BE%E7%90%83%E6%8A%BD%E7%90%83%E4%B8%93%E9%A2%98/%E6%8A%BD%E7%90%83-%E6%94%BE%E5%9B%9E%E4%B8%8E%E4%B8%8D%E6%94%BE%E5%9B%9E.html">抽球-放回与不放回</a><a class="side-link" href="../%E4%B8%80%E7%BB%B4%E5%8F%98%E9%87%8F/%E6%94%BE%E7%90%83%E6%8A%BD%E7%90%83%E4%B8%93%E9%A2%98/%E6%8A%BD%E7%90%83-%E9%A6%96%E6%AC%A1%E6%88%90%E5%8A%9F%E6%A8%A1%E5%9E%8B.html">抽球-首次成功模型</a><a class="side-link" href="../%E4%B8%80%E7%BB%B4%E5%8F%98%E9%87%8F/%E6%94%BE%E7%90%83%E6%8A%BD%E7%90%83%E4%B8%93%E9%A2%98/%E6%94%BE%E7%90%83-%E5%9F%BA%E6%9C%AC%E6%A8%A1%E5%9E%8B%E4%B8%8E%E6%8C%87%E5%AE%9A%E7%9B%92%E8%AE%A1%E6%95%B0.html">放球-基本模型与指定盒计数</a><a class="side-link" href="../%E4%B8%80%E7%BB%B4%E5%8F%98%E9%87%8F/%E6%94%BE%E7%90%83%E6%8A%BD%E7%90%83%E4%B8%93%E9%A2%98/%E6%94%BE%E7%90%83-%E7%9B%B8%E5%90%8C%E7%90%83%E4%B8%8E%E6%8F%92%E6%9D%BF%E6%B3%95.html">放球-相同球与插板法</a><a class="side-link" href="../%E4%B8%80%E7%BB%B4%E5%8F%98%E9%87%8F/%E6%94%BE%E7%90%83%E6%8A%BD%E7%90%83%E4%B8%93%E9%A2%98/%E6%94%BE%E7%90%83-%E5%8D%A0%E7%9B%92%E4%BA%8B%E4%BB%B6%E4%B8%8E%E7%A9%BA%E7%9B%92%E6%9C%9F%E6%9C%9B.html">放球-占盒事件与空盒期望</a></details></details></details></nav></details></aside><main class="note" id="main"><div class="breadcrumb"><a href="../../../index.html">错题目录</a></div><div class="note-head"><h1>04-第4讲-多维随机变量及其分布</h1></div><details class="page-toc"><summary>本页定位</summary><ul><li><a href="#h-2">第 4 讲　多维随机变量及其分布</a></li><li><a href="#h-4">1. 定义与直接结论</a></li><li><a href="#h-6">1.1 联合分布函数【基础补充】</a></li><li><a href="#h-21">1.2 离散型联合分布</a></li><li><a href="#h-31">1.3 连续型联合分布</a></li><li><a href="#h-58">1.4 条件分布与条件密度</a></li><li><a href="#h-78">1.5 独立性的等价判据</a></li><li><a href="#h-98">1.6 二维均匀分布与二维正态分布</a></li><li><a href="#h-127">2. 考研做题固定流程</a></li><li><a href="#h-129">流程 A：连续型联合密度题</a></li><li><a href="#h-137">流程 B：离散分布表</a></li><li><a href="#h-144">流程 C：二维正态</a></li><li><a href="#h-152">流程 D：用联合分布算区域概率</a></li><li><a href="#h-158">3. 补充 / 易错点</a></li><li><a href="#h-174">关联阅读</a></li></ul></details><article class="prose"><h1 id="h-2">第 4 讲　多维随机变量及其分布</h1>
+<h2 id="h-4">1. 定义与直接结论</h2>
+<h3 id="h-6">1.1 联合分布函数【基础补充】</h3>
+<p>二维随机变量 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mo stretchy="false">(</mo>
+  <mrow>
+    <mi>X</mi>
+    <mo>,</mo>
+    <mi>Y</mi>
+  </mrow>
+  <mo stretchy="false">)</mo>
+</math> 的联合分布函数为</p>
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mrow>
+    <mrow>
+      <mi>F</mi>
+      <mo>&#x2061;</mo>
+      <mrow>
+        <mo stretchy="false">(</mo>
+        <mrow>
+          <mi>x</mi>
+          <mo>,</mo>
+          <mi>y</mi>
+        </mrow>
+        <mo stretchy="false">)</mo>
+      </mrow>
+    </mrow>
+    <mo>=</mo>
+    <mrow>
+      <mi>P</mi>
+      <mo>&#x2061;</mo>
+      <mrow>
+        <mo stretchy="false">(</mo>
+        <mrow>
+          <mrow>
+            <mi>X</mi>
+            <mo>&#x2264;</mo>
+            <mi>x</mi>
+          </mrow>
+          <mo>,</mo>
+          <mrow>
+            <mi>Y</mi>
+            <mo>&#x2264;</mo>
+            <mi>y</mi>
+          </mrow>
+        </mrow>
+        <mo stretchy="false">)</mo>
+      </mrow>
+    </mrow>
+  </mrow>
+  <mo>.</mo>
+</math></div>
+
+
+<p>它关于每个变量都单调不减、右连续，并满足二维区间概率非负：</p>
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mrow>
+    <mi>P</mi>
+    <mo>&#x2061;</mo>
+    <mrow>
+      <mo stretchy="false">(</mo>
+      <mrow>
+        <mrow>
+          <msub>
+            <mi>x</mi>
+            <mn>1</mn>
+          </msub>
+          <mo>&lt;</mo>
+          <mi>X</mi>
+          <mo>&#x2264;</mo>
+          <msub>
+            <mi>x</mi>
+            <mn>2</mn>
+          </msub>
+        </mrow>
+        <mo>,</mo>
+        <mrow>
+          <mtext>&#xA0;</mtext>
+          <mrow>
+            <msub>
+              <mi>y</mi>
+              <mn>1</mn>
+            </msub>
+            <mo>&lt;</mo>
+            <mi>Y</mi>
+            <mo>&#x2264;</mo>
+            <msub>
+              <mi>y</mi>
+              <mn>2</mn>
+            </msub>
+          </mrow>
+        </mrow>
+      </mrow>
+      <mo stretchy="false">)</mo>
+    </mrow>
+  </mrow>
+  <mo>=</mo>
+  <mrow>
+    <mrow>
+      <mrow>
+        <mi>F</mi>
+        <mo>&#x2061;</mo>
+        <mrow>
+          <mo stretchy="false">(</mo>
+          <mrow>
+            <msub>
+              <mi>x</mi>
+              <mn>2</mn>
+            </msub>
+            <mo>,</mo>
+            <msub>
+              <mi>y</mi>
+              <mn>2</mn>
+            </msub>
+          </mrow>
+          <mo stretchy="false">)</mo>
+        </mrow>
+      </mrow>
+      <mo>&#x2212;</mo>
+      <mrow>
+        <mi>F</mi>
+        <mo>&#x2061;</mo>
+        <mrow>
+          <mo stretchy="false">(</mo>
+          <mrow>
+            <msub>
+              <mi>x</mi>
+              <mn>1</mn>
+            </msub>
+            <mo>,</mo>
+            <msub>
+              <mi>y</mi>
+              <mn>2</mn>
+            </msub>
+          </mrow>
+          <mo stretchy="false">)</mo>
+        </mrow>
+      </mrow>
+      <mo>&#x2212;</mo>
+      <mrow>
+        <mi>F</mi>
+        <mo>&#x2061;</mo>
+        <mrow>
+          <mo stretchy="false">(</mo>
+          <mrow>
+            <msub>
+              <mi>x</mi>
+              <mn>2</mn>
+            </msub>
+            <mo>,</mo>
+            <msub>
+              <mi>y</mi>
+              <mn>1</mn>
+            </msub>
+          </mrow>
+          <mo stretchy="false">)</mo>
+        </mrow>
+      </mrow>
+    </mrow>
+    <mo>+</mo>
+    <mrow>
+      <mi>F</mi>
+      <mo>&#x2061;</mo>
+      <mrow>
+        <mo stretchy="false">(</mo>
+        <mrow>
+          <msub>
+            <mi>x</mi>
+            <mn>1</mn>
+          </msub>
+          <mo>,</mo>
+          <msub>
+            <mi>y</mi>
+            <mn>1</mn>
+          </msub>
+        </mrow>
+        <mo stretchy="false">)</mo>
+      </mrow>
+    </mrow>
+  </mrow>
+  <mo>&#x2265;</mo>
+  <mn>0.</mn>
+</math></div>
+
+
+<h3 id="h-21">1.2 离散型联合分布</h3>
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mrow>
+    <msub>
+      <mi>p</mi>
+      <mrow data-mjx-texclass="ORD">
+        <mi>i</mi>
+        <mo>&#x2062;</mo>
+        <mi>j</mi>
+      </mrow>
+    </msub>
+    <mo>=</mo>
+    <mrow>
+      <mi>P</mi>
+      <mo>&#x2061;</mo>
+      <mrow>
+        <mo stretchy="false">(</mo>
+        <mrow>
+          <mrow>
+            <mi>X</mi>
+            <mo>=</mo>
+            <msub>
+              <mi>x</mi>
+              <mi>i</mi>
+            </msub>
+          </mrow>
+          <mo>,</mo>
+          <mrow>
+            <mi>Y</mi>
+            <mo>=</mo>
+            <msub>
+              <mi>y</mi>
+              <mi>j</mi>
+            </msub>
+          </mrow>
+        </mrow>
+        <mo stretchy="false">)</mo>
+      </mrow>
+    </mrow>
+  </mrow>
+  <mo>,</mo>
+  <mrow>
+    <mstyle scriptlevel="0">
+      <mspace width="2em"></mspace>
+    </mstyle>
+    <mrow>
+      <msub>
+        <mi>p</mi>
+        <mrow data-mjx-texclass="ORD">
+          <mi>i</mi>
+          <mo>&#x2062;</mo>
+          <mi>j</mi>
+        </mrow>
+      </msub>
+      <mo>&#x2265;</mo>
+      <mn>0</mn>
+    </mrow>
+  </mrow>
+  <mo>,</mo>
+  <mrow>
+    <mrow>
+      <mi>q</mi>
+      <mo>&#x2062;</mo>
+      <mi>q</mi>
+      <mo>&#x2062;</mo>
+      <mi>u</mi>
+      <mo>&#x2062;</mo>
+      <mi>a</mi>
+      <mo>&#x2062;</mo>
+      <mi>d</mi>
+      <mo>&#x2062;</mo>
+      <mrow>
+        <munder>
+          <mo>&#x2211;</mo>
+          <mi>i</mi>
+        </munder>
+        <mrow>
+          <munder>
+            <mo>&#x2211;</mo>
+            <mi>j</mi>
+          </munder>
+          <msub>
+            <mi>p</mi>
+            <mrow data-mjx-texclass="ORD">
+              <mi>i</mi>
+              <mo>&#x2062;</mo>
+              <mi>j</mi>
+            </mrow>
+          </msub>
+        </mrow>
+      </mrow>
+    </mrow>
+    <mo>=</mo>
+    <mn>1.</mn>
+  </mrow>
+</math></div>
+
+<p>边缘分布：</p>
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mrow>
+    <msub>
+      <mi>p</mi>
+      <mrow data-mjx-texclass="ORD">
+        <mi>i</mi>
+        <mo>&#x22C5;</mo>
+      </mrow>
+    </msub>
+    <mo>=</mo>
+    <mrow>
+      <munder>
+        <mo>&#x2211;</mo>
+        <mi>j</mi>
+      </munder>
+      <msub>
+        <mi>p</mi>
+        <mrow data-mjx-texclass="ORD">
+          <mi>i</mi>
+          <mo>&#x2062;</mo>
+          <mi>j</mi>
+        </mrow>
+      </msub>
+    </mrow>
+  </mrow>
+  <mo>,</mo>
+  <mrow>
+    <mstyle scriptlevel="0">
+      <mspace width="2em"></mspace>
+    </mstyle>
+    <mrow>
+      <msub>
+        <mi>p</mi>
+        <mrow data-mjx-texclass="ORD">
+          <mo>&#x22C5;</mo>
+          <mi>j</mi>
+        </mrow>
+      </msub>
+      <mo>=</mo>
+      <mrow>
+        <munder>
+          <mo>&#x2211;</mo>
+          <mi>i</mi>
+        </munder>
+        <msub>
+          <mi>p</mi>
+          <mrow data-mjx-texclass="ORD">
+            <mi>i</mi>
+            <mo>&#x2062;</mo>
+            <mi>j</mi>
+          </mrow>
+        </msub>
+      </mrow>
+    </mrow>
+  </mrow>
+  <mo>.</mo>
+</math></div>
+
+
+<h3 id="h-31">1.3 连续型联合分布</h3>
+<p>联合密度 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi>f</mi>
+  <mo>&#x2061;</mo>
+  <mrow>
+    <mo stretchy="false">(</mo>
+    <mrow>
+      <mi>x</mi>
+      <mo>,</mo>
+      <mi>y</mi>
+    </mrow>
+    <mo stretchy="false">)</mo>
+  </mrow>
+</math> 满足</p>
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mrow>
+    <mrow>
+      <mi>f</mi>
+      <mo>&#x2061;</mo>
+      <mrow>
+        <mo stretchy="false">(</mo>
+        <mrow>
+          <mi>x</mi>
+          <mo>,</mo>
+          <mi>y</mi>
+        </mrow>
+        <mo stretchy="false">)</mo>
+      </mrow>
+    </mrow>
+    <mo>&#x2265;</mo>
+    <mn>0</mn>
+  </mrow>
+  <mo>,</mo>
+  <mrow>
+    <mrow>
+      <mi>q</mi>
+      <mo>&#x2062;</mo>
+      <mi>q</mi>
+      <mo>&#x2062;</mo>
+      <mi>u</mi>
+      <mo>&#x2062;</mo>
+      <mi>a</mi>
+      <mo>&#x2062;</mo>
+      <mi>d</mi>
+      <mo>&#x2062;</mo>
+      <mrow>
+        <msub>
+          <mo>&#x222C;</mo>
+          <mrow data-mjx-texclass="ORD">
+            <msup>
+              <mrow data-mjx-texclass="ORD">
+                <mi mathvariant="double-struck">R</mi>
+              </mrow>
+              <mn>2</mn>
+            </msup>
+          </mrow>
+        </msub>
+        <mrow>
+          <mi>f</mi>
+          <mo>&#x2061;</mo>
+          <mrow>
+            <mo stretchy="false">(</mo>
+            <mrow>
+              <mi>x</mi>
+              <mo>,</mo>
+              <mi>y</mi>
+            </mrow>
+            <mo stretchy="false">)</mo>
+          </mrow>
+        </mrow>
+        <mstyle scriptlevel="0">
+          <mspace width="0.167em"></mspace>
+        </mstyle>
+        <mrow>
+          <mi>d</mi>
+          <mi>x</mi>
+        </mrow>
+      </mrow>
+      <mo>&#x2062;</mo>
+      <mi>d</mi>
+      <mo>&#x2062;</mo>
+      <mi>y</mi>
+    </mrow>
+    <mo>=</mo>
+    <mn>1.</mn>
+  </mrow>
+</math></div>
+
+
+<p>区域概率：</p>
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mrow>
+    <mrow>
+      <mi>P</mi>
+      <mo>&#x2062;</mo>
+      <mrow>
+        <mo fence="false" stretchy="false">{</mo>
+        <mrow>
+          <mrow>
+            <mo stretchy="false">(</mo>
+            <mrow>
+              <mi>X</mi>
+              <mo>,</mo>
+              <mi>Y</mi>
+            </mrow>
+            <mo stretchy="false">)</mo>
+          </mrow>
+          <mo>&#x2208;</mo>
+          <mi>D</mi>
+        </mrow>
+        <mo fence="false" stretchy="false">}</mo>
+      </mrow>
+    </mrow>
+    <mo>=</mo>
+    <mrow>
+      <mrow>
+        <msub>
+          <mo>&#x222C;</mo>
+          <mi>D</mi>
+        </msub>
+        <mrow>
+          <mi>f</mi>
+          <mo>&#x2061;</mo>
+          <mrow>
+            <mo stretchy="false">(</mo>
+            <mrow>
+              <mi>x</mi>
+              <mo>,</mo>
+              <mi>y</mi>
+            </mrow>
+            <mo stretchy="false">)</mo>
+          </mrow>
+        </mrow>
+        <mstyle scriptlevel="0">
+          <mspace width="0.167em"></mspace>
+        </mstyle>
+        <mrow>
+          <mi>d</mi>
+          <mi>x</mi>
+        </mrow>
+      </mrow>
+      <mo>&#x2062;</mo>
+      <mi>d</mi>
+      <mo>&#x2062;</mo>
+      <mi>y</mi>
+    </mrow>
+  </mrow>
+  <mo>.</mo>
+</math></div>
+
+
+<p>边缘密度：</p>
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mrow>
+    <mrow>
+      <msub>
+        <mi>f</mi>
+        <mi>X</mi>
+      </msub>
+      <mo>&#x2061;</mo>
+      <mrow>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+      </mrow>
+    </mrow>
+    <mo>=</mo>
+    <mrow>
+      <msubsup>
+        <mo>&#x222B;</mo>
+        <mrow data-mjx-texclass="ORD">
+          <mo>&#x2212;</mo>
+          <mi mathvariant="normal">&#x221E;</mi>
+        </mrow>
+        <mrow data-mjx-texclass="ORD">
+          <mo>+</mo>
+          <mi mathvariant="normal">&#x221E;</mi>
+        </mrow>
+      </msubsup>
+      <mrow>
+        <mi>f</mi>
+        <mo>&#x2061;</mo>
+        <mrow>
+          <mo stretchy="false">(</mo>
+          <mrow>
+            <mi>x</mi>
+            <mo>,</mo>
+            <mi>y</mi>
+          </mrow>
+          <mo stretchy="false">)</mo>
+        </mrow>
+      </mrow>
+      <mstyle scriptlevel="0">
+        <mspace width="0.167em"></mspace>
+      </mstyle>
+      <mrow>
+        <mi>d</mi>
+        <mi>y</mi>
+      </mrow>
+    </mrow>
+  </mrow>
+  <mo>,</mo>
+  <mrow>
+    <mrow>
+      <mi>q</mi>
+      <mo>&#x2062;</mo>
+      <mi>q</mi>
+      <mo>&#x2062;</mo>
+      <mi>u</mi>
+      <mo>&#x2062;</mo>
+      <mi>a</mi>
+      <mo>&#x2062;</mo>
+      <mi>d</mi>
+      <mo>&#x2062;</mo>
+      <mrow>
+        <msub>
+          <mi>f</mi>
+          <mi>Y</mi>
+        </msub>
+        <mo>&#x2061;</mo>
+        <mrow>
+          <mo stretchy="false">(</mo>
+          <mi>y</mi>
+          <mo stretchy="false">)</mo>
+        </mrow>
+      </mrow>
+    </mrow>
+    <mo>=</mo>
+    <mrow>
+      <msubsup>
+        <mo>&#x222B;</mo>
+        <mrow data-mjx-texclass="ORD">
+          <mo>&#x2212;</mo>
+          <mi mathvariant="normal">&#x221E;</mi>
+        </mrow>
+        <mrow data-mjx-texclass="ORD">
+          <mo>+</mo>
+          <mi mathvariant="normal">&#x221E;</mi>
+        </mrow>
+      </msubsup>
+      <mrow>
+        <mi>f</mi>
+        <mo>&#x2061;</mo>
+        <mrow>
+          <mo stretchy="false">(</mo>
+          <mrow>
+            <mi>x</mi>
+            <mo>,</mo>
+            <mi>y</mi>
+          </mrow>
+          <mo stretchy="false">)</mo>
+        </mrow>
+      </mrow>
+      <mstyle scriptlevel="0">
+        <mspace width="0.167em"></mspace>
+      </mstyle>
+      <mrow>
+        <mi>d</mi>
+        <mi>x</mi>
+      </mrow>
+    </mrow>
+  </mrow>
+  <mo>.</mo>
+</math></div>
+
+
+<p>边缘分布函数也可由联合 CDF 取极限：</p>
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mrow>
+    <mrow>
+      <msub>
+        <mi>F</mi>
+        <mi>X</mi>
+      </msub>
+      <mo>&#x2061;</mo>
+      <mrow>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+      </mrow>
+    </mrow>
+    <mo>=</mo>
+    <mrow>
+      <mi>F</mi>
+      <mo>&#x2061;</mo>
+      <mrow>
+        <mo stretchy="false">(</mo>
+        <mrow>
+          <mi>x</mi>
+          <mo>,</mo>
+          <mrow>
+            <mo>+</mo>
+            <mi mathvariant="normal">&#x221E;</mi>
+          </mrow>
+        </mrow>
+        <mo stretchy="false">)</mo>
+      </mrow>
+    </mrow>
+  </mrow>
+  <mo>,</mo>
+  <mrow>
+    <mstyle scriptlevel="0">
+      <mspace width="2em"></mspace>
+    </mstyle>
+    <mrow>
+      <mrow>
+        <msub>
+          <mi>F</mi>
+          <mi>Y</mi>
+        </msub>
+        <mo>&#x2061;</mo>
+        <mrow>
+          <mo stretchy="false">(</mo>
+          <mi>y</mi>
+          <mo stretchy="false">)</mo>
+        </mrow>
+      </mrow>
+      <mo>=</mo>
+      <mrow>
+        <mi>F</mi>
+        <mo>&#x2061;</mo>
+        <mrow>
+          <mo stretchy="false">(</mo>
+          <mrow>
+            <mrow>
+              <mo>+</mo>
+              <mi mathvariant="normal">&#x221E;</mi>
+            </mrow>
+            <mo>,</mo>
+            <mi>y</mi>
+          </mrow>
+          <mo stretchy="false">)</mo>
+        </mrow>
+      </mrow>
+    </mrow>
+  </mrow>
+  <mo>.</mo>
+</math></div>
+
+
+<h3 id="h-58">1.4 条件分布与条件密度</h3>
+<p>离散型：</p>
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mrow>
+    <mrow>
+      <mi>P</mi>
+      <mo>&#x2061;</mo>
+      <mrow>
+        <mo stretchy="false">(</mo>
+        <mrow>
+          <mrow>
+            <mi>X</mi>
+            <mo>=</mo>
+            <msub>
+              <mi>x</mi>
+              <mi>i</mi>
+            </msub>
+          </mrow>
+          <mo>&#x2223;</mo>
+          <mrow>
+            <mi>Y</mi>
+            <mo>=</mo>
+            <msub>
+              <mi>y</mi>
+              <mi>j</mi>
+            </msub>
+          </mrow>
+        </mrow>
+        <mo stretchy="false">)</mo>
+      </mrow>
+    </mrow>
+    <mo>=</mo>
+    <mfrac>
+      <msub>
+        <mi>p</mi>
+        <mrow data-mjx-texclass="ORD">
+          <mi>i</mi>
+          <mo>&#x2062;</mo>
+          <mi>j</mi>
+        </mrow>
+      </msub>
+      <msub>
+        <mi>p</mi>
+        <mrow data-mjx-texclass="ORD">
+          <mo>&#x22C5;</mo>
+          <mi>j</mi>
+        </mrow>
+      </msub>
+    </mfrac>
+  </mrow>
+  <mo>,</mo>
+  <mrow>
+    <mstyle scriptlevel="0">
+      <mspace width="2em"></mspace>
+    </mstyle>
+    <mrow>
+      <msub>
+        <mi>p</mi>
+        <mrow data-mjx-texclass="ORD">
+          <mo>&#x22C5;</mo>
+          <mi>j</mi>
+        </mrow>
+      </msub>
+      <mo>&gt;</mo>
+      <mn>0.</mn>
+    </mrow>
+  </mrow>
+</math></div>
+
+
+<p>连续型：</p>
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mrow>
+    <mrow>
+      <msub>
+        <mi>f</mi>
+        <mrow data-mjx-texclass="ORD">
+          <mi>X</mi>
+          <mo>&#x2223;</mo>
+          <mi>Y</mi>
+        </mrow>
+      </msub>
+      <mo>&#x2061;</mo>
+      <mrow>
+        <mo stretchy="false">(</mo>
+        <mrow>
+          <mi>x</mi>
+          <mo>&#x2223;</mo>
+          <mi>y</mi>
+        </mrow>
+        <mo stretchy="false">)</mo>
+      </mrow>
+    </mrow>
+    <mo>=</mo>
+    <mfrac>
+      <mrow>
+        <mi>f</mi>
+        <mo>&#x2061;</mo>
+        <mrow>
+          <mo stretchy="false">(</mo>
+          <mrow>
+            <mi>x</mi>
+            <mo>,</mo>
+            <mi>y</mi>
+          </mrow>
+          <mo stretchy="false">)</mo>
+        </mrow>
+      </mrow>
+      <mrow>
+        <msub>
+          <mi>f</mi>
+          <mi>Y</mi>
+        </msub>
+        <mo>&#x2061;</mo>
+        <mrow>
+          <mo stretchy="false">(</mo>
+          <mi>y</mi>
+          <mo stretchy="false">)</mo>
+        </mrow>
+      </mrow>
+    </mfrac>
+  </mrow>
+  <mo>,</mo>
+  <mrow>
+    <mstyle scriptlevel="0">
+      <mspace width="2em"></mspace>
+    </mstyle>
+    <mrow>
+      <mrow>
+        <msub>
+          <mi>f</mi>
+          <mi>Y</mi>
+        </msub>
+        <mo>&#x2061;</mo>
+        <mrow>
+          <mo stretchy="false">(</mo>
+          <mi>y</mi>
+          <mo stretchy="false">)</mo>
+        </mrow>
+      </mrow>
+      <mo>&gt;</mo>
+      <mn>0.</mn>
+    </mrow>
+  </mrow>
+</math></div>
+
+
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mrow>
+    <mrow>
+      <msub>
+        <mi>F</mi>
+        <mrow data-mjx-texclass="ORD">
+          <mi>X</mi>
+          <mo>&#x2223;</mo>
+          <mi>Y</mi>
+        </mrow>
+      </msub>
+      <mo>&#x2061;</mo>
+      <mrow>
+        <mo stretchy="false">(</mo>
+        <mrow>
+          <mi>x</mi>
+          <mo>&#x2223;</mo>
+          <mi>y</mi>
+        </mrow>
+        <mo stretchy="false">)</mo>
+      </mrow>
+    </mrow>
+    <mo>=</mo>
+    <mrow>
+      <msubsup>
+        <mo>&#x222B;</mo>
+        <mrow data-mjx-texclass="ORD">
+          <mo>&#x2212;</mo>
+          <mi mathvariant="normal">&#x221E;</mi>
+        </mrow>
+        <mrow data-mjx-texclass="ORD">
+          <mi>x</mi>
+        </mrow>
+      </msubsup>
+      <mrow>
+        <msub>
+          <mi>f</mi>
+          <mrow data-mjx-texclass="ORD">
+            <mi>X</mi>
+            <mo>&#x2223;</mo>
+            <mi>Y</mi>
+          </mrow>
+        </msub>
+        <mo>&#x2061;</mo>
+        <mrow>
+          <mo stretchy="false">(</mo>
+          <mrow>
+            <mi>u</mi>
+            <mo>&#x2223;</mo>
+            <mi>y</mi>
+          </mrow>
+          <mo stretchy="false">)</mo>
+        </mrow>
+      </mrow>
+      <mstyle scriptlevel="0">
+        <mspace width="0.167em"></mspace>
+      </mstyle>
+      <mrow>
+        <mi>d</mi>
+        <mi>u</mi>
+      </mrow>
+    </mrow>
+  </mrow>
+  <mo>.</mo>
+</math></div>
+
+
+<p>条件密度是“固定 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi>Y</mi>
+  <mo>=</mo>
+  <mi>y</mi>
+</math> 后，沿该截面的联合密度重新归一化”。即使 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mrow>
+    <mi>P</mi>
+    <mo>&#x2061;</mo>
+    <mrow>
+      <mo stretchy="false">(</mo>
+      <mrow>
+        <mi>Y</mi>
+        <mo>=</mo>
+        <mi>y</mi>
+      </mrow>
+      <mo stretchy="false">)</mo>
+    </mrow>
+  </mrow>
+  <mo>=</mo>
+  <mn>0</mn>
+</math>，只要 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mrow>
+    <msub>
+      <mi>f</mi>
+      <mi>Y</mi>
+    </msub>
+    <mo>&#x2061;</mo>
+    <mrow>
+      <mo stretchy="false">(</mo>
+      <mi>y</mi>
+      <mo stretchy="false">)</mo>
+    </mrow>
+  </mrow>
+  <mo>&gt;</mo>
+  <mn>0</mn>
+</math>，条件密度仍有意义。</p>
+<h3 id="h-78">1.5 独立性的等价判据</h3>
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mi>X</mi>
+  <mo>,</mo>
+  <mrow>
+    <mrow>
+      <mi>Y</mi>
+      <mo>&#x2062;</mo>
+      <mtext>&#xA0;&#x72EC;&#x7ACB;</mtext>
+    </mrow>
+    <mstyle scriptlevel="0">
+      <mspace width="0.278em"></mspace>
+    </mstyle>
+    <mo stretchy="false">&#x27FA;</mo>
+    <mstyle scriptlevel="0">
+      <mspace width="0.278em"></mspace>
+    </mstyle>
+    <mrow>
+      <mi>F</mi>
+      <mo>&#x2061;</mo>
+      <mrow>
+        <mo stretchy="false">(</mo>
+        <mrow>
+          <mi>x</mi>
+          <mo>,</mo>
+          <mi>y</mi>
+        </mrow>
+        <mo stretchy="false">)</mo>
+      </mrow>
+    </mrow>
+    <mo>=</mo>
+    <mrow>
+      <mrow>
+        <msub>
+          <mi>F</mi>
+          <mi>X</mi>
+        </msub>
+        <mo>&#x2061;</mo>
+        <mrow>
+          <mo stretchy="false">(</mo>
+          <mi>x</mi>
+          <mo stretchy="false">)</mo>
+        </mrow>
+      </mrow>
+      <mo>&#x2062;</mo>
+      <mrow>
+        <msub>
+          <mi>F</mi>
+          <mi>Y</mi>
+        </msub>
+        <mo>&#x2061;</mo>
+        <mrow>
+          <mo stretchy="false">(</mo>
+          <mi>y</mi>
+          <mo stretchy="false">)</mo>
+        </mrow>
+      </mrow>
+    </mrow>
+  </mrow>
+  <mo>,</mo>
+  <mrow>
+    <mstyle scriptlevel="0">
+      <mspace width="1em"></mspace>
+    </mstyle>
+    <mi mathvariant="normal">&#x2200;</mi>
+    <mi>x</mi>
+  </mrow>
+  <mo>,</mo>
+  <mi>y</mi>
+  <mo>.</mo>
+</math></div>
+
+
+<p>离散型：</p>
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mrow>
+    <msub>
+      <mi>p</mi>
+      <mrow data-mjx-texclass="ORD">
+        <mi>i</mi>
+        <mo>&#x2062;</mo>
+        <mi>j</mi>
+      </mrow>
+    </msub>
+    <mo>=</mo>
+    <mrow>
+      <msub>
+        <mi>p</mi>
+        <mrow data-mjx-texclass="ORD">
+          <mi>i</mi>
+          <mo>&#x22C5;</mo>
+        </mrow>
+      </msub>
+      <mo>&#x2062;</mo>
+      <msub>
+        <mi>p</mi>
+        <mrow data-mjx-texclass="ORD">
+          <mo>&#x22C5;</mo>
+          <mi>j</mi>
+        </mrow>
+      </msub>
+    </mrow>
+  </mrow>
+  <mo>,</mo>
+  <mrow>
+    <mstyle scriptlevel="0">
+      <mspace width="1em"></mspace>
+    </mstyle>
+    <mi mathvariant="normal">&#x2200;</mi>
+    <mi>i</mi>
+  </mrow>
+  <mo>,</mo>
+  <mi>j</mi>
+  <mo>.</mo>
+</math></div>
+
+
+<p>连续型：</p>
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mrow>
+    <mrow>
+      <mrow>
+        <mi>f</mi>
+        <mo>&#x2061;</mo>
+        <mrow>
+          <mo stretchy="false">(</mo>
+          <mrow>
+            <mi>x</mi>
+            <mo>,</mo>
+            <mi>y</mi>
+          </mrow>
+          <mo stretchy="false">)</mo>
+        </mrow>
+      </mrow>
+      <mo>=</mo>
+      <mrow>
+        <mrow>
+          <msub>
+            <mi>f</mi>
+            <mi>X</mi>
+          </msub>
+          <mo>&#x2061;</mo>
+          <mrow>
+            <mo stretchy="false">(</mo>
+            <mi>x</mi>
+            <mo stretchy="false">)</mo>
+          </mrow>
+        </mrow>
+        <mo>&#x2062;</mo>
+        <mrow>
+          <msub>
+            <mi>f</mi>
+            <mi>Y</mi>
+          </msub>
+          <mo>&#x2061;</mo>
+          <mrow>
+            <mo stretchy="false">(</mo>
+            <mi>y</mi>
+            <mo stretchy="false">)</mo>
+          </mrow>
+        </mrow>
+      </mrow>
+    </mrow>
+    <mstyle scriptlevel="0">
+      <mspace width="1em"></mspace>
+    </mstyle>
+    <mtext>&#x51E0;&#x4E4E;&#x5904;&#x5904;</mtext>
+  </mrow>
+  <mo>.</mo>
+</math></div>
+
+
+<p>离散表中，若边缘概率均非零，独立等价于各行成比例（联合概率矩阵秩为 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mn>1</mn>
+</math>）。</p>
+<h3 id="h-98">1.6 二维均匀分布与二维正态分布</h3>
+<p>若 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mo stretchy="false">(</mo>
+  <mrow>
+    <mi>X</mi>
+    <mo>,</mo>
+    <mi>Y</mi>
+  </mrow>
+  <mo stretchy="false">)</mo>
+</math> 在区域 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi>D</mi>
+</math> 上均匀，则</p>
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mrow>
+    <mi>f</mi>
+    <mo>&#x2061;</mo>
+    <mrow>
+      <mo stretchy="false">(</mo>
+      <mrow>
+        <mi>x</mi>
+        <mo>,</mo>
+        <mi>y</mi>
+      </mrow>
+      <mo stretchy="false">)</mo>
+    </mrow>
+  </mrow>
+  <mo>=</mo>
+  <mrow data-mjx-texclass="INNER">
+    <mo data-mjx-texclass="OPEN">{</mo>
+    <mstyle scriptlevel="0">
+      <mtable columnspacing="1em" rowspacing=".2em" columnalign="left left">
+        <mtr>
+          <mtd>
+            <mrow>
+              <mrow>
+                <mn>1</mn>
+                <mo>/</mo>
+                <msub>
+                  <mi>S</mi>
+                  <mi>D</mi>
+                </msub>
+              </mrow>
+              <mo>,</mo>
+            </mrow>
+          </mtd>
+          <mtd>
+            <mrow>
+              <mrow>
+                <mrow>
+                  <mo stretchy="false">(</mo>
+                  <mrow>
+                    <mi>x</mi>
+                    <mo>,</mo>
+                    <mi>y</mi>
+                  </mrow>
+                  <mo stretchy="false">)</mo>
+                </mrow>
+                <mo>&#x2208;</mo>
+                <mi>D</mi>
+              </mrow>
+              <mo>,</mo>
+            </mrow>
+          </mtd>
+        </mtr>
+        <mtr>
+          <mtd>
+            <mrow>
+              <mn>0</mn>
+              <mo>,</mo>
+            </mrow>
+          </mtd>
+          <mtd>
+            <mrow>
+              <mtext>&#x5176;&#x4ED6;</mtext>
+              <mo>.</mo>
+            </mrow>
+          </mtd>
+        </mtr>
+      </mtable>
+    </mstyle>
+    <mo data-mjx-texclass="CLOSE" fence="true" stretchy="true" symmetric="true"></mo>
+  </mrow>
+</math></div>
+
+
+<p>二维正态密度：</p>
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mrow>
+    <mrow>
+      <mi>f</mi>
+      <mo>&#x2061;</mo>
+      <mrow>
+        <mo stretchy="false">(</mo>
+        <mrow>
+          <mi>x</mi>
+          <mo>,</mo>
+          <mi>y</mi>
+        </mrow>
+        <mo stretchy="false">)</mo>
+      </mrow>
+    </mrow>
+    <mo>=</mo>
+    <mrow>
+      <mfrac>
+        <mn>1</mn>
+        <mrow>
+          <mn>2</mn>
+          <mo>&#x2062;</mo>
+          <mi>&#x3C0;</mi>
+          <mo>&#x2062;</mo>
+          <msub>
+            <mi>&#x3C3;</mi>
+            <mi>X</mi>
+          </msub>
+          <mo>&#x2062;</mo>
+          <msub>
+            <mi>&#x3C3;</mi>
+            <mi>Y</mi>
+          </msub>
+          <mo>&#x2062;</mo>
+          <msqrt>
+            <mrow>
+              <mn>1</mn>
+              <mo>&#x2212;</mo>
+              <msup>
+                <mi>&#x3C1;</mi>
+                <mn>2</mn>
+              </msup>
+            </mrow>
+          </msqrt>
+        </mrow>
+      </mfrac>
+      <mo>&#x2062;</mo>
+      <mrow>
+        <mi>exp</mi>
+        <mstyle scriptlevel="0">
+          <mspace width="-0.167em"></mspace>
+        </mstyle>
+        <mo>&#x2061;</mo>
+        <mrow data-mjx-texclass="INNER">
+          <mo data-mjx-texclass="OPEN">{</mo>
+          <mrow>
+            <mo>&#x2212;</mo>
+            <mrow>
+              <mfrac>
+                <mn>1</mn>
+                <mrow>
+                  <mn>2</mn>
+                  <mo>&#x2062;</mo>
+                  <mrow>
+                    <mo stretchy="false">(</mo>
+                    <mrow>
+                      <mn>1</mn>
+                      <mo>&#x2212;</mo>
+                      <msup>
+                        <mi>&#x3C1;</mi>
+                        <mn>2</mn>
+                      </msup>
+                    </mrow>
+                    <mo stretchy="false">)</mo>
+                  </mrow>
+                </mrow>
+              </mfrac>
+              <mo>&#x2062;</mo>
+              <mrow data-mjx-texclass="INNER">
+                <mo data-mjx-texclass="OPEN">[</mo>
+                <mrow>
+                  <mrow>
+                    <mfrac>
+                      <mrow>
+                        <msup>
+                          <mrow>
+                            <mo stretchy="false">(</mo>
+                            <mrow>
+                              <mi>x</mi>
+                              <mo>&#x2212;</mo>
+                              <msub>
+                                <mi>&#x3BC;</mi>
+                                <mi>X</mi>
+                              </msub>
+                            </mrow>
+                            <mo stretchy="false">)</mo>
+                          </mrow>
+                          <mn>2</mn>
+                        </msup>
+                      </mrow>
+                      <msubsup>
+                        <mi>&#x3C3;</mi>
+                        <mi>X</mi>
+                        <mn>2</mn>
+                      </msubsup>
+                    </mfrac>
+                    <mo>&#x2212;</mo>
+                    <mrow>
+                      <mn>2</mn>
+                      <mo>&#x2062;</mo>
+                      <mi>&#x3C1;</mi>
+                      <mo>&#x2062;</mo>
+                      <mfrac>
+                        <mrow>
+                          <mrow>
+                            <mo stretchy="false">(</mo>
+                            <mrow>
+                              <mi>x</mi>
+                              <mo>&#x2212;</mo>
+                              <msub>
+                                <mi>&#x3BC;</mi>
+                                <mi>X</mi>
+                              </msub>
+                            </mrow>
+                            <mo stretchy="false">)</mo>
+                          </mrow>
+                          <mo>&#x2062;</mo>
+                          <mrow>
+                            <mo stretchy="false">(</mo>
+                            <mrow>
+                              <mi>y</mi>
+                              <mo>&#x2212;</mo>
+                              <msub>
+                                <mi>&#x3BC;</mi>
+                                <mi>Y</mi>
+                              </msub>
+                            </mrow>
+                            <mo stretchy="false">)</mo>
+                          </mrow>
+                        </mrow>
+                        <mrow>
+                          <msub>
+                            <mi>&#x3C3;</mi>
+                            <mi>X</mi>
+                          </msub>
+                          <mo>&#x2062;</mo>
+                          <msub>
+                            <mi>&#x3C3;</mi>
+                            <mi>Y</mi>
+                          </msub>
+                        </mrow>
+                      </mfrac>
+                    </mrow>
+                  </mrow>
+                  <mo>+</mo>
+                  <mfrac>
+                    <mrow>
+                      <msup>
+                        <mrow>
+                          <mo stretchy="false">(</mo>
+                          <mrow>
+                            <mi>y</mi>
+                            <mo>&#x2212;</mo>
+                            <msub>
+                              <mi>&#x3BC;</mi>
+                              <mi>Y</mi>
+                            </msub>
+                          </mrow>
+                          <mo stretchy="false">)</mo>
+                        </mrow>
+                        <mn>2</mn>
+                      </msup>
+                    </mrow>
+                    <msubsup>
+                      <mi>&#x3C3;</mi>
+                      <mi>Y</mi>
+                      <mn>2</mn>
+                    </msubsup>
+                  </mfrac>
+                </mrow>
+                <mo data-mjx-texclass="CLOSE">]</mo>
+              </mrow>
+            </mrow>
+          </mrow>
+          <mo data-mjx-texclass="CLOSE">}</mo>
+        </mrow>
+      </mrow>
+    </mrow>
+  </mrow>
+  <mo>.</mo>
+</math></div>
+
+
+<p>重要结论：</p>
+<ul>
+<li>边缘仍为正态：<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi>X</mi>
+  <mo>&#x223C;</mo>
+  <mrow>
+    <mi>N</mi>
+    <mo>&#x2061;</mo>
+    <mrow>
+      <mo stretchy="false">(</mo>
+      <mrow>
+        <msub>
+          <mi>&#x3BC;</mi>
+          <mi>X</mi>
+        </msub>
+        <mo>,</mo>
+        <msubsup>
+          <mi>&#x3C3;</mi>
+          <mi>X</mi>
+          <mn>2</mn>
+        </msubsup>
+      </mrow>
+      <mo stretchy="false">)</mo>
+    </mrow>
+  </mrow>
+</math>，<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi>Y</mi>
+  <mo>&#x223C;</mo>
+  <mrow>
+    <mi>N</mi>
+    <mo>&#x2061;</mo>
+    <mrow>
+      <mo stretchy="false">(</mo>
+      <mrow>
+        <msub>
+          <mi>&#x3BC;</mi>
+          <mi>Y</mi>
+        </msub>
+        <mo>,</mo>
+        <msubsup>
+          <mi>&#x3C3;</mi>
+          <mi>Y</mi>
+          <mn>2</mn>
+        </msubsup>
+      </mrow>
+      <mo stretchy="false">)</mo>
+    </mrow>
+  </mrow>
+</math>。</li>
+<li>任意线性组合 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mrow>
+    <mi>a</mi>
+    <mo>&#x2062;</mo>
+    <mi>X</mi>
+  </mrow>
+  <mo>+</mo>
+  <mrow>
+    <mi>b</mi>
+    <mo>&#x2062;</mo>
+    <mi>Y</mi>
+  </mrow>
+</math> 为正态。</li>
+<li>对二维正态，<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi>X</mi>
+  <mo>,</mo>
+  <mi>Y</mi>
+</math> 独立 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mstyle scriptlevel="0">
+    <mspace width="0.278em"></mspace>
+  </mstyle>
+  <mrow></mrow>
+  <mo stretchy="false">&#x27FA;</mo>
+  <mstyle scriptlevel="0">
+    <mspace width="0.278em"></mspace>
+  </mstyle>
+  <mi>&#x3C1;</mi>
+  <mo>=</mo>
+  <mn>0</mn>
+</math>。</li>
+<li>条件分布：<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mi>X</mi>
+  <mo>&#x2223;</mo>
+  <mrow>
+    <mi>Y</mi>
+    <mo>=</mo>
+    <mi>y</mi>
+    <mo>&#x223C;</mo>
+    <mrow>
+      <mi>N</mi>
+      <mstyle scriptlevel="0">
+        <mspace width="-0.167em"></mspace>
+      </mstyle>
+      <mo>&#x2061;</mo>
+      <mrow data-mjx-texclass="INNER">
+        <mo data-mjx-texclass="OPEN">(</mo>
+        <mrow>
+          <mrow>
+            <msub>
+              <mi>&#x3BC;</mi>
+              <mi>X</mi>
+            </msub>
+            <mo>+</mo>
+            <mrow>
+              <mi>&#x3C1;</mi>
+              <mo>&#x2062;</mo>
+              <mfrac>
+                <msub>
+                  <mi>&#x3C3;</mi>
+                  <mi>X</mi>
+                </msub>
+                <msub>
+                  <mi>&#x3C3;</mi>
+                  <mi>Y</mi>
+                </msub>
+              </mfrac>
+              <mo>&#x2062;</mo>
+              <mrow>
+                <mo stretchy="false">(</mo>
+                <mrow>
+                  <mi>y</mi>
+                  <mo>&#x2212;</mo>
+                  <msub>
+                    <mi>&#x3BC;</mi>
+                    <mi>Y</mi>
+                  </msub>
+                </mrow>
+                <mo stretchy="false">)</mo>
+              </mrow>
+            </mrow>
+          </mrow>
+          <mo>,</mo>
+          <mrow>
+            <mtext>&#xA0;</mtext>
+            <mrow>
+              <msubsup>
+                <mi>&#x3C3;</mi>
+                <mi>X</mi>
+                <mn>2</mn>
+              </msubsup>
+              <mo>&#x2062;</mo>
+              <mrow>
+                <mo stretchy="false">(</mo>
+                <mrow>
+                  <mn>1</mn>
+                  <mo>&#x2212;</mo>
+                  <msup>
+                    <mi>&#x3C1;</mi>
+                    <mn>2</mn>
+                  </msup>
+                </mrow>
+                <mo stretchy="false">)</mo>
+              </mrow>
+            </mrow>
+          </mrow>
+        </mrow>
+        <mo data-mjx-texclass="CLOSE">)</mo>
+      </mrow>
+    </mrow>
+  </mrow>
+  <mo>.</mo>
+</math></div></li>
+</ul>
+<h2 id="h-127">2. 考研做题固定流程</h2>
+<h3 id="h-129">流程 A：连续型联合密度题</h3>
+<ol>
+<li><strong>先画或写区域 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi>D</mi>
+</math></strong>，不要先积分。</li>
+<li>用 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mrow>
+    <msub>
+      <mo>&#x222C;</mo>
+      <mi>D</mi>
+    </msub>
+    <mi>f</mi>
+    <mrow></mrow>
+  </mrow>
+  <mo>=</mo>
+  <mn>1</mn>
+</math> 求常数。</li>
+<li>求 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <msub>
+    <mi>f</mi>
+    <mi>X</mi>
+  </msub>
+  <mo>&#x2061;</mo>
+  <mrow>
+    <mo stretchy="false">(</mo>
+    <mi>x</mi>
+    <mo stretchy="false">)</mo>
+  </mrow>
+</math> 时，固定 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi>x</mi>
+</math>，从图上读出 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi>y</mi>
+</math> 的上下限；求 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <msub>
+    <mi>f</mi>
+    <mi>Y</mi>
+  </msub>
+  <mo>&#x2061;</mo>
+  <mrow>
+    <mo stretchy="false">(</mo>
+    <mi>y</mi>
+    <mo stretchy="false">)</mo>
+  </mrow>
+</math> 同理。</li>
+<li>求条件密度：联合密度除以对应边缘密度，并重新写条件取值范围。</li>
+<li>判断独立：优先看支撑区域能否写成直积 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <msub>
+    <mi>D</mi>
+    <mi>X</mi>
+  </msub>
+  <mo>&#xD7;</mo>
+  <msub>
+    <mi>D</mi>
+    <mi>Y</mi>
+  </msub>
+</math>；不是矩形通常直接不独立。</li>
+</ol>
+<h3 id="h-137">流程 B：离散分布表</h3>
+<ol>
+<li>用总和为 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mn>1</mn>
+</math>、题目给出的事件关系求未知格。</li>
+<li>行和得到 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi>X</mi>
+</math> 的边缘，列和得到 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi>Y</mi>
+</math> 的边缘。</li>
+<li>条件概率 = 指定格 / 对应行和或列和。</li>
+<li>独立性不能只查一个格；需验证全部格，或证明各行成比例。</li>
+</ol>
+<h3 id="h-144">流程 C：二维正态</h3>
+<ol>
+<li>先把指数中的二次型配方，读出 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <msub>
+    <mi>&#x3BC;</mi>
+    <mi>X</mi>
+  </msub>
+  <mo>,</mo>
+  <msub>
+    <mi>&#x3BC;</mi>
+    <mi>Y</mi>
+  </msub>
+  <mo>,</mo>
+  <msub>
+    <mi>&#x3C3;</mi>
+    <mi>X</mi>
+  </msub>
+  <mo>,</mo>
+  <msub>
+    <mi>&#x3C3;</mi>
+    <mi>Y</mi>
+  </msub>
+  <mo>,</mo>
+  <mi>&#x3C1;</mi>
+</math>。</li>
+<li>线性组合直接算均值和方差：<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mrow>
+    <mrow>
+      <mi>E</mi>
+      <mo>&#x2062;</mo>
+      <mrow>
+        <mo stretchy="false">(</mo>
+        <mrow>
+          <mrow>
+            <mi>a</mi>
+            <mo>&#x2062;</mo>
+            <mi>X</mi>
+          </mrow>
+          <mo>+</mo>
+          <mrow>
+            <mi>b</mi>
+            <mo>&#x2062;</mo>
+            <mi>Y</mi>
+          </mrow>
+        </mrow>
+        <mo stretchy="false">)</mo>
+      </mrow>
+    </mrow>
+    <mo>=</mo>
+    <mrow>
+      <mrow>
+        <mi>a</mi>
+        <mo>&#x2062;</mo>
+        <msub>
+          <mi>&#x3BC;</mi>
+          <mi>X</mi>
+        </msub>
+      </mrow>
+      <mo>+</mo>
+      <mrow>
+        <mi>b</mi>
+        <mo>&#x2062;</mo>
+        <msub>
+          <mi>&#x3BC;</mi>
+          <mi>Y</mi>
+        </msub>
+      </mrow>
+    </mrow>
+  </mrow>
+  <mo>,</mo>
+</math></div>
+<div class="equation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mrow>
+    <mrow>
+      <mi>D</mi>
+      <mo>&#x2062;</mo>
+      <mrow>
+        <mo stretchy="false">(</mo>
+        <mrow>
+          <mrow>
+            <mi>a</mi>
+            <mo>&#x2062;</mo>
+            <mi>X</mi>
+          </mrow>
+          <mo>+</mo>
+          <mrow>
+            <mi>b</mi>
+            <mo>&#x2062;</mo>
+            <mi>Y</mi>
+          </mrow>
+        </mrow>
+        <mo stretchy="false">)</mo>
+      </mrow>
+    </mrow>
+    <mo>=</mo>
+    <mrow>
+      <mrow>
+        <msup>
+          <mi>a</mi>
+          <mn>2</mn>
+        </msup>
+        <mo>&#x2062;</mo>
+        <msubsup>
+          <mi>&#x3C3;</mi>
+          <mi>X</mi>
+          <mn>2</mn>
+        </msubsup>
+      </mrow>
+      <mo>+</mo>
+      <mrow>
+        <msup>
+          <mi>b</mi>
+          <mn>2</mn>
+        </msup>
+        <mo>&#x2062;</mo>
+        <msubsup>
+          <mi>&#x3C3;</mi>
+          <mi>Y</mi>
+          <mn>2</mn>
+        </msubsup>
+      </mrow>
+      <mo>+</mo>
+      <mrow>
+        <mn>2</mn>
+        <mo>&#x2062;</mo>
+        <mi>a</mi>
+        <mo>&#x2062;</mo>
+        <mi>b</mi>
+        <mo>&#x2062;</mo>
+        <mi>&#x3C1;</mi>
+        <mo>&#x2062;</mo>
+        <msub>
+          <mi>&#x3C3;</mi>
+          <mi>X</mi>
+        </msub>
+        <mo>&#x2062;</mo>
+        <msub>
+          <mi>&#x3C3;</mi>
+          <mi>Y</mi>
+        </msub>
+      </mrow>
+    </mrow>
+  </mrow>
+  <mo>.</mo>
+</math></div></li>
+<li>若要求某个线性组合与另一个变量独立，先令协方差为 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mn>0</mn>
+</math>；二维正态下即可推出独立。</li>
+</ol>
+<h3 id="h-152">流程 D：用联合分布算区域概率</h3>
+<ul>
+<li>离散型：把落在区域内的格点概率相加。</li>
+<li>连续型：画出 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi>D</mi>
+</math>，写二重积分。</li>
+<li>混合型：按离散条件分层，再用全概率。</li>
+</ul>
+<h2 id="h-158">3. 补充 / 易错点</h2>
+<details class="callout warning" open><summary>高频错误</summary><div class="callout-content"><ul>
+<li>边缘分布只能由联合分布推出；只知道两个边缘，通常不能唯一确定联合分布。</li>
+<li>边缘独立性不能靠“看起来可分离”判断；支撑区域也必须能分离。</li>
+<li><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mrow>
+    <mi>Cov</mi>
+    <mo data-mjx-texclass="NONE">&#x2061;</mo>
+    <mrow>
+      <mo stretchy="false">(</mo>
+      <mrow>
+        <mi>X</mi>
+        <mo>,</mo>
+        <mi>Y</mi>
+      </mrow>
+      <mo stretchy="false">)</mo>
+    </mrow>
+  </mrow>
+  <mo>=</mo>
+  <mn>0</mn>
+</math> 一般只表示不相关，不推出独立；二维正态是重要例外。</li>
+<li>条件密度的分母是被固定变量的边缘密度。</li>
+<li>二维正态中的参数是方差 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <msup>
+    <mi>&#x3C3;</mi>
+    <mn>2</mn>
+  </msup>
+</math> 还是标准差 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi>&#x3C3;</mi>
+</math>，读题时要分清。</li>
+</ul>
+</div></details><p>若支撑区域是斜三角形、圆盘或其他非直积区域，即使联合密度表达式能写成 <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mrow>
+    <mi>g</mi>
+    <mo>&#x2061;</mo>
+    <mrow>
+      <mo stretchy="false">(</mo>
+      <mi>x</mi>
+      <mo stretchy="false">)</mo>
+    </mrow>
+  </mrow>
+  <mo>&#x2062;</mo>
+  <mrow>
+    <mi>h</mi>
+    <mo>&#x2061;</mo>
+    <mrow>
+      <mo stretchy="false">(</mo>
+      <mi>y</mi>
+      <mo stretchy="false">)</mo>
+    </mrow>
+  </mrow>
+</math>，<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi>X</mi>
+  <mo>,</mo>
+  <mi>Y</mi>
+</math> 通常仍不独立。</p>
+<hr>
+<h2 id="h-174">关联阅读</h2>
+<p><strong>延伸阅读：</strong> <a href="../%E6%9D%A1%E4%BB%B6%E6%A6%82%E7%8E%87/%E6%9D%A1%E4%BB%B6%E6%A6%82%E7%8E%87%E3%80%81%E6%9D%A1%E4%BB%B6%E5%88%86%E5%B8%83%E4%B8%8E%E2%80%9C%E5%9B%BA%E5%AE%9A%E4%B8%80%E4%B8%AA%E9%9A%8F%E6%9C%BA%E5%8F%98%E9%87%8F%E2%80%9D%E7%9A%84%E7%BB%9F%E4%B8%80%E7%90%86%E8%A7%A3.html">条件概率、条件分布与“固定一个随机变量”的统一理解</a> · <a href="../%E5%A4%9A%E7%BB%B4%E5%8F%98%E9%87%8F/%E4%BA%8C%E7%BB%B4%E6%AD%A3%E6%80%81%E5%88%86%E5%B8%83.html">二维正态分布</a></p>
+</article></main></div><script>function reveal(){const t=document.getElementById(decodeURIComponent(location.hash.slice(1)));if(!t)return;for(let p=t.parentElement;p;p=p.parentElement)if(p.tagName==="DETAILS")p.open=true;requestAnimationFrame(()=>t.scrollIntoView())}addEventListener("hashchange",reveal);reveal();if(matchMedia("(max-width:740px)").matches)document.querySelector(".directory").open=false</script><footer class="footer"><a href="../../../index.html">返回错题目录</a></footer></body></html>

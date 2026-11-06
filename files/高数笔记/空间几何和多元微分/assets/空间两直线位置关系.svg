@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1120" viewBox="0 0 1600 1120">
+<defs>
+<marker id="arr-blue" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M 0 0 L 8 4 L 0 8 Z" fill="#2363cc"/></marker>
+<marker id="arr-orange" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M 0 0 L 8 4 L 0 8 Z" fill="#d66516"/></marker>
+<marker id="arr-purple" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M 0 0 L 8 4 L 0 8 Z" fill="#7d43b5"/></marker>
+<marker id="arr-ink" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M 0 0 L 8 4 L 0 8 Z" fill="#1d2d45"/></marker>
+<marker id="arr-muted" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M 0 0 L 8 4 L 0 8 Z" fill="#52647b"/></marker>
+</defs>
+<rect width="1600" height="1120" fill="#f5f8fc"/>
+<g font-family="Microsoft YaHei, Noto Sans CJK SC, Segoe UI, sans-serif">
+<text x="40.00" y="54.00" font-size="36" fill="#1d2d45" font-weight="700" text-anchor="start">空间两直线：先看方向，再看位置</text>
+<text x="40.00" y="90.00" font-size="22" fill="#52647b" font-weight="400" text-anchor="start">蓝线 ℓ₁；橙线 ℓ₂；黑箭头 d = P₁P₂；下排统一以 Π : z = 0 为参考平面。</text>
+<rect x="32" y="118" width="756" height="400" rx="18" fill="white" stroke="#d8e2ef" stroke-width="2"/>
+<text x="56.00" y="155.00" font-size="27" fill="#1d2d45" font-weight="700" text-anchor="start">① 重合</text>
+<text x="56.00" y="186.00" font-size="20" fill="#52647b" font-weight="400" text-anchor="start">方向平行，且 P₂ 在 ℓ₁ 上</text>
+<polygon points="200.20,395.25 590.20,395.25 497.40,293.75 107.40,293.75" fill="#e8f1fd" stroke="#b6ccef" stroke-width="1.6" opacity="1"/>
+<text x="632.00" y="385.00" font-size="18" fill="#52647b" font-weight="400" text-anchor="start">z = 0</text>
+<line x1="152.00" y1="348.00" x2="567.00" y2="348.00" stroke="#2363cc" stroke-width="4" opacity="1"/>
+<line x1="182.00" y1="348.00" x2="249.00" y2="348.00" stroke="#2363cc" stroke-width="4" opacity="1" marker-end="url(#arr-blue)"/>
+<text x="202.00" y="333.00" font-size="24" fill="#2363cc" font-weight="400" text-anchor="start">s₁</text>
+<text x="122.00" y="356.00" font-size="24" fill="#2363cc" font-weight="400" text-anchor="start">ℓ₁</text>
+<line x1="152.00" y1="348.00" x2="567.00" y2="348.00" stroke="#d66516" stroke-width="2.2" opacity="1" stroke-dasharray="12 9"/>
+<line x1="477.00" y1="348.00" x2="545.00" y2="348.00" stroke="#d66516" stroke-width="3.4" opacity="1" marker-end="url(#arr-orange)"/>
+<text x="506.00" y="376.00" font-size="24" fill="#d66516" font-weight="400" text-anchor="start">s₂</text>
+<circle cx="357.00" cy="348.00" r="5.2" fill="#2363cc" stroke="white" stroke-width="1.5"/>
+<text x="328.00" y="375.00" font-size="21" fill="#2363cc" font-weight="400" text-anchor="start">P₁</text>
+<circle cx="457.00" cy="348.00" r="5.2" fill="#d66516" stroke="white" stroke-width="1.5"/>
+<text x="447.00" y="331.00" font-size="21" fill="#d66516" font-weight="400" text-anchor="start">P₂</text>
+<text x="554.00" y="326.00" font-size="22" fill="#d66516" font-weight="400" text-anchor="start">ℓ₂ = ℓ₁</text>
+<rect x="52" y="446" width="716" height="53" rx="10" fill="#f4f7fb"/>
+<text x="66.00" y="479.00" font-size="22" fill="#1d2d45" font-weight="600" text-anchor="start">n = 0，d × s₁ = 0</text>
+<rect x="812" y="118" width="756" height="400" rx="18" fill="white" stroke="#d8e2ef" stroke-width="2"/>
+<text x="836.00" y="155.00" font-size="27" fill="#1d2d45" font-weight="700" text-anchor="start">② 平行不重合</text>
+<text x="836.00" y="186.00" font-size="20" fill="#52647b" font-weight="400" text-anchor="start">方向平行，但 P₂ 不在 ℓ₁ 上</text>
+<polygon points="980.20,395.25 1370.20,395.25 1277.40,293.75 887.40,293.75" fill="#e8f1fd" stroke="#b6ccef" stroke-width="1.6" opacity="1"/>
+<text x="1412.00" y="385.00" font-size="18" fill="#52647b" font-weight="400" text-anchor="start">z = 0</text>
+<line x1="932.00" y1="348.00" x2="1347.00" y2="348.00" stroke="#2363cc" stroke-width="4" opacity="1"/>
+<line x1="962.00" y1="348.00" x2="1029.00" y2="348.00" stroke="#2363cc" stroke-width="4" opacity="1" marker-end="url(#arr-blue)"/>
+<text x="982.00" y="333.00" font-size="24" fill="#2363cc" font-weight="400" text-anchor="start">s₁</text>
+<text x="902.00" y="356.00" font-size="24" fill="#2363cc" font-weight="400" text-anchor="start">ℓ₁</text>
+<line x1="905.00" y1="313.00" x2="1260.00" y2="313.00" stroke="#d66516" stroke-width="3.5" opacity="1"/>
+<line x1="1185.00" y1="313.00" x2="1250.00" y2="313.00" stroke="#d66516" stroke-width="3.5" opacity="1" marker-end="url(#arr-orange)"/>
+<text x="1209.00" y="298.00" font-size="24" fill="#d66516" font-weight="400" text-anchor="start">s₂</text>
+<text x="877.00" y="309.00" font-size="24" fill="#d66516" font-weight="400" text-anchor="start">ℓ₂</text>
+<line x1="1137.00" y1="348.00" x2="1105.00" y2="313.00" stroke="#1d2d45" stroke-width="2.2" opacity="1" marker-end="url(#arr-ink)"/>
+<text x="1133.40" y="340.75" font-size="23" fill="#1d2d45" font-weight="400" text-anchor="start">d</text>
+<circle cx="1137.00" cy="348.00" r="5.2" fill="#2363cc" stroke="white" stroke-width="1.5"/>
+<text x="1108.00" y="375.00" font-size="21" fill="#2363cc" font-weight="400" text-anchor="start">P₁</text>
+<circle cx="1105.00" cy="313.00" r="5.2" fill="#d66516" stroke="white" stroke-width="1.5"/>
+<text x="1115.00" y="303.00" font-size="21" fill="#d66516" font-weight="400" text-anchor="start">P₂</text>
+<rect x="832" y="446" width="716" height="53" rx="10" fill="#f4f7fb"/>
+<text x="846.00" y="479.00" font-size="22" fill="#1d2d45" font-weight="600" text-anchor="start">n = 0，d × s₁ ≠ 0</text>
+<rect x="32" y="542" width="756" height="470" rx="18" fill="white" stroke="#d8e2ef" stroke-width="2"/>
+<text x="56.00" y="579.00" font-size="27" fill="#1d2d45" font-weight="700" text-anchor="start">③ 相交</text>
+<text x="56.00" y="610.00" font-size="20" fill="#52647b" font-weight="400" text-anchor="start">方向不平行；P₂ 在参考平面 Π 内</text>
+<polygon points="200.20,899.25 590.20,899.25 497.40,797.75 107.40,797.75" fill="#e8f1fd" stroke="#b6ccef" stroke-width="1.6" opacity="1"/>
+<text x="632.00" y="889.00" font-size="18" fill="#52647b" font-weight="400" text-anchor="start">Π : z = 0</text>
+<line x1="152.00" y1="852.00" x2="567.00" y2="852.00" stroke="#2363cc" stroke-width="4" opacity="1"/>
+<line x1="182.00" y1="852.00" x2="249.00" y2="852.00" stroke="#2363cc" stroke-width="4" opacity="1" marker-end="url(#arr-blue)"/>
+<text x="202.00" y="837.00" font-size="24" fill="#2363cc" font-weight="400" text-anchor="start">s₁</text>
+<text x="122.00" y="860.00" font-size="24" fill="#2363cc" font-weight="400" text-anchor="start">ℓ₁</text>
+<line x1="497.00" y1="895.75" x2="404.20" y2="794.25" stroke="#d66516" stroke-width="3.5" opacity="1"/>
+<line x1="490.60" y1="888.75" x2="468.20" y2="864.25" stroke="#d66516" stroke-width="3.5" opacity="1" marker-end="url(#arr-orange)"/>
+<text x="512.60" y="867.00" font-size="24" fill="#d66516" font-weight="400" text-anchor="start">s₂</text>
+<text x="416.20" y="789.25" font-size="24" fill="#d66516" font-weight="400" text-anchor="start">ℓ₂</text>
+<line x1="357.00" y1="852.00" x2="357.00" y2="696.75" stroke="#7d43b5" stroke-width="2.6" opacity="1" marker-end="url(#arr-purple)"/>
+<text x="252.00" y="683.75" font-size="21" fill="#7d43b5" font-weight="400" text-anchor="start">n = s₁ × s₂</text>
+<line x1="357.00" y1="852.00" x2="425.00" y2="817.00" stroke="#1d2d45" stroke-width="2.2" opacity="1" marker-end="url(#arr-ink)"/>
+<text x="384.36" y="821.80" font-size="23" fill="#1d2d45" font-weight="400" text-anchor="start">d</text>
+<circle cx="357.00" cy="852.00" r="5.2" fill="#2363cc" stroke="white" stroke-width="1.5"/>
+<text x="328.00" y="879.00" font-size="21" fill="#2363cc" font-weight="400" text-anchor="start">P₁</text>
+<circle cx="425.00" cy="817.00" r="5.2" fill="#d66516" stroke="white" stroke-width="1.5"/>
+<text x="437.00" y="820.00" font-size="21" fill="#d66516" font-weight="400" text-anchor="start">P₂</text>
+<circle cx="457.00" cy="852.00" r="5.6" fill="#1d2d45" stroke="white" stroke-width="1.5"/>
+<text x="440.00" y="875.00" font-size="21" fill="#1d2d45" font-weight="400" text-anchor="start">I</text>
+<rect x="52" y="940" width="716" height="53" rx="10" fill="#f4f7fb"/>
+<text x="66.00" y="973.00" font-size="22" fill="#1d2d45" font-weight="600" text-anchor="start">n ≠ 0，D = d · n = 0；交点 I = (1, 0, 0)</text>
+<rect x="812" y="542" width="756" height="470" rx="18" fill="white" stroke="#d8e2ef" stroke-width="2"/>
+<text x="836.00" y="579.00" font-size="27" fill="#1d2d45" font-weight="700" text-anchor="start">④ 异面</text>
+<text x="836.00" y="610.00" font-size="20" fill="#52647b" font-weight="400" text-anchor="start">方向不平行；P₂ 偏离参考平面 Π</text>
+<polygon points="980.20,899.25 1370.20,899.25 1277.40,797.75 887.40,797.75" fill="#e8f1fd" stroke="#b6ccef" stroke-width="1.6" opacity="1"/>
+<text x="1412.00" y="889.00" font-size="18" fill="#52647b" font-weight="400" text-anchor="start">Π : z = 0</text>
+<line x1="932.00" y1="852.00" x2="1347.00" y2="852.00" stroke="#2363cc" stroke-width="4" opacity="1"/>
+<line x1="962.00" y1="852.00" x2="1029.00" y2="852.00" stroke="#2363cc" stroke-width="4" opacity="1" marker-end="url(#arr-blue)"/>
+<text x="982.00" y="837.00" font-size="24" fill="#2363cc" font-weight="400" text-anchor="start">s₁</text>
+<text x="902.00" y="860.00" font-size="24" fill="#2363cc" font-weight="400" text-anchor="start">ℓ₁</text>
+<line x1="1277.00" y1="780.75" x2="1184.20" y2="679.25" stroke="#d66516" stroke-width="3.5" opacity="1"/>
+<line x1="1270.60" y1="773.75" x2="1248.20" y2="749.25" stroke="#d66516" stroke-width="3.5" opacity="1" marker-end="url(#arr-orange)"/>
+<text x="1278.60" y="782.00" font-size="24" fill="#d66516" font-weight="400" text-anchor="start">s₂</text>
+<text x="1194.20" y="676.25" font-size="21" fill="#d66516" font-weight="400" text-anchor="start">ℓ₂（z = 1）</text>
+<line x1="1137.00" y1="852.00" x2="1137.00" y2="696.75" stroke="#7d43b5" stroke-width="2.6" opacity="1" marker-end="url(#arr-purple)"/>
+<text x="1032.00" y="683.75" font-size="21" fill="#7d43b5" font-weight="400" text-anchor="start">n = s₁ × s₂</text>
+<line x1="1137.00" y1="852.00" x2="1205.00" y2="817.00" stroke="#52647b" stroke-width="1.9" opacity="1" stroke-dasharray="6 5" marker-end="url(#arr-muted)"/>
+<line x1="1205.00" y1="817.00" x2="1205.00" y2="702.00" stroke="#7d43b5" stroke-width="2.3" opacity="1" stroke-dasharray="6 5" marker-end="url(#arr-purple)"/>
+<line x1="1137.00" y1="852.00" x2="1205.00" y2="702.00" stroke="#1d2d45" stroke-width="2.3" opacity="1" marker-end="url(#arr-ink)"/>
+<text x="1144.24" y="784.50" font-size="23" fill="#1d2d45" font-weight="400" text-anchor="start">d</text>
+<circle cx="1137.00" cy="852.00" r="5.2" fill="#2363cc" stroke="white" stroke-width="1.5"/>
+<text x="1108.00" y="879.00" font-size="21" fill="#2363cc" font-weight="400" text-anchor="start">P₁</text>
+<circle cx="1205.00" cy="817.00" r="4.5" fill="#52647b" stroke="white" stroke-width="1.5"/>
+<text x="1215.00" y="834.00" font-size="21" fill="#52647b" font-weight="400" text-anchor="start">Q</text>
+<circle cx="1205.00" cy="702.00" r="5.2" fill="#d66516" stroke="white" stroke-width="1.5"/>
+<text x="1215.00" y="689.00" font-size="21" fill="#d66516" font-weight="400" text-anchor="start">P₂</text>
+<text x="1220.00" y="763.50" font-size="23" fill="#7d43b5" font-weight="400" text-anchor="start">d⊥</text>
+<rect x="832" y="940" width="716" height="53" rx="10" fill="#f4f7fb"/>
+<text x="846.00" y="973.00" font-size="22" fill="#1d2d45" font-weight="600" text-anchor="start">n ≠ 0，D = d · n = 1 ≠ 0</text>
+<text x="40.00" y="1053.00" font-size="21" fill="#1d2d45" font-weight="600" text-anchor="start">下排的方向完全相同：s₁ = (1, 0, 0)，s₂ = (0, 1, 0)，n = (0, 0, 1)。紫色虚线 QP₂ 是法向分量。</text>
+<text x="40.00" y="1090.00" font-size="21" fill="#52647b" font-weight="400" text-anchor="start">仅将橙线从 z = 0 抬到 z = 1，就从相交变成异面。投影不保持角度，判断以方程和向量计算为准。</text>
+</g></svg>
